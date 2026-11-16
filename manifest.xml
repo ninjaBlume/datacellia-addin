@@ -5,7 +5,7 @@
            xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
            xsi:type="TaskPaneApp">
   <Id>f69a7bc2-42e8-4e6a-9db8-55c71a75db34</Id>
-  <Version>3.12.0.0</Version>
+  <Version>3.13.0.0</Version>
   <ProviderName>Datacellia</ProviderName>
   <DefaultLocale>tr-TR</DefaultLocale>
   <DisplayName DefaultValue="Datacellia"/>
@@ -79,9 +79,9 @@
               <Group id="Group.clean">
                 <Label resid="Cat.clean"/>
                 <Icon>
-                  <bt:Image size="16" resid="Icon.16"/>
-                  <bt:Image size="32" resid="Icon.32"/>
-                  <bt:Image size="80" resid="Icon.80"/>
+                  <bt:Image size="16" resid="Category.clean.16"/>
+                  <bt:Image size="32" resid="Category.clean.32"/>
+                  <bt:Image size="80" resid="Category.clean.80"/>
                 </Icon>
                 <Control xsi:type="Button" id="Cmd.trim-whitespace">
                   <Label resid="L.trim-whitespace"/>
@@ -90,9 +90,9 @@
                     <Description resid="D.trim-whitespace"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.1.16"/>
+                    <bt:Image size="32" resid="Tool.1.32"/>
+                    <bt:Image size="80" resid="Tool.1.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -106,9 +106,9 @@
                     <Description resid="D.clean-invisible-characters"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.2.16"/>
+                    <bt:Image size="32" resid="Tool.2.32"/>
+                    <bt:Image size="80" resid="Tool.2.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -122,9 +122,9 @@
                     <Description resid="D.remove-empty-rows"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.3.16"/>
+                    <bt:Image size="32" resid="Tool.3.32"/>
+                    <bt:Image size="80" resid="Tool.3.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -138,9 +138,9 @@
                     <Description resid="D.remove-empty-columns"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.4.16"/>
+                    <bt:Image size="32" resid="Tool.4.32"/>
+                    <bt:Image size="80" resid="Tool.4.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -154,9 +154,9 @@
                     <Description resid="D.remove-duplicates"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.5.16"/>
+                    <bt:Image size="32" resid="Tool.5.32"/>
+                    <bt:Image size="80" resid="Tool.5.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -167,9 +167,9 @@
               <Group id="Group.text">
                 <Label resid="Cat.text"/>
                 <Icon>
-                  <bt:Image size="16" resid="Icon.16"/>
-                  <bt:Image size="32" resid="Icon.32"/>
-                  <bt:Image size="80" resid="Icon.80"/>
+                  <bt:Image size="16" resid="Category.text.16"/>
+                  <bt:Image size="32" resid="Category.text.32"/>
+                  <bt:Image size="80" resid="Category.text.80"/>
                 </Icon>
                 <Control xsi:type="Button" id="Cmd.to-upper-case">
                   <Label resid="L.to-upper-case"/>
@@ -178,9 +178,9 @@
                     <Description resid="D.to-upper-case"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.6.16"/>
+                    <bt:Image size="32" resid="Tool.6.32"/>
+                    <bt:Image size="80" resid="Tool.6.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -194,9 +194,9 @@
                     <Description resid="D.to-lower-case"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.7.16"/>
+                    <bt:Image size="32" resid="Tool.7.32"/>
+                    <bt:Image size="80" resid="Tool.7.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -210,9 +210,9 @@
                     <Description resid="D.capitalize-words"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.8.16"/>
+                    <bt:Image size="32" resid="Tool.8.32"/>
+                    <bt:Image size="80" resid="Tool.8.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -226,9 +226,9 @@
                     <Description resid="D.split-by-delimiter"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.9.16"/>
+                    <bt:Image size="32" resid="Tool.9.32"/>
+                    <bt:Image size="80" resid="Tool.9.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -242,9 +242,9 @@
                     <Description resid="D.extract-email"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.10.16"/>
+                    <bt:Image size="32" resid="Tool.10.32"/>
+                    <bt:Image size="80" resid="Tool.10.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -258,9 +258,9 @@
                     <Description resid="D.extract-first-number"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.11.16"/>
+                    <bt:Image size="32" resid="Tool.11.32"/>
+                    <bt:Image size="80" resid="Tool.11.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -271,9 +271,9 @@
               <Group id="Group.data">
                 <Label resid="Cat.data"/>
                 <Icon>
-                  <bt:Image size="16" resid="Icon.16"/>
-                  <bt:Image size="32" resid="Icon.32"/>
-                  <bt:Image size="80" resid="Icon.80"/>
+                  <bt:Image size="16" resid="Category.data.16"/>
+                  <bt:Image size="32" resid="Category.data.32"/>
+                  <bt:Image size="80" resid="Category.data.80"/>
                 </Icon>
                 <Control xsi:type="Button" id="Cmd.data-profile">
                   <Label resid="L.data-profile"/>
@@ -282,9 +282,9 @@
                     <Description resid="D.data-profile"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.12.16"/>
+                    <bt:Image size="32" resid="Tool.12.32"/>
+                    <bt:Image size="80" resid="Tool.12.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -298,9 +298,9 @@
                     <Description resid="D.formulas-to-values"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.13.16"/>
+                    <bt:Image size="32" resid="Tool.13.32"/>
+                    <bt:Image size="80" resid="Tool.13.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -314,9 +314,9 @@
                     <Description resid="D.fill-down"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.14.16"/>
+                    <bt:Image size="32" resid="Tool.14.32"/>
+                    <bt:Image size="80" resid="Tool.14.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -330,9 +330,9 @@
                     <Description resid="D.fill-blanks"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.15.16"/>
+                    <bt:Image size="32" resid="Tool.15.32"/>
+                    <bt:Image size="80" resid="Tool.15.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -346,9 +346,9 @@
                     <Description resid="D.text-to-number"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.16.16"/>
+                    <bt:Image size="32" resid="Tool.16.32"/>
+                    <bt:Image size="80" resid="Tool.16.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -362,9 +362,9 @@
                     <Description resid="D.unique-values"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.17.16"/>
+                    <bt:Image size="32" resid="Tool.17.32"/>
+                    <bt:Image size="80" resid="Tool.17.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -378,9 +378,9 @@
                     <Description resid="D.date-parts"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.18.16"/>
+                    <bt:Image size="32" resid="Tool.18.32"/>
+                    <bt:Image size="80" resid="Tool.18.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -391,9 +391,9 @@
               <Group id="Group.number">
                 <Label resid="Cat.number"/>
                 <Icon>
-                  <bt:Image size="16" resid="Icon.16"/>
-                  <bt:Image size="32" resid="Icon.32"/>
-                  <bt:Image size="80" resid="Icon.80"/>
+                  <bt:Image size="16" resid="Category.number.16"/>
+                  <bt:Image size="32" resid="Category.number.32"/>
+                  <bt:Image size="80" resid="Category.number.80"/>
                 </Icon>
                 <Control xsi:type="Button" id="Cmd.round-number">
                   <Label resid="L.round-number"/>
@@ -402,9 +402,9 @@
                     <Description resid="D.round-number"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.19.16"/>
+                    <bt:Image size="32" resid="Tool.19.32"/>
+                    <bt:Image size="80" resid="Tool.19.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -418,9 +418,9 @@
                     <Description resid="D.change-decimal-display"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.20.16"/>
+                    <bt:Image size="32" resid="Tool.20.32"/>
+                    <bt:Image size="80" resid="Tool.20.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -434,9 +434,9 @@
                     <Description resid="D.absolute-numbers"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.21.16"/>
+                    <bt:Image size="32" resid="Tool.21.32"/>
+                    <bt:Image size="80" resid="Tool.21.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -450,9 +450,9 @@
                     <Description resid="D.flip-number-signs"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.22.16"/>
+                    <bt:Image size="32" resid="Tool.22.32"/>
+                    <bt:Image size="80" resid="Tool.22.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -466,9 +466,9 @@
                     <Description resid="D.convert-to-percent"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.23.16"/>
+                    <bt:Image size="32" resid="Tool.23.32"/>
+                    <bt:Image size="80" resid="Tool.23.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -482,9 +482,9 @@
                     <Description resid="D.convert-percent-to-number"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.24.16"/>
+                    <bt:Image size="32" resid="Tool.24.32"/>
+                    <bt:Image size="80" resid="Tool.24.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -498,9 +498,9 @@
                     <Description resid="D.fix-number-separators"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.25.16"/>
+                    <bt:Image size="32" resid="Tool.25.32"/>
+                    <bt:Image size="80" resid="Tool.25.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -514,9 +514,9 @@
                     <Description resid="D.scale-numbers"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.26.16"/>
+                    <bt:Image size="32" resid="Tool.26.32"/>
+                    <bt:Image size="80" resid="Tool.26.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -530,9 +530,9 @@
                     <Description resid="D.clear-zero-values"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.27.16"/>
+                    <bt:Image size="32" resid="Tool.27.32"/>
+                    <bt:Image size="80" resid="Tool.27.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -546,9 +546,9 @@
                     <Description resid="D.number-health-check"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.28.16"/>
+                    <bt:Image size="32" resid="Tool.28.32"/>
+                    <bt:Image size="80" resid="Tool.28.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -559,9 +559,9 @@
               <Group id="Group.dateTime">
                 <Label resid="Cat.dateTime"/>
                 <Icon>
-                  <bt:Image size="16" resid="Icon.16"/>
-                  <bt:Image size="32" resid="Icon.32"/>
-                  <bt:Image size="80" resid="Icon.80"/>
+                  <bt:Image size="16" resid="Category.dateTime.16"/>
+                  <bt:Image size="32" resid="Category.dateTime.32"/>
+                  <bt:Image size="80" resid="Category.dateTime.80"/>
                 </Icon>
                 <Control xsi:type="Button" id="Cmd.pick-date">
                   <Label resid="L.pick-date"/>
@@ -570,9 +570,9 @@
                     <Description resid="D.pick-date"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.29.16"/>
+                    <bt:Image size="32" resid="Tool.29.32"/>
+                    <bt:Image size="80" resid="Tool.29.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -586,9 +586,9 @@
                     <Description resid="D.pick-time"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.30.16"/>
+                    <bt:Image size="32" resid="Tool.30.32"/>
+                    <bt:Image size="80" resid="Tool.30.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -602,9 +602,9 @@
                     <Description resid="D.pick-date-time"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.31.16"/>
+                    <bt:Image size="32" resid="Tool.31.32"/>
+                    <bt:Image size="80" resid="Tool.31.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -618,9 +618,9 @@
                     <Description resid="D.insert-today"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.32.16"/>
+                    <bt:Image size="32" resid="Tool.32.32"/>
+                    <bt:Image size="80" resid="Tool.32.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -634,9 +634,9 @@
                     <Description resid="D.insert-current-time"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.33.16"/>
+                    <bt:Image size="32" resid="Tool.33.32"/>
+                    <bt:Image size="80" resid="Tool.33.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -650,9 +650,9 @@
                     <Description resid="D.insert-date-time"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.34.16"/>
+                    <bt:Image size="32" resid="Tool.34.32"/>
+                    <bt:Image size="80" resid="Tool.34.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -663,9 +663,9 @@
               <Group id="Group.compare">
                 <Label resid="Cat.compare"/>
                 <Icon>
-                  <bt:Image size="16" resid="Icon.16"/>
-                  <bt:Image size="32" resid="Icon.32"/>
-                  <bt:Image size="80" resid="Icon.80"/>
+                  <bt:Image size="16" resid="Category.compare.16"/>
+                  <bt:Image size="32" resid="Category.compare.32"/>
+                  <bt:Image size="80" resid="Category.compare.80"/>
                 </Icon>
                 <Control xsi:type="Button" id="Cmd.compare-lists">
                   <Label resid="L.compare-lists"/>
@@ -674,9 +674,9 @@
                     <Description resid="D.compare-lists"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.35.16"/>
+                    <bt:Image size="32" resid="Tool.35.32"/>
+                    <bt:Image size="80" resid="Tool.35.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -690,9 +690,9 @@
                     <Description resid="D.compare-tables-by-key"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.36.16"/>
+                    <bt:Image size="32" resid="Tool.36.32"/>
+                    <bt:Image size="80" resid="Tool.36.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -706,9 +706,9 @@
                     <Description resid="D.compare-rows"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.37.16"/>
+                    <bt:Image size="32" resid="Tool.37.32"/>
+                    <bt:Image size="80" resid="Tool.37.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -722,9 +722,9 @@
                     <Description resid="D.compare-health-check"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Icon.16"/>
-                    <bt:Image size="32" resid="Icon.32"/>
-                    <bt:Image size="80" resid="Icon.80"/>
+                    <bt:Image size="16" resid="Tool.38.16"/>
+                    <bt:Image size="32" resid="Tool.38.32"/>
+                    <bt:Image size="80" resid="Tool.38.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -745,9 +745,9 @@
                   <Description resid="D.pick-date"/>
                 </Supertip>
                 <Icon>
-                  <bt:Image size="16" resid="Icon.16"/>
-                  <bt:Image size="32" resid="Icon.32"/>
-                  <bt:Image size="80" resid="Icon.80"/>
+                  <bt:Image size="16" resid="Tool.29.16"/>
+                  <bt:Image size="32" resid="Tool.29.32"/>
+                  <bt:Image size="80" resid="Tool.29.80"/>
                 </Icon>
                 <Action xsi:type="ShowTaskpane">
                   <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
@@ -764,6 +764,140 @@
         <bt:Image id="Icon.16" DefaultValue="https://addin.datacellia.com/icons/icon-16.png"/>
         <bt:Image id="Icon.32" DefaultValue="https://addin.datacellia.com/icons/icon-32.png"/>
         <bt:Image id="Icon.80" DefaultValue="https://addin.datacellia.com/icons/icon-80.png"/>
+        <!-- BEGIN GENERATED IMAGES -->
+        <bt:Image id="Category.clean.16" DefaultValue="https://addin.datacellia.com/icons/tools/category-clean-1659c6c3-16.png"/>
+        <bt:Image id="Category.clean.32" DefaultValue="https://addin.datacellia.com/icons/tools/category-clean-1659c6c3-32.png"/>
+        <bt:Image id="Category.clean.80" DefaultValue="https://addin.datacellia.com/icons/tools/category-clean-1659c6c3-80.png"/>
+        <bt:Image id="Tool.1.16" DefaultValue="https://addin.datacellia.com/icons/tools/trim-whitespace-80148463-16.png"/>
+        <bt:Image id="Tool.1.32" DefaultValue="https://addin.datacellia.com/icons/tools/trim-whitespace-80148463-32.png"/>
+        <bt:Image id="Tool.1.80" DefaultValue="https://addin.datacellia.com/icons/tools/trim-whitespace-80148463-80.png"/>
+        <bt:Image id="Tool.2.16" DefaultValue="https://addin.datacellia.com/icons/tools/clean-invisible-characters-4d69b80b-16.png"/>
+        <bt:Image id="Tool.2.32" DefaultValue="https://addin.datacellia.com/icons/tools/clean-invisible-characters-4d69b80b-32.png"/>
+        <bt:Image id="Tool.2.80" DefaultValue="https://addin.datacellia.com/icons/tools/clean-invisible-characters-4d69b80b-80.png"/>
+        <bt:Image id="Tool.3.16" DefaultValue="https://addin.datacellia.com/icons/tools/remove-empty-rows-05753bd8-16.png"/>
+        <bt:Image id="Tool.3.32" DefaultValue="https://addin.datacellia.com/icons/tools/remove-empty-rows-05753bd8-32.png"/>
+        <bt:Image id="Tool.3.80" DefaultValue="https://addin.datacellia.com/icons/tools/remove-empty-rows-05753bd8-80.png"/>
+        <bt:Image id="Tool.4.16" DefaultValue="https://addin.datacellia.com/icons/tools/remove-empty-columns-0cea933b-16.png"/>
+        <bt:Image id="Tool.4.32" DefaultValue="https://addin.datacellia.com/icons/tools/remove-empty-columns-0cea933b-32.png"/>
+        <bt:Image id="Tool.4.80" DefaultValue="https://addin.datacellia.com/icons/tools/remove-empty-columns-0cea933b-80.png"/>
+        <bt:Image id="Tool.5.16" DefaultValue="https://addin.datacellia.com/icons/tools/remove-duplicates-525dbec4-16.png"/>
+        <bt:Image id="Tool.5.32" DefaultValue="https://addin.datacellia.com/icons/tools/remove-duplicates-525dbec4-32.png"/>
+        <bt:Image id="Tool.5.80" DefaultValue="https://addin.datacellia.com/icons/tools/remove-duplicates-525dbec4-80.png"/>
+        <bt:Image id="Category.text.16" DefaultValue="https://addin.datacellia.com/icons/tools/category-text-de873f6c-16.png"/>
+        <bt:Image id="Category.text.32" DefaultValue="https://addin.datacellia.com/icons/tools/category-text-de873f6c-32.png"/>
+        <bt:Image id="Category.text.80" DefaultValue="https://addin.datacellia.com/icons/tools/category-text-de873f6c-80.png"/>
+        <bt:Image id="Tool.6.16" DefaultValue="https://addin.datacellia.com/icons/tools/to-upper-case-f72af42c-16.png"/>
+        <bt:Image id="Tool.6.32" DefaultValue="https://addin.datacellia.com/icons/tools/to-upper-case-f72af42c-32.png"/>
+        <bt:Image id="Tool.6.80" DefaultValue="https://addin.datacellia.com/icons/tools/to-upper-case-f72af42c-80.png"/>
+        <bt:Image id="Tool.7.16" DefaultValue="https://addin.datacellia.com/icons/tools/to-lower-case-e9f8f250-16.png"/>
+        <bt:Image id="Tool.7.32" DefaultValue="https://addin.datacellia.com/icons/tools/to-lower-case-e9f8f250-32.png"/>
+        <bt:Image id="Tool.7.80" DefaultValue="https://addin.datacellia.com/icons/tools/to-lower-case-e9f8f250-80.png"/>
+        <bt:Image id="Tool.8.16" DefaultValue="https://addin.datacellia.com/icons/tools/capitalize-words-c4428cce-16.png"/>
+        <bt:Image id="Tool.8.32" DefaultValue="https://addin.datacellia.com/icons/tools/capitalize-words-c4428cce-32.png"/>
+        <bt:Image id="Tool.8.80" DefaultValue="https://addin.datacellia.com/icons/tools/capitalize-words-c4428cce-80.png"/>
+        <bt:Image id="Tool.9.16" DefaultValue="https://addin.datacellia.com/icons/tools/split-by-delimiter-69800896-16.png"/>
+        <bt:Image id="Tool.9.32" DefaultValue="https://addin.datacellia.com/icons/tools/split-by-delimiter-69800896-32.png"/>
+        <bt:Image id="Tool.9.80" DefaultValue="https://addin.datacellia.com/icons/tools/split-by-delimiter-69800896-80.png"/>
+        <bt:Image id="Tool.10.16" DefaultValue="https://addin.datacellia.com/icons/tools/extract-email-96a2483e-16.png"/>
+        <bt:Image id="Tool.10.32" DefaultValue="https://addin.datacellia.com/icons/tools/extract-email-96a2483e-32.png"/>
+        <bt:Image id="Tool.10.80" DefaultValue="https://addin.datacellia.com/icons/tools/extract-email-96a2483e-80.png"/>
+        <bt:Image id="Tool.11.16" DefaultValue="https://addin.datacellia.com/icons/tools/extract-first-number-accd4b3d-16.png"/>
+        <bt:Image id="Tool.11.32" DefaultValue="https://addin.datacellia.com/icons/tools/extract-first-number-accd4b3d-32.png"/>
+        <bt:Image id="Tool.11.80" DefaultValue="https://addin.datacellia.com/icons/tools/extract-first-number-accd4b3d-80.png"/>
+        <bt:Image id="Category.data.16" DefaultValue="https://addin.datacellia.com/icons/tools/category-data-9a34fedf-16.png"/>
+        <bt:Image id="Category.data.32" DefaultValue="https://addin.datacellia.com/icons/tools/category-data-9a34fedf-32.png"/>
+        <bt:Image id="Category.data.80" DefaultValue="https://addin.datacellia.com/icons/tools/category-data-9a34fedf-80.png"/>
+        <bt:Image id="Tool.12.16" DefaultValue="https://addin.datacellia.com/icons/tools/data-profile-dcf9227b-16.png"/>
+        <bt:Image id="Tool.12.32" DefaultValue="https://addin.datacellia.com/icons/tools/data-profile-dcf9227b-32.png"/>
+        <bt:Image id="Tool.12.80" DefaultValue="https://addin.datacellia.com/icons/tools/data-profile-dcf9227b-80.png"/>
+        <bt:Image id="Tool.13.16" DefaultValue="https://addin.datacellia.com/icons/tools/formulas-to-values-dc161e1d-16.png"/>
+        <bt:Image id="Tool.13.32" DefaultValue="https://addin.datacellia.com/icons/tools/formulas-to-values-dc161e1d-32.png"/>
+        <bt:Image id="Tool.13.80" DefaultValue="https://addin.datacellia.com/icons/tools/formulas-to-values-dc161e1d-80.png"/>
+        <bt:Image id="Tool.14.16" DefaultValue="https://addin.datacellia.com/icons/tools/fill-down-a37809cd-16.png"/>
+        <bt:Image id="Tool.14.32" DefaultValue="https://addin.datacellia.com/icons/tools/fill-down-a37809cd-32.png"/>
+        <bt:Image id="Tool.14.80" DefaultValue="https://addin.datacellia.com/icons/tools/fill-down-a37809cd-80.png"/>
+        <bt:Image id="Tool.15.16" DefaultValue="https://addin.datacellia.com/icons/tools/fill-blanks-93eeba31-16.png"/>
+        <bt:Image id="Tool.15.32" DefaultValue="https://addin.datacellia.com/icons/tools/fill-blanks-93eeba31-32.png"/>
+        <bt:Image id="Tool.15.80" DefaultValue="https://addin.datacellia.com/icons/tools/fill-blanks-93eeba31-80.png"/>
+        <bt:Image id="Tool.16.16" DefaultValue="https://addin.datacellia.com/icons/tools/text-to-number-75bc0041-16.png"/>
+        <bt:Image id="Tool.16.32" DefaultValue="https://addin.datacellia.com/icons/tools/text-to-number-75bc0041-32.png"/>
+        <bt:Image id="Tool.16.80" DefaultValue="https://addin.datacellia.com/icons/tools/text-to-number-75bc0041-80.png"/>
+        <bt:Image id="Tool.17.16" DefaultValue="https://addin.datacellia.com/icons/tools/unique-values-d44a8f40-16.png"/>
+        <bt:Image id="Tool.17.32" DefaultValue="https://addin.datacellia.com/icons/tools/unique-values-d44a8f40-32.png"/>
+        <bt:Image id="Tool.17.80" DefaultValue="https://addin.datacellia.com/icons/tools/unique-values-d44a8f40-80.png"/>
+        <bt:Image id="Tool.18.16" DefaultValue="https://addin.datacellia.com/icons/tools/date-parts-3e3ef9f9-16.png"/>
+        <bt:Image id="Tool.18.32" DefaultValue="https://addin.datacellia.com/icons/tools/date-parts-3e3ef9f9-32.png"/>
+        <bt:Image id="Tool.18.80" DefaultValue="https://addin.datacellia.com/icons/tools/date-parts-3e3ef9f9-80.png"/>
+        <bt:Image id="Category.number.16" DefaultValue="https://addin.datacellia.com/icons/tools/category-number-8f034aca-16.png"/>
+        <bt:Image id="Category.number.32" DefaultValue="https://addin.datacellia.com/icons/tools/category-number-8f034aca-32.png"/>
+        <bt:Image id="Category.number.80" DefaultValue="https://addin.datacellia.com/icons/tools/category-number-8f034aca-80.png"/>
+        <bt:Image id="Tool.19.16" DefaultValue="https://addin.datacellia.com/icons/tools/round-number-3b1368d6-16.png"/>
+        <bt:Image id="Tool.19.32" DefaultValue="https://addin.datacellia.com/icons/tools/round-number-3b1368d6-32.png"/>
+        <bt:Image id="Tool.19.80" DefaultValue="https://addin.datacellia.com/icons/tools/round-number-3b1368d6-80.png"/>
+        <bt:Image id="Tool.20.16" DefaultValue="https://addin.datacellia.com/icons/tools/change-decimal-display-c7bc77f4-16.png"/>
+        <bt:Image id="Tool.20.32" DefaultValue="https://addin.datacellia.com/icons/tools/change-decimal-display-c7bc77f4-32.png"/>
+        <bt:Image id="Tool.20.80" DefaultValue="https://addin.datacellia.com/icons/tools/change-decimal-display-c7bc77f4-80.png"/>
+        <bt:Image id="Tool.21.16" DefaultValue="https://addin.datacellia.com/icons/tools/absolute-numbers-a9286592-16.png"/>
+        <bt:Image id="Tool.21.32" DefaultValue="https://addin.datacellia.com/icons/tools/absolute-numbers-a9286592-32.png"/>
+        <bt:Image id="Tool.21.80" DefaultValue="https://addin.datacellia.com/icons/tools/absolute-numbers-a9286592-80.png"/>
+        <bt:Image id="Tool.22.16" DefaultValue="https://addin.datacellia.com/icons/tools/flip-number-signs-16e3f437-16.png"/>
+        <bt:Image id="Tool.22.32" DefaultValue="https://addin.datacellia.com/icons/tools/flip-number-signs-16e3f437-32.png"/>
+        <bt:Image id="Tool.22.80" DefaultValue="https://addin.datacellia.com/icons/tools/flip-number-signs-16e3f437-80.png"/>
+        <bt:Image id="Tool.23.16" DefaultValue="https://addin.datacellia.com/icons/tools/convert-to-percent-7653de5d-16.png"/>
+        <bt:Image id="Tool.23.32" DefaultValue="https://addin.datacellia.com/icons/tools/convert-to-percent-7653de5d-32.png"/>
+        <bt:Image id="Tool.23.80" DefaultValue="https://addin.datacellia.com/icons/tools/convert-to-percent-7653de5d-80.png"/>
+        <bt:Image id="Tool.24.16" DefaultValue="https://addin.datacellia.com/icons/tools/convert-percent-to-number-38551ca5-16.png"/>
+        <bt:Image id="Tool.24.32" DefaultValue="https://addin.datacellia.com/icons/tools/convert-percent-to-number-38551ca5-32.png"/>
+        <bt:Image id="Tool.24.80" DefaultValue="https://addin.datacellia.com/icons/tools/convert-percent-to-number-38551ca5-80.png"/>
+        <bt:Image id="Tool.25.16" DefaultValue="https://addin.datacellia.com/icons/tools/fix-number-separators-d53dd9bd-16.png"/>
+        <bt:Image id="Tool.25.32" DefaultValue="https://addin.datacellia.com/icons/tools/fix-number-separators-d53dd9bd-32.png"/>
+        <bt:Image id="Tool.25.80" DefaultValue="https://addin.datacellia.com/icons/tools/fix-number-separators-d53dd9bd-80.png"/>
+        <bt:Image id="Tool.26.16" DefaultValue="https://addin.datacellia.com/icons/tools/scale-numbers-3d3bc956-16.png"/>
+        <bt:Image id="Tool.26.32" DefaultValue="https://addin.datacellia.com/icons/tools/scale-numbers-3d3bc956-32.png"/>
+        <bt:Image id="Tool.26.80" DefaultValue="https://addin.datacellia.com/icons/tools/scale-numbers-3d3bc956-80.png"/>
+        <bt:Image id="Tool.27.16" DefaultValue="https://addin.datacellia.com/icons/tools/clear-zero-values-6fde3245-16.png"/>
+        <bt:Image id="Tool.27.32" DefaultValue="https://addin.datacellia.com/icons/tools/clear-zero-values-6fde3245-32.png"/>
+        <bt:Image id="Tool.27.80" DefaultValue="https://addin.datacellia.com/icons/tools/clear-zero-values-6fde3245-80.png"/>
+        <bt:Image id="Tool.28.16" DefaultValue="https://addin.datacellia.com/icons/tools/number-health-check-816c83b9-16.png"/>
+        <bt:Image id="Tool.28.32" DefaultValue="https://addin.datacellia.com/icons/tools/number-health-check-816c83b9-32.png"/>
+        <bt:Image id="Tool.28.80" DefaultValue="https://addin.datacellia.com/icons/tools/number-health-check-816c83b9-80.png"/>
+        <bt:Image id="Category.dateTime.16" DefaultValue="https://addin.datacellia.com/icons/tools/category-dateTime-519a94d0-16.png"/>
+        <bt:Image id="Category.dateTime.32" DefaultValue="https://addin.datacellia.com/icons/tools/category-dateTime-519a94d0-32.png"/>
+        <bt:Image id="Category.dateTime.80" DefaultValue="https://addin.datacellia.com/icons/tools/category-dateTime-519a94d0-80.png"/>
+        <bt:Image id="Tool.29.16" DefaultValue="https://addin.datacellia.com/icons/tools/pick-date-276ede0d-16.png"/>
+        <bt:Image id="Tool.29.32" DefaultValue="https://addin.datacellia.com/icons/tools/pick-date-276ede0d-32.png"/>
+        <bt:Image id="Tool.29.80" DefaultValue="https://addin.datacellia.com/icons/tools/pick-date-276ede0d-80.png"/>
+        <bt:Image id="Tool.30.16" DefaultValue="https://addin.datacellia.com/icons/tools/pick-time-2d803da1-16.png"/>
+        <bt:Image id="Tool.30.32" DefaultValue="https://addin.datacellia.com/icons/tools/pick-time-2d803da1-32.png"/>
+        <bt:Image id="Tool.30.80" DefaultValue="https://addin.datacellia.com/icons/tools/pick-time-2d803da1-80.png"/>
+        <bt:Image id="Tool.31.16" DefaultValue="https://addin.datacellia.com/icons/tools/pick-date-time-5901035b-16.png"/>
+        <bt:Image id="Tool.31.32" DefaultValue="https://addin.datacellia.com/icons/tools/pick-date-time-5901035b-32.png"/>
+        <bt:Image id="Tool.31.80" DefaultValue="https://addin.datacellia.com/icons/tools/pick-date-time-5901035b-80.png"/>
+        <bt:Image id="Tool.32.16" DefaultValue="https://addin.datacellia.com/icons/tools/insert-today-f90695b9-16.png"/>
+        <bt:Image id="Tool.32.32" DefaultValue="https://addin.datacellia.com/icons/tools/insert-today-f90695b9-32.png"/>
+        <bt:Image id="Tool.32.80" DefaultValue="https://addin.datacellia.com/icons/tools/insert-today-f90695b9-80.png"/>
+        <bt:Image id="Tool.33.16" DefaultValue="https://addin.datacellia.com/icons/tools/insert-current-time-b8d16b6c-16.png"/>
+        <bt:Image id="Tool.33.32" DefaultValue="https://addin.datacellia.com/icons/tools/insert-current-time-b8d16b6c-32.png"/>
+        <bt:Image id="Tool.33.80" DefaultValue="https://addin.datacellia.com/icons/tools/insert-current-time-b8d16b6c-80.png"/>
+        <bt:Image id="Tool.34.16" DefaultValue="https://addin.datacellia.com/icons/tools/insert-date-time-a4d80a59-16.png"/>
+        <bt:Image id="Tool.34.32" DefaultValue="https://addin.datacellia.com/icons/tools/insert-date-time-a4d80a59-32.png"/>
+        <bt:Image id="Tool.34.80" DefaultValue="https://addin.datacellia.com/icons/tools/insert-date-time-a4d80a59-80.png"/>
+        <bt:Image id="Category.compare.16" DefaultValue="https://addin.datacellia.com/icons/tools/category-compare-a14d1473-16.png"/>
+        <bt:Image id="Category.compare.32" DefaultValue="https://addin.datacellia.com/icons/tools/category-compare-a14d1473-32.png"/>
+        <bt:Image id="Category.compare.80" DefaultValue="https://addin.datacellia.com/icons/tools/category-compare-a14d1473-80.png"/>
+        <bt:Image id="Tool.35.16" DefaultValue="https://addin.datacellia.com/icons/tools/compare-lists-8780cb8a-16.png"/>
+        <bt:Image id="Tool.35.32" DefaultValue="https://addin.datacellia.com/icons/tools/compare-lists-8780cb8a-32.png"/>
+        <bt:Image id="Tool.35.80" DefaultValue="https://addin.datacellia.com/icons/tools/compare-lists-8780cb8a-80.png"/>
+        <bt:Image id="Tool.36.16" DefaultValue="https://addin.datacellia.com/icons/tools/compare-tables-by-key-4da1d017-16.png"/>
+        <bt:Image id="Tool.36.32" DefaultValue="https://addin.datacellia.com/icons/tools/compare-tables-by-key-4da1d017-32.png"/>
+        <bt:Image id="Tool.36.80" DefaultValue="https://addin.datacellia.com/icons/tools/compare-tables-by-key-4da1d017-80.png"/>
+        <bt:Image id="Tool.37.16" DefaultValue="https://addin.datacellia.com/icons/tools/compare-rows-7db3106b-16.png"/>
+        <bt:Image id="Tool.37.32" DefaultValue="https://addin.datacellia.com/icons/tools/compare-rows-7db3106b-32.png"/>
+        <bt:Image id="Tool.37.80" DefaultValue="https://addin.datacellia.com/icons/tools/compare-rows-7db3106b-80.png"/>
+        <bt:Image id="Tool.38.16" DefaultValue="https://addin.datacellia.com/icons/tools/compare-health-check-2dd5add9-16.png"/>
+        <bt:Image id="Tool.38.32" DefaultValue="https://addin.datacellia.com/icons/tools/compare-health-check-2dd5add9-32.png"/>
+        <bt:Image id="Tool.38.80" DefaultValue="https://addin.datacellia.com/icons/tools/compare-health-check-2dd5add9-80.png"/>
+<!-- END GENERATED IMAGES -->
       </bt:Images>
       <bt:Urls>
         <bt:Url id="Commands.Url" DefaultValue="https://addin.datacellia.com/commands.html"/>
