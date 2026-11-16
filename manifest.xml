@@ -5,7 +5,7 @@
            xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
            xsi:type="TaskPaneApp">
   <Id>f69a7bc2-42e8-4e6a-9db8-55c71a75db34</Id>
-  <Version>3.19.1.0</Version>
+  <Version>3.20.0.0</Version>
   <ProviderName>Datacellia</ProviderName>
   <DefaultLocale>tr-TR</DefaultLocale>
   <DisplayName DefaultValue="Datacellia"/>
@@ -26,7 +26,7 @@
     </Sets>
   </Requirements>
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://addin.datacellia.com/index.html?v=3.19.1.0"/>
+    <SourceLocation DefaultValue="https://addin.datacellia.com/index.html?v=3.20.0.0"/>
   </DefaultSettings>
   <Permissions>ReadWriteDocument</Permissions>
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
@@ -76,14 +76,26 @@
                 </Control>
               </Group>
               <!-- BEGIN GENERATED GROUPS -->
-              <Group id="Group.clean">
-                <Label resid="Cat.clean"/>
+              <Group id="Workflow.prepare">
+                <Label resid="Workflow.prepare"/>
                 <Icon>
                   <bt:Image size="16" resid="Category.clean.16"/>
                   <bt:Image size="32" resid="Category.clean.32"/>
                   <bt:Image size="80" resid="Category.clean.80"/>
                 </Icon>
-                <Control xsi:type="Button" id="Cmd.trim-whitespace">
+                <Control xsi:type="Menu" id="Menu.clean">
+                  <Label resid="Cat.clean"/>
+                  <Supertip>
+                    <Title resid="Cat.clean"/>
+                    <Description resid="MenuDesc.clean"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Category.clean.16"/>
+                    <bt:Image size="32" resid="Category.clean.32"/>
+                    <bt:Image size="80" resid="Category.clean.80"/>
+                  </Icon>
+                  <Items>
+                <Item id="Cmd.trim-whitespace">
                   <Label resid="L.trim-whitespace"/>
                   <Supertip>
                     <Title resid="L.trim-whitespace"/>
@@ -98,8 +110,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.1"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.clean-invisible-characters">
+                </Item>
+                <Item id="Cmd.clean-invisible-characters">
                   <Label resid="L.clean-invisible-characters"/>
                   <Supertip>
                     <Title resid="L.clean-invisible-characters"/>
@@ -114,8 +126,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.2"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.remove-empty-rows">
+                </Item>
+                <Item id="Cmd.remove-empty-rows">
                   <Label resid="L.remove-empty-rows"/>
                   <Supertip>
                     <Title resid="L.remove-empty-rows"/>
@@ -130,8 +142,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.3"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.remove-empty-columns">
+                </Item>
+                <Item id="Cmd.remove-empty-columns">
                   <Label resid="L.remove-empty-columns"/>
                   <Supertip>
                     <Title resid="L.remove-empty-columns"/>
@@ -146,8 +158,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.4"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.remove-duplicates">
+                </Item>
+                <Item id="Cmd.remove-duplicates">
                   <Label resid="L.remove-duplicates"/>
                   <Supertip>
                     <Title resid="L.remove-duplicates"/>
@@ -162,16 +174,22 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.5"/>
                   </Action>
+                </Item>
+                  </Items>
                 </Control>
-              </Group>
-              <Group id="Group.text">
-                <Label resid="Cat.text"/>
-                <Icon>
-                  <bt:Image size="16" resid="Category.text.16"/>
-                  <bt:Image size="32" resid="Category.text.32"/>
-                  <bt:Image size="80" resid="Category.text.80"/>
-                </Icon>
-                <Control xsi:type="Button" id="Cmd.to-upper-case">
+                <Control xsi:type="Menu" id="Menu.text">
+                  <Label resid="Cat.text"/>
+                  <Supertip>
+                    <Title resid="Cat.text"/>
+                    <Description resid="MenuDesc.text"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Category.text.16"/>
+                    <bt:Image size="32" resid="Category.text.32"/>
+                    <bt:Image size="80" resid="Category.text.80"/>
+                  </Icon>
+                  <Items>
+                <Item id="Cmd.to-upper-case">
                   <Label resid="L.to-upper-case"/>
                   <Supertip>
                     <Title resid="L.to-upper-case"/>
@@ -186,8 +204,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.6"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.to-lower-case">
+                </Item>
+                <Item id="Cmd.to-lower-case">
                   <Label resid="L.to-lower-case"/>
                   <Supertip>
                     <Title resid="L.to-lower-case"/>
@@ -202,8 +220,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.7"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.capitalize-words">
+                </Item>
+                <Item id="Cmd.capitalize-words">
                   <Label resid="L.capitalize-words"/>
                   <Supertip>
                     <Title resid="L.capitalize-words"/>
@@ -218,8 +236,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.8"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.split-by-delimiter">
+                </Item>
+                <Item id="Cmd.split-by-delimiter">
                   <Label resid="L.split-by-delimiter"/>
                   <Supertip>
                     <Title resid="L.split-by-delimiter"/>
@@ -234,8 +252,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.9"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.extract-email">
+                </Item>
+                <Item id="Cmd.extract-email">
                   <Label resid="L.extract-email"/>
                   <Supertip>
                     <Title resid="L.extract-email"/>
@@ -250,8 +268,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.10"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.extract-first-number">
+                </Item>
+                <Item id="Cmd.extract-first-number">
                   <Label resid="L.extract-first-number"/>
                   <Supertip>
                     <Title resid="L.extract-first-number"/>
@@ -266,16 +284,22 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.11"/>
                   </Action>
+                </Item>
+                  </Items>
                 </Control>
-              </Group>
-              <Group id="Group.data">
-                <Label resid="Cat.data"/>
-                <Icon>
-                  <bt:Image size="16" resid="Category.data.16"/>
-                  <bt:Image size="32" resid="Category.data.32"/>
-                  <bt:Image size="80" resid="Category.data.80"/>
-                </Icon>
-                <Control xsi:type="Button" id="Cmd.data-profile">
+                <Control xsi:type="Menu" id="Menu.data">
+                  <Label resid="Cat.data"/>
+                  <Supertip>
+                    <Title resid="Cat.data"/>
+                    <Description resid="MenuDesc.data"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Category.data.16"/>
+                    <bt:Image size="32" resid="Category.data.32"/>
+                    <bt:Image size="80" resid="Category.data.80"/>
+                  </Icon>
+                  <Items>
+                <Item id="Cmd.data-profile">
                   <Label resid="L.data-profile"/>
                   <Supertip>
                     <Title resid="L.data-profile"/>
@@ -290,8 +314,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.12"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.formulas-to-values">
+                </Item>
+                <Item id="Cmd.formulas-to-values">
                   <Label resid="L.formulas-to-values"/>
                   <Supertip>
                     <Title resid="L.formulas-to-values"/>
@@ -306,8 +330,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.13"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.fill-down">
+                </Item>
+                <Item id="Cmd.fill-down">
                   <Label resid="L.fill-down"/>
                   <Supertip>
                     <Title resid="L.fill-down"/>
@@ -322,8 +346,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.14"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.fill-blanks">
+                </Item>
+                <Item id="Cmd.fill-blanks">
                   <Label resid="L.fill-blanks"/>
                   <Supertip>
                     <Title resid="L.fill-blanks"/>
@@ -338,8 +362,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.15"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.text-to-number">
+                </Item>
+                <Item id="Cmd.text-to-number">
                   <Label resid="L.text-to-number"/>
                   <Supertip>
                     <Title resid="L.text-to-number"/>
@@ -354,8 +378,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.16"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.unique-values">
+                </Item>
+                <Item id="Cmd.unique-values">
                   <Label resid="L.unique-values"/>
                   <Supertip>
                     <Title resid="L.unique-values"/>
@@ -370,8 +394,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.17"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.date-parts">
+                </Item>
+                <Item id="Cmd.date-parts">
                   <Label resid="L.date-parts"/>
                   <Supertip>
                     <Title resid="L.date-parts"/>
@@ -386,16 +410,30 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.18"/>
                   </Action>
+                </Item>
+                  </Items>
                 </Control>
               </Group>
-              <Group id="Group.number">
-                <Label resid="Cat.number"/>
+              <Group id="Workflow.values">
+                <Label resid="Workflow.values"/>
                 <Icon>
                   <bt:Image size="16" resid="Category.number.16"/>
                   <bt:Image size="32" resid="Category.number.32"/>
                   <bt:Image size="80" resid="Category.number.80"/>
                 </Icon>
-                <Control xsi:type="Button" id="Cmd.round-number">
+                <Control xsi:type="Menu" id="Menu.number">
+                  <Label resid="Cat.number"/>
+                  <Supertip>
+                    <Title resid="Cat.number"/>
+                    <Description resid="MenuDesc.number"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Category.number.16"/>
+                    <bt:Image size="32" resid="Category.number.32"/>
+                    <bt:Image size="80" resid="Category.number.80"/>
+                  </Icon>
+                  <Items>
+                <Item id="Cmd.round-number">
                   <Label resid="L.round-number"/>
                   <Supertip>
                     <Title resid="L.round-number"/>
@@ -410,8 +448,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.19"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.change-decimal-display">
+                </Item>
+                <Item id="Cmd.change-decimal-display">
                   <Label resid="L.change-decimal-display"/>
                   <Supertip>
                     <Title resid="L.change-decimal-display"/>
@@ -426,8 +464,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.20"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.absolute-numbers">
+                </Item>
+                <Item id="Cmd.absolute-numbers">
                   <Label resid="L.absolute-numbers"/>
                   <Supertip>
                     <Title resid="L.absolute-numbers"/>
@@ -442,8 +480,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.21"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.flip-number-signs">
+                </Item>
+                <Item id="Cmd.flip-number-signs">
                   <Label resid="L.flip-number-signs"/>
                   <Supertip>
                     <Title resid="L.flip-number-signs"/>
@@ -458,8 +496,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.22"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.convert-to-percent">
+                </Item>
+                <Item id="Cmd.convert-to-percent">
                   <Label resid="L.convert-to-percent"/>
                   <Supertip>
                     <Title resid="L.convert-to-percent"/>
@@ -474,8 +512,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.23"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.convert-percent-to-number">
+                </Item>
+                <Item id="Cmd.convert-percent-to-number">
                   <Label resid="L.convert-percent-to-number"/>
                   <Supertip>
                     <Title resid="L.convert-percent-to-number"/>
@@ -490,8 +528,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.24"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.fix-number-separators">
+                </Item>
+                <Item id="Cmd.fix-number-separators">
                   <Label resid="L.fix-number-separators"/>
                   <Supertip>
                     <Title resid="L.fix-number-separators"/>
@@ -506,8 +544,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.25"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.scale-numbers">
+                </Item>
+                <Item id="Cmd.scale-numbers">
                   <Label resid="L.scale-numbers"/>
                   <Supertip>
                     <Title resid="L.scale-numbers"/>
@@ -522,8 +560,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.26"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.clear-zero-values">
+                </Item>
+                <Item id="Cmd.clear-zero-values">
                   <Label resid="L.clear-zero-values"/>
                   <Supertip>
                     <Title resid="L.clear-zero-values"/>
@@ -538,8 +576,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.27"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.number-health-check">
+                </Item>
+                <Item id="Cmd.number-health-check">
                   <Label resid="L.number-health-check"/>
                   <Supertip>
                     <Title resid="L.number-health-check"/>
@@ -554,16 +592,22 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.28"/>
                   </Action>
+                </Item>
+                  </Items>
                 </Control>
-              </Group>
-              <Group id="Group.dateTime">
-                <Label resid="Cat.dateTime"/>
-                <Icon>
-                  <bt:Image size="16" resid="Category.dateTime.16"/>
-                  <bt:Image size="32" resid="Category.dateTime.32"/>
-                  <bt:Image size="80" resid="Category.dateTime.80"/>
-                </Icon>
-                <Control xsi:type="Button" id="Cmd.pick-date">
+                <Control xsi:type="Menu" id="Menu.dateTime">
+                  <Label resid="Cat.dateTime"/>
+                  <Supertip>
+                    <Title resid="Cat.dateTime"/>
+                    <Description resid="MenuDesc.dateTime"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Category.dateTime.16"/>
+                    <bt:Image size="32" resid="Category.dateTime.32"/>
+                    <bt:Image size="80" resid="Category.dateTime.80"/>
+                  </Icon>
+                  <Items>
+                <Item id="Cmd.pick-date">
                   <Label resid="L.pick-date"/>
                   <Supertip>
                     <Title resid="L.pick-date"/>
@@ -578,8 +622,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.29"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.pick-time">
+                </Item>
+                <Item id="Cmd.pick-time">
                   <Label resid="L.pick-time"/>
                   <Supertip>
                     <Title resid="L.pick-time"/>
@@ -594,8 +638,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.30"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.pick-date-time">
+                </Item>
+                <Item id="Cmd.pick-date-time">
                   <Label resid="L.pick-date-time"/>
                   <Supertip>
                     <Title resid="L.pick-date-time"/>
@@ -610,8 +654,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.31"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.insert-today">
+                </Item>
+                <Item id="Cmd.insert-today">
                   <Label resid="L.insert-today"/>
                   <Supertip>
                     <Title resid="L.insert-today"/>
@@ -626,8 +670,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.32"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.insert-current-time">
+                </Item>
+                <Item id="Cmd.insert-current-time">
                   <Label resid="L.insert-current-time"/>
                   <Supertip>
                     <Title resid="L.insert-current-time"/>
@@ -642,8 +686,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.33"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.insert-date-time">
+                </Item>
+                <Item id="Cmd.insert-date-time">
                   <Label resid="L.insert-date-time"/>
                   <Supertip>
                     <Title resid="L.insert-date-time"/>
@@ -658,16 +702,30 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.34"/>
                   </Action>
+                </Item>
+                  </Items>
                 </Control>
               </Group>
-              <Group id="Group.compare">
-                <Label resid="Cat.compare"/>
+              <Group id="Workflow.combine">
+                <Label resid="Workflow.combine"/>
                 <Icon>
                   <bt:Image size="16" resid="Category.compare.16"/>
                   <bt:Image size="32" resid="Category.compare.32"/>
                   <bt:Image size="80" resid="Category.compare.80"/>
                 </Icon>
-                <Control xsi:type="Button" id="Cmd.compare-lists">
+                <Control xsi:type="Menu" id="Menu.compare">
+                  <Label resid="Cat.compare"/>
+                  <Supertip>
+                    <Title resid="Cat.compare"/>
+                    <Description resid="MenuDesc.compare"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Category.compare.16"/>
+                    <bt:Image size="32" resid="Category.compare.32"/>
+                    <bt:Image size="80" resid="Category.compare.80"/>
+                  </Icon>
+                  <Items>
+                <Item id="Cmd.compare-lists">
                   <Label resid="L.compare-lists"/>
                   <Supertip>
                     <Title resid="L.compare-lists"/>
@@ -682,8 +740,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.35"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.compare-tables-by-key">
+                </Item>
+                <Item id="Cmd.compare-tables-by-key">
                   <Label resid="L.compare-tables-by-key"/>
                   <Supertip>
                     <Title resid="L.compare-tables-by-key"/>
@@ -698,8 +756,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.36"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.compare-rows">
+                </Item>
+                <Item id="Cmd.compare-rows">
                   <Label resid="L.compare-rows"/>
                   <Supertip>
                     <Title resid="L.compare-rows"/>
@@ -714,8 +772,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.37"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.compare-health-check">
+                </Item>
+                <Item id="Cmd.compare-health-check">
                   <Label resid="L.compare-health-check"/>
                   <Supertip>
                     <Title resid="L.compare-health-check"/>
@@ -730,16 +788,22 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.38"/>
                   </Action>
+                </Item>
+                  </Items>
                 </Control>
-              </Group>
-              <Group id="Group.combine">
-                <Label resid="Cat.combine"/>
-                <Icon>
-                  <bt:Image size="16" resid="Category.combine.16"/>
-                  <bt:Image size="32" resid="Category.combine.32"/>
-                  <bt:Image size="80" resid="Category.combine.80"/>
-                </Icon>
-                <Control xsi:type="Button" id="Cmd.append-worksheets">
+                <Control xsi:type="Menu" id="Menu.combine">
+                  <Label resid="Cat.combine"/>
+                  <Supertip>
+                    <Title resid="Cat.combine"/>
+                    <Description resid="MenuDesc.combine"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Category.combine.16"/>
+                    <bt:Image size="32" resid="Category.combine.32"/>
+                    <bt:Image size="80" resid="Category.combine.80"/>
+                  </Icon>
+                  <Items>
+                <Item id="Cmd.append-worksheets">
                   <Label resid="L.append-worksheets"/>
                   <Supertip>
                     <Title resid="L.append-worksheets"/>
@@ -754,8 +818,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.39"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.append-tables">
+                </Item>
+                <Item id="Cmd.append-tables">
                   <Label resid="L.append-tables"/>
                   <Supertip>
                     <Title resid="L.append-tables"/>
@@ -770,8 +834,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.40"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.lookup-from-table">
+                </Item>
+                <Item id="Cmd.lookup-from-table">
                   <Label resid="L.lookup-from-table"/>
                   <Supertip>
                     <Title resid="L.lookup-from-table"/>
@@ -786,8 +850,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.41"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.multi-lookup">
+                </Item>
+                <Item id="Cmd.multi-lookup">
                   <Label resid="L.multi-lookup"/>
                   <Supertip>
                     <Title resid="L.multi-lookup"/>
@@ -802,16 +866,22 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.42"/>
                   </Action>
+                </Item>
+                  </Items>
                 </Control>
-              </Group>
-              <Group id="Group.summarize">
-                <Label resid="Cat.summarize"/>
-                <Icon>
-                  <bt:Image size="16" resid="Category.summarize.16"/>
-                  <bt:Image size="32" resid="Category.summarize.32"/>
-                  <bt:Image size="80" resid="Category.summarize.80"/>
-                </Icon>
-                <Control xsi:type="Button" id="Cmd.group-summarize">
+                <Control xsi:type="Menu" id="Menu.summarize">
+                  <Label resid="Cat.summarize"/>
+                  <Supertip>
+                    <Title resid="Cat.summarize"/>
+                    <Description resid="MenuDesc.summarize"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Category.summarize.16"/>
+                    <bt:Image size="32" resid="Category.summarize.32"/>
+                    <bt:Image size="80" resid="Category.summarize.80"/>
+                  </Icon>
+                  <Items>
+                <Item id="Cmd.group-summarize">
                   <Label resid="L.group-summarize"/>
                   <Supertip>
                     <Title resid="L.group-summarize"/>
@@ -826,8 +896,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.43"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.unpivot-columns">
+                </Item>
+                <Item id="Cmd.unpivot-columns">
                   <Label resid="L.unpivot-columns"/>
                   <Supertip>
                     <Title resid="L.unpivot-columns"/>
@@ -842,16 +912,30 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.44"/>
                   </Action>
+                </Item>
+                  </Items>
                 </Control>
               </Group>
-              <Group id="Group.formulaAudit">
-                <Label resid="Cat.formulaAudit"/>
+              <Group id="Workflow.audit">
+                <Label resid="Workflow.audit"/>
                 <Icon>
                   <bt:Image size="16" resid="Category.formulaAudit.16"/>
                   <bt:Image size="32" resid="Category.formulaAudit.32"/>
                   <bt:Image size="80" resid="Category.formulaAudit.80"/>
                 </Icon>
-                <Control xsi:type="Button" id="Cmd.highlight-formulas">
+                <Control xsi:type="Menu" id="Menu.formulaAudit">
+                  <Label resid="Cat.formulaAudit"/>
+                  <Supertip>
+                    <Title resid="Cat.formulaAudit"/>
+                    <Description resid="MenuDesc.formulaAudit"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Category.formulaAudit.16"/>
+                    <bt:Image size="32" resid="Category.formulaAudit.32"/>
+                    <bt:Image size="80" resid="Category.formulaAudit.80"/>
+                  </Icon>
+                  <Items>
+                <Item id="Cmd.highlight-formulas">
                   <Label resid="L.highlight-formulas"/>
                   <Supertip>
                     <Title resid="L.highlight-formulas"/>
@@ -866,8 +950,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.45"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.highlight-errors">
+                </Item>
+                <Item id="Cmd.highlight-errors">
                   <Label resid="L.highlight-errors"/>
                   <Supertip>
                     <Title resid="L.highlight-errors"/>
@@ -882,8 +966,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.46"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.highlight-external-formulas">
+                </Item>
+                <Item id="Cmd.highlight-external-formulas">
                   <Label resid="L.highlight-external-formulas"/>
                   <Supertip>
                     <Title resid="L.highlight-external-formulas"/>
@@ -898,8 +982,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.47"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.highlight-constants">
+                </Item>
+                <Item id="Cmd.highlight-constants">
                   <Label resid="L.highlight-constants"/>
                   <Supertip>
                     <Title resid="L.highlight-constants"/>
@@ -914,8 +998,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.48"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.highlight-blanks">
+                </Item>
+                <Item id="Cmd.highlight-blanks">
                   <Label resid="L.highlight-blanks"/>
                   <Supertip>
                     <Title resid="L.highlight-blanks"/>
@@ -930,8 +1014,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.49"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.highlight-inconsistent">
+                </Item>
+                <Item id="Cmd.highlight-inconsistent">
                   <Label resid="L.highlight-inconsistent"/>
                   <Supertip>
                     <Title resid="L.highlight-inconsistent"/>
@@ -946,8 +1030,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.50"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.highlight-data-validation">
+                </Item>
+                <Item id="Cmd.highlight-data-validation">
                   <Label resid="L.highlight-data-validation"/>
                   <Supertip>
                     <Title resid="L.highlight-data-validation"/>
@@ -962,8 +1046,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.51"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.highlight-conditional-formats">
+                </Item>
+                <Item id="Cmd.highlight-conditional-formats">
                   <Label resid="L.highlight-conditional-formats"/>
                   <Supertip>
                     <Title resid="L.highlight-conditional-formats"/>
@@ -978,8 +1062,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.52"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.highlight-locked-cells">
+                </Item>
+                <Item id="Cmd.highlight-locked-cells">
                   <Label resid="L.highlight-locked-cells"/>
                   <Supertip>
                     <Title resid="L.highlight-locked-cells"/>
@@ -994,8 +1078,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.53"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.highlight-unlocked-cells">
+                </Item>
+                <Item id="Cmd.highlight-unlocked-cells">
                   <Label resid="L.highlight-unlocked-cells"/>
                   <Supertip>
                     <Title resid="L.highlight-unlocked-cells"/>
@@ -1010,8 +1094,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.54"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.highlight-error-rows">
+                </Item>
+                <Item id="Cmd.highlight-error-rows">
                   <Label resid="L.highlight-error-rows"/>
                   <Supertip>
                     <Title resid="L.highlight-error-rows"/>
@@ -1026,8 +1110,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.55"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.select-formulas">
+                </Item>
+                <Item id="Cmd.select-formulas">
                   <Label resid="L.select-formulas"/>
                   <Supertip>
                     <Title resid="L.select-formulas"/>
@@ -1042,8 +1126,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.56"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.select-constants">
+                </Item>
+                <Item id="Cmd.select-constants">
                   <Label resid="L.select-constants"/>
                   <Supertip>
                     <Title resid="L.select-constants"/>
@@ -1058,8 +1142,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.57"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.select-errors">
+                </Item>
+                <Item id="Cmd.select-errors">
                   <Label resid="L.select-errors"/>
                   <Supertip>
                     <Title resid="L.select-errors"/>
@@ -1074,8 +1158,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.58"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.select-blanks">
+                </Item>
+                <Item id="Cmd.select-blanks">
                   <Label resid="L.select-blanks"/>
                   <Supertip>
                     <Title resid="L.select-blanks"/>
@@ -1090,8 +1174,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.59"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.select-visible-cells">
+                </Item>
+                <Item id="Cmd.select-visible-cells">
                   <Label resid="L.select-visible-cells"/>
                   <Supertip>
                     <Title resid="L.select-visible-cells"/>
@@ -1106,8 +1190,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.60"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.formula-map-summary">
+                </Item>
+                <Item id="Cmd.formula-map-summary">
                   <Label resid="L.formula-map-summary"/>
                   <Supertip>
                     <Title resid="L.formula-map-summary"/>
@@ -1122,8 +1206,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.61"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.extract-formulas-as-text">
+                </Item>
+                <Item id="Cmd.extract-formulas-as-text">
                   <Label resid="L.extract-formulas-as-text"/>
                   <Supertip>
                     <Title resid="L.extract-formulas-as-text"/>
@@ -1138,8 +1222,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.62"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.list-external-formulas">
+                </Item>
+                <Item id="Cmd.list-external-formulas">
                   <Label resid="L.list-external-formulas"/>
                   <Supertip>
                     <Title resid="L.list-external-formulas"/>
@@ -1154,8 +1238,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.63"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.list-named-ranges">
+                </Item>
+                <Item id="Cmd.list-named-ranges">
                   <Label resid="L.list-named-ranges"/>
                   <Supertip>
                     <Title resid="L.list-named-ranges"/>
@@ -1170,8 +1254,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.64"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.list-hyperlinks">
+                </Item>
+                <Item id="Cmd.list-hyperlinks">
                   <Label resid="L.list-hyperlinks"/>
                   <Supertip>
                     <Title resid="L.list-hyperlinks"/>
@@ -1186,8 +1270,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.65"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.list-comments-and-notes">
+                </Item>
+                <Item id="Cmd.list-comments-and-notes">
                   <Label resid="L.list-comments-and-notes"/>
                   <Supertip>
                     <Title resid="L.list-comments-and-notes"/>
@@ -1202,8 +1286,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.66"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.list-worksheets">
+                </Item>
+                <Item id="Cmd.list-worksheets">
                   <Label resid="L.list-worksheets"/>
                   <Supertip>
                     <Title resid="L.list-worksheets"/>
@@ -1218,8 +1302,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.67"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.worksheet-protection-summary">
+                </Item>
+                <Item id="Cmd.worksheet-protection-summary">
                   <Label resid="L.worksheet-protection-summary"/>
                   <Supertip>
                     <Title resid="L.worksheet-protection-summary"/>
@@ -1234,352 +1318,22 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.68"/>
                   </Action>
+                </Item>
+                  </Items>
                 </Control>
-              </Group>
-              <Group id="Group.reporting">
-                <Label resid="Cat.reporting"/>
-                <Icon>
-                  <bt:Image size="16" resid="Category.reporting.16"/>
-                  <bt:Image size="32" resid="Category.reporting.32"/>
-                  <bt:Image size="80" resid="Category.reporting.80"/>
-                </Icon>
-                <Control xsi:type="Button" id="Cmd.create-dashboard">
-                  <Label resid="L.create-dashboard"/>
+                <Control xsi:type="Menu" id="Menu.validation">
+                  <Label resid="Cat.validation"/>
                   <Supertip>
-                    <Title resid="L.create-dashboard"/>
-                    <Description resid="D.create-dashboard"/>
+                    <Title resid="Cat.validation"/>
+                    <Description resid="MenuDesc.validation"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="Tool.69.16"/>
-                    <bt:Image size="32" resid="Tool.69.32"/>
-                    <bt:Image size="80" resid="Tool.69.80"/>
+                    <bt:Image size="16" resid="Category.validation.16"/>
+                    <bt:Image size="32" resid="Category.validation.32"/>
+                    <bt:Image size="80" resid="Category.validation.80"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.69"/>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.create-report">
-                  <Label resid="L.create-report"/>
-                  <Supertip>
-                    <Title resid="L.create-report"/>
-                    <Description resid="D.create-report"/>
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Tool.70.16"/>
-                    <bt:Image size="32" resid="Tool.70.32"/>
-                    <bt:Image size="80" resid="Tool.70.80"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.70"/>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.executive-dashboard">
-                  <Label resid="L.executive-dashboard"/>
-                  <Supertip>
-                    <Title resid="L.executive-dashboard"/>
-                    <Description resid="D.executive-dashboard"/>
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Tool.71.16"/>
-                    <bt:Image size="32" resid="Tool.71.32"/>
-                    <bt:Image size="80" resid="Tool.71.80"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.71"/>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.sales-dashboard">
-                  <Label resid="L.sales-dashboard"/>
-                  <Supertip>
-                    <Title resid="L.sales-dashboard"/>
-                    <Description resid="D.sales-dashboard"/>
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Tool.72.16"/>
-                    <bt:Image size="32" resid="Tool.72.32"/>
-                    <bt:Image size="80" resid="Tool.72.80"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.72"/>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.hr-dashboard">
-                  <Label resid="L.hr-dashboard"/>
-                  <Supertip>
-                    <Title resid="L.hr-dashboard"/>
-                    <Description resid="D.hr-dashboard"/>
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Tool.73.16"/>
-                    <bt:Image size="32" resid="Tool.73.32"/>
-                    <bt:Image size="80" resid="Tool.73.80"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.73"/>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.finance-dashboard">
-                  <Label resid="L.finance-dashboard"/>
-                  <Supertip>
-                    <Title resid="L.finance-dashboard"/>
-                    <Description resid="D.finance-dashboard"/>
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Tool.74.16"/>
-                    <bt:Image size="32" resid="Tool.74.32"/>
-                    <bt:Image size="80" resid="Tool.74.80"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.74"/>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.executive-report">
-                  <Label resid="L.executive-report"/>
-                  <Supertip>
-                    <Title resid="L.executive-report"/>
-                    <Description resid="D.executive-report"/>
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Tool.75.16"/>
-                    <bt:Image size="32" resid="Tool.75.32"/>
-                    <bt:Image size="80" resid="Tool.75.80"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.75"/>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.sales-report">
-                  <Label resid="L.sales-report"/>
-                  <Supertip>
-                    <Title resid="L.sales-report"/>
-                    <Description resid="D.sales-report"/>
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Tool.76.16"/>
-                    <bt:Image size="32" resid="Tool.76.32"/>
-                    <bt:Image size="80" resid="Tool.76.80"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.76"/>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.hr-report">
-                  <Label resid="L.hr-report"/>
-                  <Supertip>
-                    <Title resid="L.hr-report"/>
-                    <Description resid="D.hr-report"/>
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Tool.77.16"/>
-                    <bt:Image size="32" resid="Tool.77.32"/>
-                    <bt:Image size="80" resid="Tool.77.80"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.77"/>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.finance-report">
-                  <Label resid="L.finance-report"/>
-                  <Supertip>
-                    <Title resid="L.finance-report"/>
-                    <Description resid="D.finance-report"/>
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Tool.78.16"/>
-                    <bt:Image size="32" resid="Tool.78.32"/>
-                    <bt:Image size="80" resid="Tool.78.80"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.78"/>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.stock-report">
-                  <Label resid="L.stock-report"/>
-                  <Supertip>
-                    <Title resid="L.stock-report"/>
-                    <Description resid="D.stock-report"/>
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Tool.79.16"/>
-                    <bt:Image size="32" resid="Tool.79.32"/>
-                    <bt:Image size="80" resid="Tool.79.80"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.79"/>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.project-report">
-                  <Label resid="L.project-report"/>
-                  <Supertip>
-                    <Title resid="L.project-report"/>
-                    <Description resid="D.project-report"/>
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Tool.80.16"/>
-                    <bt:Image size="32" resid="Tool.80.32"/>
-                    <bt:Image size="80" resid="Tool.80.80"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.80"/>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.data-quality-report">
-                  <Label resid="L.data-quality-report"/>
-                  <Supertip>
-                    <Title resid="L.data-quality-report"/>
-                    <Description resid="D.data-quality-report"/>
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Tool.81.16"/>
-                    <bt:Image size="32" resid="Tool.81.32"/>
-                    <bt:Image size="80" resid="Tool.81.80"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.81"/>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.general-report">
-                  <Label resid="L.general-report"/>
-                  <Supertip>
-                    <Title resid="L.general-report"/>
-                    <Description resid="D.general-report"/>
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Tool.82.16"/>
-                    <bt:Image size="32" resid="Tool.82.32"/>
-                    <bt:Image size="80" resid="Tool.82.80"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.82"/>
-                  </Action>
-                </Control>
-              </Group>
-              <Group id="Group.charts">
-                <Label resid="Cat.charts"/>
-                <Icon>
-                  <bt:Image size="16" resid="Category.charts.16"/>
-                  <bt:Image size="32" resid="Category.charts.32"/>
-                  <bt:Image size="80" resid="Category.charts.80"/>
-                </Icon>
-                <Control xsi:type="Button" id="Cmd.create-chart">
-                  <Label resid="L.create-chart"/>
-                  <Supertip>
-                    <Title resid="L.create-chart"/>
-                    <Description resid="D.create-chart"/>
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Tool.83.16"/>
-                    <bt:Image size="32" resid="Tool.83.32"/>
-                    <bt:Image size="80" resid="Tool.83.80"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.83"/>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.category-chart">
-                  <Label resid="L.category-chart"/>
-                  <Supertip>
-                    <Title resid="L.category-chart"/>
-                    <Description resid="D.category-chart"/>
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Tool.84.16"/>
-                    <bt:Image size="32" resid="Tool.84.32"/>
-                    <bt:Image size="80" resid="Tool.84.80"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.84"/>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.trend-chart">
-                  <Label resid="L.trend-chart"/>
-                  <Supertip>
-                    <Title resid="L.trend-chart"/>
-                    <Description resid="D.trend-chart"/>
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Tool.85.16"/>
-                    <bt:Image size="32" resid="Tool.85.32"/>
-                    <bt:Image size="80" resid="Tool.85.80"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.85"/>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.share-chart">
-                  <Label resid="L.share-chart"/>
-                  <Supertip>
-                    <Title resid="L.share-chart"/>
-                    <Description resid="D.share-chart"/>
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Tool.86.16"/>
-                    <bt:Image size="32" resid="Tool.86.32"/>
-                    <bt:Image size="80" resid="Tool.86.80"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.86"/>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.target-chart">
-                  <Label resid="L.target-chart"/>
-                  <Supertip>
-                    <Title resid="L.target-chart"/>
-                    <Description resid="D.target-chart"/>
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Tool.87.16"/>
-                    <bt:Image size="32" resid="Tool.87.32"/>
-                    <bt:Image size="80" resid="Tool.87.80"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.87"/>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.pareto-chart">
-                  <Label resid="L.pareto-chart"/>
-                  <Supertip>
-                    <Title resid="L.pareto-chart"/>
-                    <Description resid="D.pareto-chart"/>
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Tool.88.16"/>
-                    <bt:Image size="32" resid="Tool.88.32"/>
-                    <bt:Image size="80" resid="Tool.88.80"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.88"/>
-                  </Action>
-                </Control>
-              </Group>
-              <Group id="Group.validation">
-                <Label resid="Cat.validation"/>
-                <Icon>
-                  <bt:Image size="16" resid="Category.validation.16"/>
-                  <bt:Image size="32" resid="Category.validation.32"/>
-                  <bt:Image size="80" resid="Category.validation.80"/>
-                </Icon>
-                <Control xsi:type="Button" id="Cmd.create-dropdown-list">
+                  <Items>
+                <Item id="Cmd.create-dropdown-list">
                   <Label resid="L.create-dropdown-list"/>
                   <Supertip>
                     <Title resid="L.create-dropdown-list"/>
@@ -1594,8 +1348,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.89"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.set-number-validation">
+                </Item>
+                <Item id="Cmd.set-number-validation">
                   <Label resid="L.set-number-validation"/>
                   <Supertip>
                     <Title resid="L.set-number-validation"/>
@@ -1610,8 +1364,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.90"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.set-date-validation">
+                </Item>
+                <Item id="Cmd.set-date-validation">
                   <Label resid="L.set-date-validation"/>
                   <Supertip>
                     <Title resid="L.set-date-validation"/>
@@ -1626,8 +1380,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.91"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.set-text-length-validation">
+                </Item>
+                <Item id="Cmd.set-text-length-validation">
                   <Label resid="L.set-text-length-validation"/>
                   <Supertip>
                     <Title resid="L.set-text-length-validation"/>
@@ -1642,8 +1396,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.92"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.prevent-duplicate-entry">
+                </Item>
+                <Item id="Cmd.prevent-duplicate-entry">
                   <Label resid="L.prevent-duplicate-entry"/>
                   <Supertip>
                     <Title resid="L.prevent-duplicate-entry"/>
@@ -1658,8 +1412,8 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.93"/>
                   </Action>
-                </Control>
-                <Control xsi:type="Button" id="Cmd.report-invalid-data">
+                </Item>
+                <Item id="Cmd.report-invalid-data">
                   <Label resid="L.report-invalid-data"/>
                   <Supertip>
                     <Title resid="L.report-invalid-data"/>
@@ -1674,6 +1428,364 @@
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.94"/>
                   </Action>
+                </Item>
+                  </Items>
+                </Control>
+              </Group>
+              <Group id="Workflow.present">
+                <Label resid="Workflow.present"/>
+                <Icon>
+                  <bt:Image size="16" resid="Category.charts.16"/>
+                  <bt:Image size="32" resid="Category.charts.32"/>
+                  <bt:Image size="80" resid="Category.charts.80"/>
+                </Icon>
+                <Control xsi:type="Menu" id="Menu.charts">
+                  <Label resid="Cat.charts"/>
+                  <Supertip>
+                    <Title resid="Cat.charts"/>
+                    <Description resid="MenuDesc.charts"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Category.charts.16"/>
+                    <bt:Image size="32" resid="Category.charts.32"/>
+                    <bt:Image size="80" resid="Category.charts.80"/>
+                  </Icon>
+                  <Items>
+                <Item id="Cmd.create-chart">
+                  <Label resid="L.create-chart"/>
+                  <Supertip>
+                    <Title resid="L.create-chart"/>
+                    <Description resid="D.create-chart"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Tool.83.16"/>
+                    <bt:Image size="32" resid="Tool.83.32"/>
+                    <bt:Image size="80" resid="Tool.83.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.83"/>
+                  </Action>
+                </Item>
+                <Item id="Cmd.category-chart">
+                  <Label resid="L.category-chart"/>
+                  <Supertip>
+                    <Title resid="L.category-chart"/>
+                    <Description resid="D.category-chart"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Tool.84.16"/>
+                    <bt:Image size="32" resid="Tool.84.32"/>
+                    <bt:Image size="80" resid="Tool.84.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.84"/>
+                  </Action>
+                </Item>
+                <Item id="Cmd.trend-chart">
+                  <Label resid="L.trend-chart"/>
+                  <Supertip>
+                    <Title resid="L.trend-chart"/>
+                    <Description resid="D.trend-chart"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Tool.85.16"/>
+                    <bt:Image size="32" resid="Tool.85.32"/>
+                    <bt:Image size="80" resid="Tool.85.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.85"/>
+                  </Action>
+                </Item>
+                <Item id="Cmd.share-chart">
+                  <Label resid="L.share-chart"/>
+                  <Supertip>
+                    <Title resid="L.share-chart"/>
+                    <Description resid="D.share-chart"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Tool.86.16"/>
+                    <bt:Image size="32" resid="Tool.86.32"/>
+                    <bt:Image size="80" resid="Tool.86.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.86"/>
+                  </Action>
+                </Item>
+                <Item id="Cmd.target-chart">
+                  <Label resid="L.target-chart"/>
+                  <Supertip>
+                    <Title resid="L.target-chart"/>
+                    <Description resid="D.target-chart"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Tool.87.16"/>
+                    <bt:Image size="32" resid="Tool.87.32"/>
+                    <bt:Image size="80" resid="Tool.87.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.87"/>
+                  </Action>
+                </Item>
+                <Item id="Cmd.pareto-chart">
+                  <Label resid="L.pareto-chart"/>
+                  <Supertip>
+                    <Title resid="L.pareto-chart"/>
+                    <Description resid="D.pareto-chart"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Tool.88.16"/>
+                    <bt:Image size="32" resid="Tool.88.32"/>
+                    <bt:Image size="80" resid="Tool.88.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.88"/>
+                  </Action>
+                </Item>
+                  </Items>
+                </Control>
+                <Control xsi:type="Menu" id="Menu.reporting">
+                  <Label resid="Cat.reporting"/>
+                  <Supertip>
+                    <Title resid="Cat.reporting"/>
+                    <Description resid="MenuDesc.reporting"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Category.reporting.16"/>
+                    <bt:Image size="32" resid="Category.reporting.32"/>
+                    <bt:Image size="80" resid="Category.reporting.80"/>
+                  </Icon>
+                  <Items>
+                <Item id="Cmd.create-dashboard">
+                  <Label resid="L.create-dashboard"/>
+                  <Supertip>
+                    <Title resid="L.create-dashboard"/>
+                    <Description resid="D.create-dashboard"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Tool.69.16"/>
+                    <bt:Image size="32" resid="Tool.69.32"/>
+                    <bt:Image size="80" resid="Tool.69.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.69"/>
+                  </Action>
+                </Item>
+                <Item id="Cmd.create-report">
+                  <Label resid="L.create-report"/>
+                  <Supertip>
+                    <Title resid="L.create-report"/>
+                    <Description resid="D.create-report"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Tool.70.16"/>
+                    <bt:Image size="32" resid="Tool.70.32"/>
+                    <bt:Image size="80" resid="Tool.70.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.70"/>
+                  </Action>
+                </Item>
+                <Item id="Cmd.executive-dashboard">
+                  <Label resid="L.executive-dashboard"/>
+                  <Supertip>
+                    <Title resid="L.executive-dashboard"/>
+                    <Description resid="D.executive-dashboard"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Tool.71.16"/>
+                    <bt:Image size="32" resid="Tool.71.32"/>
+                    <bt:Image size="80" resid="Tool.71.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.71"/>
+                  </Action>
+                </Item>
+                <Item id="Cmd.sales-dashboard">
+                  <Label resid="L.sales-dashboard"/>
+                  <Supertip>
+                    <Title resid="L.sales-dashboard"/>
+                    <Description resid="D.sales-dashboard"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Tool.72.16"/>
+                    <bt:Image size="32" resid="Tool.72.32"/>
+                    <bt:Image size="80" resid="Tool.72.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.72"/>
+                  </Action>
+                </Item>
+                <Item id="Cmd.hr-dashboard">
+                  <Label resid="L.hr-dashboard"/>
+                  <Supertip>
+                    <Title resid="L.hr-dashboard"/>
+                    <Description resid="D.hr-dashboard"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Tool.73.16"/>
+                    <bt:Image size="32" resid="Tool.73.32"/>
+                    <bt:Image size="80" resid="Tool.73.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.73"/>
+                  </Action>
+                </Item>
+                <Item id="Cmd.finance-dashboard">
+                  <Label resid="L.finance-dashboard"/>
+                  <Supertip>
+                    <Title resid="L.finance-dashboard"/>
+                    <Description resid="D.finance-dashboard"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Tool.74.16"/>
+                    <bt:Image size="32" resid="Tool.74.32"/>
+                    <bt:Image size="80" resid="Tool.74.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.74"/>
+                  </Action>
+                </Item>
+                <Item id="Cmd.executive-report">
+                  <Label resid="L.executive-report"/>
+                  <Supertip>
+                    <Title resid="L.executive-report"/>
+                    <Description resid="D.executive-report"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Tool.75.16"/>
+                    <bt:Image size="32" resid="Tool.75.32"/>
+                    <bt:Image size="80" resid="Tool.75.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.75"/>
+                  </Action>
+                </Item>
+                <Item id="Cmd.sales-report">
+                  <Label resid="L.sales-report"/>
+                  <Supertip>
+                    <Title resid="L.sales-report"/>
+                    <Description resid="D.sales-report"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Tool.76.16"/>
+                    <bt:Image size="32" resid="Tool.76.32"/>
+                    <bt:Image size="80" resid="Tool.76.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.76"/>
+                  </Action>
+                </Item>
+                <Item id="Cmd.hr-report">
+                  <Label resid="L.hr-report"/>
+                  <Supertip>
+                    <Title resid="L.hr-report"/>
+                    <Description resid="D.hr-report"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Tool.77.16"/>
+                    <bt:Image size="32" resid="Tool.77.32"/>
+                    <bt:Image size="80" resid="Tool.77.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.77"/>
+                  </Action>
+                </Item>
+                <Item id="Cmd.finance-report">
+                  <Label resid="L.finance-report"/>
+                  <Supertip>
+                    <Title resid="L.finance-report"/>
+                    <Description resid="D.finance-report"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Tool.78.16"/>
+                    <bt:Image size="32" resid="Tool.78.32"/>
+                    <bt:Image size="80" resid="Tool.78.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.78"/>
+                  </Action>
+                </Item>
+                <Item id="Cmd.stock-report">
+                  <Label resid="L.stock-report"/>
+                  <Supertip>
+                    <Title resid="L.stock-report"/>
+                    <Description resid="D.stock-report"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Tool.79.16"/>
+                    <bt:Image size="32" resid="Tool.79.32"/>
+                    <bt:Image size="80" resid="Tool.79.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.79"/>
+                  </Action>
+                </Item>
+                <Item id="Cmd.project-report">
+                  <Label resid="L.project-report"/>
+                  <Supertip>
+                    <Title resid="L.project-report"/>
+                    <Description resid="D.project-report"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Tool.80.16"/>
+                    <bt:Image size="32" resid="Tool.80.32"/>
+                    <bt:Image size="80" resid="Tool.80.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.80"/>
+                  </Action>
+                </Item>
+                <Item id="Cmd.data-quality-report">
+                  <Label resid="L.data-quality-report"/>
+                  <Supertip>
+                    <Title resid="L.data-quality-report"/>
+                    <Description resid="D.data-quality-report"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Tool.81.16"/>
+                    <bt:Image size="32" resid="Tool.81.32"/>
+                    <bt:Image size="80" resid="Tool.81.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.81"/>
+                  </Action>
+                </Item>
+                <Item id="Cmd.general-report">
+                  <Label resid="L.general-report"/>
+                  <Supertip>
+                    <Title resid="L.general-report"/>
+                    <Description resid="D.general-report"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Tool.82.16"/>
+                    <bt:Image size="32" resid="Tool.82.32"/>
+                    <bt:Image size="80" resid="Tool.82.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.82"/>
+                  </Action>
+                </Item>
+                  </Items>
                 </Control>
               </Group>
 <!-- END GENERATED GROUPS -->
@@ -2031,111 +2143,110 @@
       </bt:Images>
       <bt:Urls>
         <bt:Url id="Commands.Url" DefaultValue="https://addin.datacellia.com/commands.html"/>
-        <bt:Url id="Taskpane.Url" DefaultValue="https://addin.datacellia.com/index.html?v=3.19.1.0"/>
-        <bt:Url id="Context.PickDate.Url" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date&amp;source=context-menu&amp;v=3.19.1.0"/>
+        <bt:Url id="Taskpane.Url" DefaultValue="https://addin.datacellia.com/index.html?v=3.20.0.0"/>
+        <bt:Url id="Context.PickDate.Url" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date&amp;source=context-menu&amp;v=3.20.0.0"/>
         <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://addin.datacellia.com/"/>
         <!-- BEGIN GENERATED URLS -->
-        <bt:Url id="TP.1" DefaultValue="https://addin.datacellia.com/index.html?tool=trim-whitespace&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.2" DefaultValue="https://addin.datacellia.com/index.html?tool=clean-invisible-characters&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.3" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-empty-rows&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.4" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-empty-columns&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.5" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-duplicates&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.6" DefaultValue="https://addin.datacellia.com/index.html?tool=to-upper-case&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.7" DefaultValue="https://addin.datacellia.com/index.html?tool=to-lower-case&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.8" DefaultValue="https://addin.datacellia.com/index.html?tool=capitalize-words&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.9" DefaultValue="https://addin.datacellia.com/index.html?tool=split-by-delimiter&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.10" DefaultValue="https://addin.datacellia.com/index.html?tool=extract-email&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.11" DefaultValue="https://addin.datacellia.com/index.html?tool=extract-first-number&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.12" DefaultValue="https://addin.datacellia.com/index.html?tool=data-profile&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.13" DefaultValue="https://addin.datacellia.com/index.html?tool=formulas-to-values&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.14" DefaultValue="https://addin.datacellia.com/index.html?tool=fill-down&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.15" DefaultValue="https://addin.datacellia.com/index.html?tool=fill-blanks&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.16" DefaultValue="https://addin.datacellia.com/index.html?tool=text-to-number&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.17" DefaultValue="https://addin.datacellia.com/index.html?tool=unique-values&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.18" DefaultValue="https://addin.datacellia.com/index.html?tool=date-parts&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.19" DefaultValue="https://addin.datacellia.com/index.html?tool=round-number&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.20" DefaultValue="https://addin.datacellia.com/index.html?tool=change-decimal-display&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.21" DefaultValue="https://addin.datacellia.com/index.html?tool=absolute-numbers&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.22" DefaultValue="https://addin.datacellia.com/index.html?tool=flip-number-signs&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.23" DefaultValue="https://addin.datacellia.com/index.html?tool=convert-to-percent&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.24" DefaultValue="https://addin.datacellia.com/index.html?tool=convert-percent-to-number&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.25" DefaultValue="https://addin.datacellia.com/index.html?tool=fix-number-separators&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.26" DefaultValue="https://addin.datacellia.com/index.html?tool=scale-numbers&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.27" DefaultValue="https://addin.datacellia.com/index.html?tool=clear-zero-values&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.28" DefaultValue="https://addin.datacellia.com/index.html?tool=number-health-check&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.29" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.30" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-time&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.31" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date-time&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.32" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-today&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.33" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-current-time&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.34" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-date-time&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.35" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-lists&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.36" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-tables-by-key&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.37" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-rows&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.38" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-health-check&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.39" DefaultValue="https://addin.datacellia.com/index.html?tool=append-worksheets&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.40" DefaultValue="https://addin.datacellia.com/index.html?tool=append-tables&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.41" DefaultValue="https://addin.datacellia.com/index.html?tool=lookup-from-table&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.42" DefaultValue="https://addin.datacellia.com/index.html?tool=multi-lookup&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.43" DefaultValue="https://addin.datacellia.com/index.html?tool=group-summarize&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.44" DefaultValue="https://addin.datacellia.com/index.html?tool=unpivot-columns&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.45" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-formulas&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.46" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-errors&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.47" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-external-formulas&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.48" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-constants&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.49" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-blanks&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.50" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-inconsistent&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.51" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-data-validation&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.52" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-conditional-formats&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.53" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-locked-cells&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.54" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-unlocked-cells&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.55" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-error-rows&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.56" DefaultValue="https://addin.datacellia.com/index.html?tool=select-formulas&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.57" DefaultValue="https://addin.datacellia.com/index.html?tool=select-constants&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.58" DefaultValue="https://addin.datacellia.com/index.html?tool=select-errors&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.59" DefaultValue="https://addin.datacellia.com/index.html?tool=select-blanks&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.60" DefaultValue="https://addin.datacellia.com/index.html?tool=select-visible-cells&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.61" DefaultValue="https://addin.datacellia.com/index.html?tool=formula-map-summary&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.62" DefaultValue="https://addin.datacellia.com/index.html?tool=extract-formulas-as-text&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.63" DefaultValue="https://addin.datacellia.com/index.html?tool=list-external-formulas&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.64" DefaultValue="https://addin.datacellia.com/index.html?tool=list-named-ranges&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.65" DefaultValue="https://addin.datacellia.com/index.html?tool=list-hyperlinks&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.66" DefaultValue="https://addin.datacellia.com/index.html?tool=list-comments-and-notes&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.67" DefaultValue="https://addin.datacellia.com/index.html?tool=list-worksheets&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.68" DefaultValue="https://addin.datacellia.com/index.html?tool=worksheet-protection-summary&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.69" DefaultValue="https://addin.datacellia.com/index.html?tool=create-dashboard&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.70" DefaultValue="https://addin.datacellia.com/index.html?tool=create-report&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.71" DefaultValue="https://addin.datacellia.com/index.html?tool=executive-dashboard&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.72" DefaultValue="https://addin.datacellia.com/index.html?tool=sales-dashboard&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.73" DefaultValue="https://addin.datacellia.com/index.html?tool=hr-dashboard&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.74" DefaultValue="https://addin.datacellia.com/index.html?tool=finance-dashboard&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.75" DefaultValue="https://addin.datacellia.com/index.html?tool=executive-report&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.76" DefaultValue="https://addin.datacellia.com/index.html?tool=sales-report&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.77" DefaultValue="https://addin.datacellia.com/index.html?tool=hr-report&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.78" DefaultValue="https://addin.datacellia.com/index.html?tool=finance-report&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.79" DefaultValue="https://addin.datacellia.com/index.html?tool=stock-report&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.80" DefaultValue="https://addin.datacellia.com/index.html?tool=project-report&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.81" DefaultValue="https://addin.datacellia.com/index.html?tool=data-quality-report&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.82" DefaultValue="https://addin.datacellia.com/index.html?tool=general-report&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.83" DefaultValue="https://addin.datacellia.com/index.html?tool=create-chart&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.84" DefaultValue="https://addin.datacellia.com/index.html?tool=category-chart&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.85" DefaultValue="https://addin.datacellia.com/index.html?tool=trend-chart&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.86" DefaultValue="https://addin.datacellia.com/index.html?tool=share-chart&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.87" DefaultValue="https://addin.datacellia.com/index.html?tool=target-chart&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.88" DefaultValue="https://addin.datacellia.com/index.html?tool=pareto-chart&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.89" DefaultValue="https://addin.datacellia.com/index.html?tool=create-dropdown-list&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.90" DefaultValue="https://addin.datacellia.com/index.html?tool=set-number-validation&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.91" DefaultValue="https://addin.datacellia.com/index.html?tool=set-date-validation&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.92" DefaultValue="https://addin.datacellia.com/index.html?tool=set-text-length-validation&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.93" DefaultValue="https://addin.datacellia.com/index.html?tool=prevent-duplicate-entry&amp;v=3.19.1.0"/>
-        <bt:Url id="TP.94" DefaultValue="https://addin.datacellia.com/index.html?tool=report-invalid-data&amp;v=3.19.1.0"/>
+        <bt:Url id="TP.1" DefaultValue="https://addin.datacellia.com/index.html?tool=trim-whitespace&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.2" DefaultValue="https://addin.datacellia.com/index.html?tool=clean-invisible-characters&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.3" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-empty-rows&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.4" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-empty-columns&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.5" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-duplicates&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.6" DefaultValue="https://addin.datacellia.com/index.html?tool=to-upper-case&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.7" DefaultValue="https://addin.datacellia.com/index.html?tool=to-lower-case&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.8" DefaultValue="https://addin.datacellia.com/index.html?tool=capitalize-words&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.9" DefaultValue="https://addin.datacellia.com/index.html?tool=split-by-delimiter&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.10" DefaultValue="https://addin.datacellia.com/index.html?tool=extract-email&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.11" DefaultValue="https://addin.datacellia.com/index.html?tool=extract-first-number&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.12" DefaultValue="https://addin.datacellia.com/index.html?tool=data-profile&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.13" DefaultValue="https://addin.datacellia.com/index.html?tool=formulas-to-values&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.14" DefaultValue="https://addin.datacellia.com/index.html?tool=fill-down&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.15" DefaultValue="https://addin.datacellia.com/index.html?tool=fill-blanks&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.16" DefaultValue="https://addin.datacellia.com/index.html?tool=text-to-number&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.17" DefaultValue="https://addin.datacellia.com/index.html?tool=unique-values&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.18" DefaultValue="https://addin.datacellia.com/index.html?tool=date-parts&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.19" DefaultValue="https://addin.datacellia.com/index.html?tool=round-number&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.20" DefaultValue="https://addin.datacellia.com/index.html?tool=change-decimal-display&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.21" DefaultValue="https://addin.datacellia.com/index.html?tool=absolute-numbers&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.22" DefaultValue="https://addin.datacellia.com/index.html?tool=flip-number-signs&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.23" DefaultValue="https://addin.datacellia.com/index.html?tool=convert-to-percent&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.24" DefaultValue="https://addin.datacellia.com/index.html?tool=convert-percent-to-number&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.25" DefaultValue="https://addin.datacellia.com/index.html?tool=fix-number-separators&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.26" DefaultValue="https://addin.datacellia.com/index.html?tool=scale-numbers&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.27" DefaultValue="https://addin.datacellia.com/index.html?tool=clear-zero-values&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.28" DefaultValue="https://addin.datacellia.com/index.html?tool=number-health-check&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.29" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.30" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-time&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.31" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date-time&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.32" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-today&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.33" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-current-time&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.34" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-date-time&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.35" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-lists&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.36" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-tables-by-key&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.37" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-rows&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.38" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-health-check&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.39" DefaultValue="https://addin.datacellia.com/index.html?tool=append-worksheets&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.40" DefaultValue="https://addin.datacellia.com/index.html?tool=append-tables&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.41" DefaultValue="https://addin.datacellia.com/index.html?tool=lookup-from-table&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.42" DefaultValue="https://addin.datacellia.com/index.html?tool=multi-lookup&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.43" DefaultValue="https://addin.datacellia.com/index.html?tool=group-summarize&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.44" DefaultValue="https://addin.datacellia.com/index.html?tool=unpivot-columns&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.45" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-formulas&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.46" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-errors&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.47" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-external-formulas&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.48" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-constants&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.49" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-blanks&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.50" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-inconsistent&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.51" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-data-validation&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.52" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-conditional-formats&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.53" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-locked-cells&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.54" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-unlocked-cells&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.55" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-error-rows&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.56" DefaultValue="https://addin.datacellia.com/index.html?tool=select-formulas&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.57" DefaultValue="https://addin.datacellia.com/index.html?tool=select-constants&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.58" DefaultValue="https://addin.datacellia.com/index.html?tool=select-errors&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.59" DefaultValue="https://addin.datacellia.com/index.html?tool=select-blanks&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.60" DefaultValue="https://addin.datacellia.com/index.html?tool=select-visible-cells&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.61" DefaultValue="https://addin.datacellia.com/index.html?tool=formula-map-summary&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.62" DefaultValue="https://addin.datacellia.com/index.html?tool=extract-formulas-as-text&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.63" DefaultValue="https://addin.datacellia.com/index.html?tool=list-external-formulas&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.64" DefaultValue="https://addin.datacellia.com/index.html?tool=list-named-ranges&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.65" DefaultValue="https://addin.datacellia.com/index.html?tool=list-hyperlinks&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.66" DefaultValue="https://addin.datacellia.com/index.html?tool=list-comments-and-notes&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.67" DefaultValue="https://addin.datacellia.com/index.html?tool=list-worksheets&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.68" DefaultValue="https://addin.datacellia.com/index.html?tool=worksheet-protection-summary&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.69" DefaultValue="https://addin.datacellia.com/index.html?tool=create-dashboard&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.70" DefaultValue="https://addin.datacellia.com/index.html?tool=create-report&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.71" DefaultValue="https://addin.datacellia.com/index.html?tool=executive-dashboard&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.72" DefaultValue="https://addin.datacellia.com/index.html?tool=sales-dashboard&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.73" DefaultValue="https://addin.datacellia.com/index.html?tool=hr-dashboard&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.74" DefaultValue="https://addin.datacellia.com/index.html?tool=finance-dashboard&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.75" DefaultValue="https://addin.datacellia.com/index.html?tool=executive-report&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.76" DefaultValue="https://addin.datacellia.com/index.html?tool=sales-report&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.77" DefaultValue="https://addin.datacellia.com/index.html?tool=hr-report&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.78" DefaultValue="https://addin.datacellia.com/index.html?tool=finance-report&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.79" DefaultValue="https://addin.datacellia.com/index.html?tool=stock-report&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.80" DefaultValue="https://addin.datacellia.com/index.html?tool=project-report&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.81" DefaultValue="https://addin.datacellia.com/index.html?tool=data-quality-report&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.82" DefaultValue="https://addin.datacellia.com/index.html?tool=general-report&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.83" DefaultValue="https://addin.datacellia.com/index.html?tool=create-chart&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.84" DefaultValue="https://addin.datacellia.com/index.html?tool=category-chart&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.85" DefaultValue="https://addin.datacellia.com/index.html?tool=trend-chart&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.86" DefaultValue="https://addin.datacellia.com/index.html?tool=share-chart&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.87" DefaultValue="https://addin.datacellia.com/index.html?tool=target-chart&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.88" DefaultValue="https://addin.datacellia.com/index.html?tool=pareto-chart&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.89" DefaultValue="https://addin.datacellia.com/index.html?tool=create-dropdown-list&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.90" DefaultValue="https://addin.datacellia.com/index.html?tool=set-number-validation&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.91" DefaultValue="https://addin.datacellia.com/index.html?tool=set-date-validation&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.92" DefaultValue="https://addin.datacellia.com/index.html?tool=set-text-length-validation&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.93" DefaultValue="https://addin.datacellia.com/index.html?tool=prevent-duplicate-entry&amp;v=3.20.0.0"/>
+        <bt:Url id="TP.94" DefaultValue="https://addin.datacellia.com/index.html?tool=report-invalid-data&amp;v=3.20.0.0"/>
 <!-- END GENERATED URLS -->
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="GetStarted.Title" DefaultValue="Datacellia hazır"/>
         <bt:String id="Datacellia.GroupLabel" DefaultValue="Datacellia"/>
         <bt:String id="Datacellia.TabLabel" DefaultValue="Datacellia"/>
-        <bt:String id="Datacellia.ButtonLabel" DefaultValue="Datacellia"/>
         <!-- BEGIN GENERATED SHORTSTRINGS -->
         <bt:String id="Cat.clean" DefaultValue="Temizle">
           <bt:Override Locale="en-US" Value="Clean"/>
@@ -2667,12 +2778,46 @@
           <bt:Override Locale="az-Latn-AZ" Value="Yanlış Məlumatları Hesabatla"/>
           <bt:Override Locale="es-ES" Value="Informar Datos No Válidos"/>
         </bt:String>
+        <bt:String id="Datacellia.ButtonLabel" DefaultValue="Tüm araçlar">
+          <bt:Override Locale="en-US" Value="All tools"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Bütün alətlər"/>
+          <bt:Override Locale="es-ES" Value="Todas las herramientas"/>
+        </bt:String>
+        <bt:String id="Workflow.prepare" DefaultValue="Veriyi Düzenle">
+          <bt:Override Locale="en-US" Value="Prepare Data"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Verini düzəlt"/>
+          <bt:Override Locale="es-ES" Value="Preparar datos"/>
+        </bt:String>
+        <bt:String id="Workflow.values" DefaultValue="Sayı ve Tarih">
+          <bt:Override Locale="en-US" Value="Numbers and Dates"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Ədəd və tarix"/>
+          <bt:Override Locale="es-ES" Value="Números y fechas"/>
+        </bt:String>
+        <bt:String id="Workflow.combine" DefaultValue="Birleştir ve Özetle">
+          <bt:Override Locale="en-US" Value="Combine and Summarize"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Birləşdir və xülasələ"/>
+          <bt:Override Locale="es-ES" Value="Combinar y resumir"/>
+        </bt:String>
+        <bt:String id="Workflow.audit" DefaultValue="Denetle">
+          <bt:Override Locale="en-US" Value="Review"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Yoxla"/>
+          <bt:Override Locale="es-ES" Value="Revisar"/>
+        </bt:String>
+        <bt:String id="Workflow.present" DefaultValue="Görselleştir ve Raporla">
+          <bt:Override Locale="en-US" Value="Visualize and Report"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Vizuallaşdır və hesabat ver"/>
+          <bt:Override Locale="es-ES" Value="Visualizar e informar"/>
+        </bt:String>
 <!-- END GENERATED SHORTSTRINGS -->
       </bt:ShortStrings>
       <bt:LongStrings>
-        <bt:String id="GetStarted.Description" DefaultValue="Datacellia araçlarını kullanmak için Giriş sekmesindeki Datacellia düğmesini seçin."/>
-        <bt:String id="Datacellia.ButtonDescription" DefaultValue="Datacellia Free Excel Toolkit görev bölmesini açar."/>
+        <bt:String id="GetStarted.Description" DefaultValue="Datacellia sekmesinden bir kategori seçin veya Tüm araçlar ile arama yapın."/>
         <!-- BEGIN GENERATED LONGSTRINGS -->
+        <bt:String id="MenuDesc.clean" DefaultValue="Boşlukları Temizle · Görünmeyen Karakterleri Temizle · Boş Satırları Sil">
+          <bt:Override Locale="en-US" Value="Trim Whitespace · Remove Invisible Characters · Delete Empty Rows"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Boşluqları Təmizlə · Görünməyən Simvolları Təmizlə · Boş Sətirləri Sil"/>
+          <bt:Override Locale="es-ES" Value="Limpiar Espacios · Eliminar Caracteres Invisibles · Eliminar Filas Vacías"/>
+        </bt:String>
         <bt:String id="D.trim-whitespace" DefaultValue="Metinlerdeki gereksiz boşlukları düzeltir; sekme ve satır sonlarını korur.">
           <bt:Override Locale="en-US" Value="Fixes stray spaces in text, keeping tabs and line breaks intact."/>
           <bt:Override Locale="az-Latn-AZ" Value="Mətnlərdəki artıq boşluqları düzəldir; tabulyasiya və sətir sonlarını qoruyur."/>
@@ -2697,6 +2842,11 @@
           <bt:Override Locale="en-US" Value="Removes duplicate rows inside the selection and keeps the first record. No header row is assumed."/>
           <bt:Override Locale="az-Latn-AZ" Value="Seçim daxilindəki təkrar sətirləri silir və ilk qeydi saxlayır. Başlıq sətri güman edilmir."/>
           <bt:Override Locale="es-ES" Value="Quita las filas duplicadas dentro de la selección y conserva el primer registro. No se supone una fila de encabezado."/>
+        </bt:String>
+        <bt:String id="MenuDesc.text" DefaultValue="BÜYÜK HARFE ÇEVİR · küçük harfe çevir · Her Kelimeyi Büyük Harfle Başlat">
+          <bt:Override Locale="en-US" Value="UPPERCASE · lowercase · Capitalise Each Word"/>
+          <bt:Override Locale="az-Latn-AZ" Value="BÖYÜK HƏRFƏ ÇEVİR · kiçik hərfə çevir · Hər Sözü Böyük Hərflə Başlat"/>
+          <bt:Override Locale="es-ES" Value="CONVERTIR A MAYÚSCULAS · convertir a minúsculas · Poner Cada Palabra En Mayúscula"/>
         </bt:String>
         <bt:String id="D.to-upper-case" DefaultValue="Metin hücrelerini büyük harfe çevirir. Excel dilinize uygun dönüşüm yapar.">
           <bt:Override Locale="en-US" Value="Converts text cells to uppercase, following your Excel language."/>
@@ -2727,6 +2877,11 @@
           <bt:Override Locale="en-US" Value="Writes the first run of digits into the empty column on the right, as text, so leading zeros survive."/>
           <bt:Override Locale="az-Latn-AZ" Value="Mətndəki ilk rəqəm ardıcıllığını sağdakı boş sütuna mətn kimi yazır. Baştakı sıfırlar qorunur."/>
           <bt:Override Locale="es-ES" Value="Escribe la primera secuencia de dígitos en la columna vacía de la derecha, como texto, para conservar los ceros iniciales."/>
+        </bt:String>
+        <bt:String id="MenuDesc.data" DefaultValue="Veri Profili · Formülleri Değere Dönüştür · Yukarıdaki Değerle Doldur">
+          <bt:Override Locale="en-US" Value="Data Profile · Convert Formulas to Values · Fill Down From Above"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Veri Profili · Düsturları Dəyərə Çevir · Yuxarıdakı Dəyərlə Doldur"/>
+          <bt:Override Locale="es-ES" Value="Perfil de Datos · Convertir Fórmulas En Valores · Rellenar Con El Valor Superior"/>
         </bt:String>
         <bt:String id="D.data-profile" DefaultValue="Seçimi değiştirmeden boş hücre, tekrarlanan satır, hata, karma veri tipi ve metin temizliği bulgularını tarar.">
           <bt:Override Locale="en-US" Value="Scans the selection for blanks, repeated rows, errors, mixed types and text cleanup findings without changing data."/>
@@ -2762,6 +2917,11 @@
           <bt:Override Locale="en-US" Value="Writes the year, month, day and quarter of date cells into the empty columns on the right, as numbers."/>
           <bt:Override Locale="az-Latn-AZ" Value="Tarix xanalarından il, ay, gün və rüb dəyərlərini sağdakı boş sütunlara rəqəm kimi yazır."/>
           <bt:Override Locale="es-ES" Value="Escribe el año, el mes, el día y el trimestre de las celdas de fecha en las columnas vacías de la derecha, como números."/>
+        </bt:String>
+        <bt:String id="MenuDesc.number" DefaultValue="Sayıyı Yuvarla · Ondalık Basamak Görünümünü Değiştir · Negatifleri Pozitife Çevir">
+          <bt:Override Locale="en-US" Value="Round Numbers · Change Decimal Display · Convert Negatives to Positive"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Rəqəmi Yuvarlaqlaşdır · Onluq Görünüşünü Dəyiş · Mənfiləri Müsbətə Çevir"/>
+          <bt:Override Locale="es-ES" Value="Redondear números · Cambiar decimales visibles · Convertir negativos en positivos"/>
         </bt:String>
         <bt:String id="D.round-number" DefaultValue="Gerçek sayısal değerleri istenen ondalık basamağa yuvarlayarak değiştirir.">
           <bt:Override Locale="en-US" Value="Changes the real numeric values by rounding them to the requested decimal places."/>
@@ -2813,6 +2973,11 @@
           <bt:Override Locale="az-Latn-AZ" Value="Rəqəm, mətn, faiz, tarix/saat, düstur, boş və xəta xanalarını yazmadan analiz edir."/>
           <bt:Override Locale="es-ES" Value="Analiza celdas numéricas, texto, porcentajes, fecha/hora, fórmulas, vacías y errores sin escribir nada."/>
         </bt:String>
+        <bt:String id="MenuDesc.dateTime" DefaultValue="Tarih Seç · Saat Seç · Tarih ve Saat Seç">
+          <bt:Override Locale="en-US" Value="Pick Date · Pick Time · Pick Date &amp; Time"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Tarix Seç · Saat Seç · Tarix və Saat Seç"/>
+          <bt:Override Locale="es-ES" Value="Elegir fecha · Elegir hora · Elegir fecha y hora"/>
+        </bt:String>
         <bt:String id="D.pick-date" DefaultValue="Kompakt takvimi açar ve seçilen tarihi gerçek Excel değeri olarak yazar.">
           <bt:Override Locale="en-US" Value="Opens a compact calendar and writes the selected date as a real Excel value."/>
           <bt:Override Locale="az-Latn-AZ" Value="Yığcam təqvimi açır və seçilmiş tarixi həqiqi Excel dəyəri kimi yazır."/>
@@ -2843,6 +3008,11 @@
           <bt:Override Locale="az-Latn-AZ" Value="İndiki yerli tarix və saatı bir sabit Excel dəyəri kimi yazır."/>
           <bt:Override Locale="es-ES" Value="Escribe la fecha y hora locales actuales como un único valor fijo de Excel."/>
         </bt:String>
+        <bt:String id="MenuDesc.compare" DefaultValue="İki Listeyi Karşılaştır · İki Tabloyu Anahtarla Karşılaştır · Satır Satır Karşılaştır">
+          <bt:Override Locale="en-US" Value="Compare Two Lists · Compare Two Tables By Key · Compare Row By Row"/>
+          <bt:Override Locale="az-Latn-AZ" Value="İki Siyahını Müqayisə Et · İki Cədvəli Açarla Müqayisə Et · Sətir-Sətir Müqayisə Et"/>
+          <bt:Override Locale="es-ES" Value="Comparar Dos Listas · Comparar Dos Tablas Por Clave · Comparar Fila Por Fila"/>
+        </bt:String>
         <bt:String id="D.compare-lists" DefaultValue="Tek sütunluk iki listeyi karşılaştırır; sonucu yeni bir sayfaya yazar. Kaynak listeler değişmez.">
           <bt:Override Locale="en-US" Value="Compares two single-column lists and writes the result to a new sheet. The source lists are untouched."/>
           <bt:Override Locale="az-Latn-AZ" Value="Tək sütunlu iki siyahını müqayisə edir; nəticəni yeni vərəqə yazır. Mənbə siyahılar dəyişmir."/>
@@ -2862,6 +3032,11 @@
           <bt:Override Locale="en-US" Value="Reports key, header and data type problems before you compare. Writes nothing."/>
           <bt:Override Locale="az-Latn-AZ" Value="İki cədvəli müqayisə etmədən əvvəl açar, başlıq və məlumat tipi problemlərini bildirir. Heç nə yazmır."/>
           <bt:Override Locale="es-ES" Value="Informa de problemas de clave, encabezado y tipo de datos antes de comparar. No escribe nada."/>
+        </bt:String>
+        <bt:String id="MenuDesc.combine" DefaultValue="Sayfaları Alt Alta Birleştir · Tabloları Alt Alta Birleştir · Tablodan Veri Getir">
+          <bt:Override Locale="en-US" Value="Append Worksheets · Append Tables · Lookup from Table"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Vərəqləri Alt-alta Birləşdir · Cədvəlləri Alt-alta Birləşdir · Cədvəldən Məlumat Gətir"/>
+          <bt:Override Locale="es-ES" Value="Anexar Hojas · Anexar Tablas · Buscar en Tabla"/>
         </bt:String>
         <bt:String id="D.append-worksheets" DefaultValue="Seçtiğiniz sayfaların veri aralıklarını başlıklara göre hizalayıp tek bir sonuç sayfasında birleştirir. Her kaynak sayfadan bir hücre seçip kaynaklara ekleyin.">
           <bt:Override Locale="en-US" Value="Align the used ranges of chosen worksheets by header and combine them on a new worksheet. Select a cell on each source sheet and capture it in order."/>
@@ -2883,6 +3058,11 @@
           <bt:Override Locale="az-Latn-AZ" Value="Hər açarın bütün uyğunluqlarını ayrıca sətirlərdə yeni nəticə vərəqinə gətirir."/>
           <bt:Override Locale="es-ES" Value="Devuelve todas las filas coincidentes para cada clave y conserva las filas sin coincidencia en una hoja nueva."/>
         </bt:String>
+        <bt:String id="MenuDesc.summarize" DefaultValue="Grupla ve Özetle · Sütunları Satırlara Dönüştür">
+          <bt:Override Locale="en-US" Value="Group and Summarize · Unpivot Columns"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Qruplaşdır və Yekunlaşdır · Sütunları Sətirlərə Çevir"/>
+          <bt:Override Locale="es-ES" Value="Agrupar y Resumir · Anular Dinamización de Columnas"/>
+        </bt:String>
         <bt:String id="D.group-summarize" DefaultValue="Tabloyu seçilen sütuna göre gruplayıp satır adedi, sayısal adet, toplam, ortalama, en küçük ve en büyük değerleri yeni sayfada oluşturur.">
           <bt:Override Locale="en-US" Value="Group by a selected column and create row count, numeric count, sum, average, minimum and maximum on a new worksheet."/>
           <bt:Override Locale="az-Latn-AZ" Value="Seçilmiş sütuna görə qruplaşdırıb say, ədədi say, cəm, orta, minimum və maksimumu yeni vərəqdə yaradır."/>
@@ -2892,6 +3072,11 @@
           <bt:Override Locale="en-US" Value="Keep the identifier columns and turn the remaining columns into attribute and value rows on a new worksheet."/>
           <bt:Override Locale="az-Latn-AZ" Value="Kimlik sütunlarını saxlayaraq digər sütunları xüsusiyyət və dəyər sətirlərinə çevirir."/>
           <bt:Override Locale="es-ES" Value="Conserva las columnas identificadoras y transforma las demás columnas en filas de atributo y valor en una hoja nueva."/>
+        </bt:String>
+        <bt:String id="MenuDesc.formulaAudit" DefaultValue="Formülleri Vurgula · Hatalı Hücreleri Vurgula · Dış Bağlantılı Formülleri Vurgula">
+          <bt:Override Locale="en-US" Value="Highlight Formulas · Highlight Errors · Highlight External Formulas"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Düsturları vurğula · Səhv xanaları vurğula · Xarici düsturları vurğula"/>
+          <bt:Override Locale="es-ES" Value="Resaltar fórmulas · Resaltar errores · Resaltar fórmulas externas"/>
         </bt:String>
         <bt:String id="D.highlight-formulas" DefaultValue="Seçilen aralıkta eşleşen hücreleri önizler ve dolgu rengi uygular. Datacellia Geri Al ile önceki dolgulara dönün.">
           <bt:Override Locale="en-US" Value="Preview matching cells in the captured range and apply fill formatting. Datacellia Undo restores previous fills."/>
@@ -3013,6 +3198,11 @@
           <bt:Override Locale="az-Latn-AZ" Value="Yoxlama nəticəsini önizləyir və yeni vərəqə yazır. Hesabat cari vəziyyəti göstərir."/>
           <bt:Override Locale="es-ES" Value="Previsualiza el resultado y lo escribe en una hoja nueva. El informe refleja el estado actual."/>
         </bt:String>
+        <bt:String id="MenuDesc.reporting" DefaultValue="Dashboard Oluşturucu · Rapor Oluşturucu · Yönetici Panosu">
+          <bt:Override Locale="en-US" Value="Dashboard Builder · Report Builder · Executive Dashboard"/>
+          <bt:Override Locale="az-Latn-AZ" Value="İdarə Paneli Qurucusu · Hesabat Qurucusu · Rəhbər Paneli"/>
+          <bt:Override Locale="es-ES" Value="Creador de Paneles · Creador de Informes · Panel Ejecutivo"/>
+        </bt:String>
         <bt:String id="D.create-dashboard" DefaultValue="Sütunları eşleyin, önizleyin ve düzenlenebilir Excel grafikleriyle oluşturun. Kaynak değiştiğinde Yenile kullanın.">
           <bt:Override Locale="en-US" Value="Map columns, preview and create editable Excel charts. Use Refresh after source changes."/>
           <bt:Override Locale="az-Latn-AZ" Value="Sütunları seçin, önbaxışa baxın və redaktə edilən Excel diaqramları yaradın. Mənbə dəyişəndə Yenilə istifadə edin."/>
@@ -3083,6 +3273,11 @@
           <bt:Override Locale="az-Latn-AZ" Value="Sütunları seçin, önbaxışa baxın və redaktə edilən Excel diaqramları yaradın. Mənbə dəyişəndə Yenilə istifadə edin."/>
           <bt:Override Locale="es-ES" Value="Asigne columnas, revise la vista previa y cree gráficos editables de Excel. Actualice tras cambiar el origen."/>
         </bt:String>
+        <bt:String id="MenuDesc.charts" DefaultValue="Grafik Oluşturucu · Kategori Karşılaştırma · Zaman İçinde Eğilim">
+          <bt:Override Locale="en-US" Value="Chart Builder · Category Comparison · Trend Over Time"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Qrafik Yaradıcısı · Kateqoriya Müqayisəsi · Zaman Üzrə Meyil"/>
+          <bt:Override Locale="es-ES" Value="Creador de Gráficos · Comparación por Categoría · Tendencia Temporal"/>
+        </bt:String>
         <bt:String id="D.create-chart" DefaultValue="Sütunları eşleyin, sonucu önizleyin ve düzenlenebilir Excel grafiği oluşturun. Kaynak değiştiğinde Yenile kullanın.">
           <bt:Override Locale="en-US" Value="Map columns, preview the results and create an editable Excel chart. Use Refresh after source changes."/>
           <bt:Override Locale="az-Latn-AZ" Value="Sütunları uyğunlaşdırın, nəticəni öncədən baxın və redaktə edilən Excel qrafiki yaradın. Mənbə dəyişəndə Yenilə istifadə edin."/>
@@ -3113,6 +3308,11 @@
           <bt:Override Locale="az-Latn-AZ" Value="Sütunları uyğunlaşdırın, nəticəni öncədən baxın və redaktə edilən Excel qrafiki yaradın. Mənbə dəyişəndə Yenilə istifadə edin."/>
           <bt:Override Locale="es-ES" Value="Asigne columnas, revise la vista previa y cree un gráfico editable de Excel. Actualice después de cambiar el origen."/>
         </bt:String>
+        <bt:String id="MenuDesc.validation" DefaultValue="Açılır Liste Oluştur · Sayı Aralığı Kuralı · Tarih Aralığı Kuralı">
+          <bt:Override Locale="en-US" Value="Create Drop-down List · Number Range Rule · Date Range Rule"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Açılan Siyahı Yarat · Ədəd Aralığı Qaydası · Tarix Aralığı Qaydası"/>
+          <bt:Override Locale="es-ES" Value="Crear Lista Desplegable · Regla de Rango Numérico · Regla de Rango de Fechas"/>
+        </bt:String>
         <bt:String id="D.create-dropdown-list" DefaultValue="Hedef aralığı seçin, kuralı önizleyin ve Excel giriş kuralını uygulayın. Önceki kurallar aynı oturumda Geri Al ile geri yüklenir.">
           <bt:Override Locale="en-US" Value="Capture the target, preview the rule and apply native Excel data validation. Undo restores previous rules in the same session."/>
           <bt:Override Locale="az-Latn-AZ" Value="Hədəfi seçin, qaydaya öncədən baxın və Excel giriş qaydasını tətbiq edin. Geri Al əvvəlki qaydaları eyni sessiyada bərpa edir."/>
@@ -3142,6 +3342,11 @@
           <bt:Override Locale="en-US" Value="Uses Excel to check existing validation and reports invalid records and the number of cells without rules on a new sheet."/>
           <bt:Override Locale="az-Latn-AZ" Value="Mövcud qaydaları Excel ilə yoxlayır, yanlış qeydləri və qaydasız xanaların sayını yeni vərəqdə göstərir."/>
           <bt:Override Locale="es-ES" Value="Usa Excel para comprobar las reglas existentes e informa los registros no válidos y las celdas sin reglas en una hoja nueva."/>
+        </bt:String>
+        <bt:String id="Datacellia.ButtonDescription" DefaultValue="Araç adını arayın veya kategorilerden seçin.">
+          <bt:Override Locale="en-US" Value="Search for a tool by name or browse categories."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Alətin adını axtarın və ya kateqoriyalardan seçin."/>
+          <bt:Override Locale="es-ES" Value="Busque una herramienta por nombre o explore las categorías."/>
         </bt:String>
 <!-- END GENERATED LONGSTRINGS -->
       </bt:LongStrings>
