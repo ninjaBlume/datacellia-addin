@@ -2276,62 +2276,62 @@
           <bt:Override Locale="es-ES" Value="Creador de Informes"/>
         </bt:String>
         <bt:String id="L.executive-dashboard" DefaultValue="Yönetici Panosu">
-          <bt:Override Locale="en-US" Value="Dashboard Executive"/>
+          <bt:Override Locale="en-US" Value="Executive Dashboard"/>
           <bt:Override Locale="az-Latn-AZ" Value="Rəhbər Paneli"/>
           <bt:Override Locale="es-ES" Value="Panel Ejecutivo"/>
         </bt:String>
         <bt:String id="L.sales-dashboard" DefaultValue="Satış Panosu">
-          <bt:Override Locale="en-US" Value="Dashboard Sales"/>
+          <bt:Override Locale="en-US" Value="Sales Dashboard"/>
           <bt:Override Locale="az-Latn-AZ" Value="Satış Paneli"/>
           <bt:Override Locale="es-ES" Value="Panel Ventas"/>
         </bt:String>
         <bt:String id="L.hr-dashboard" DefaultValue="İK Panosu">
-          <bt:Override Locale="en-US" Value="Dashboard HR"/>
+          <bt:Override Locale="en-US" Value="HR Dashboard"/>
           <bt:Override Locale="az-Latn-AZ" Value="İnsan Resursları Paneli"/>
           <bt:Override Locale="es-ES" Value="Panel RR. HH."/>
         </bt:String>
         <bt:String id="L.finance-dashboard" DefaultValue="Finans Panosu">
-          <bt:Override Locale="en-US" Value="Dashboard Finance"/>
+          <bt:Override Locale="en-US" Value="Finance Dashboard"/>
           <bt:Override Locale="az-Latn-AZ" Value="Maliyyə Paneli"/>
           <bt:Override Locale="es-ES" Value="Panel Finanzas"/>
         </bt:String>
         <bt:String id="L.executive-report" DefaultValue="Yönetici Raporu">
-          <bt:Override Locale="en-US" Value="Report Executive"/>
+          <bt:Override Locale="en-US" Value="Executive Report"/>
           <bt:Override Locale="az-Latn-AZ" Value="Rəhbər Hesabatı"/>
           <bt:Override Locale="es-ES" Value="Informe Ejecutivo"/>
         </bt:String>
         <bt:String id="L.sales-report" DefaultValue="Satış Raporu">
-          <bt:Override Locale="en-US" Value="Report Sales"/>
+          <bt:Override Locale="en-US" Value="Sales Report"/>
           <bt:Override Locale="az-Latn-AZ" Value="Satış Hesabatı"/>
           <bt:Override Locale="es-ES" Value="Informe Ventas"/>
         </bt:String>
         <bt:String id="L.hr-report" DefaultValue="İK Raporu">
-          <bt:Override Locale="en-US" Value="Report HR"/>
+          <bt:Override Locale="en-US" Value="HR Report"/>
           <bt:Override Locale="az-Latn-AZ" Value="İnsan Resursları Hesabatı"/>
           <bt:Override Locale="es-ES" Value="Informe RR. HH."/>
         </bt:String>
         <bt:String id="L.finance-report" DefaultValue="Finans Raporu">
-          <bt:Override Locale="en-US" Value="Report Finance"/>
+          <bt:Override Locale="en-US" Value="Finance Report"/>
           <bt:Override Locale="az-Latn-AZ" Value="Maliyyə Hesabatı"/>
           <bt:Override Locale="es-ES" Value="Informe Finanzas"/>
         </bt:String>
         <bt:String id="L.stock-report" DefaultValue="Stok Raporu">
-          <bt:Override Locale="en-US" Value="Report Stock"/>
+          <bt:Override Locale="en-US" Value="Stock Report"/>
           <bt:Override Locale="az-Latn-AZ" Value="Anbar Hesabatı"/>
           <bt:Override Locale="es-ES" Value="Informe Inventario"/>
         </bt:String>
         <bt:String id="L.project-report" DefaultValue="Proje Raporu">
-          <bt:Override Locale="en-US" Value="Report Project"/>
+          <bt:Override Locale="en-US" Value="Project Report"/>
           <bt:Override Locale="az-Latn-AZ" Value="Layihə Hesabatı"/>
           <bt:Override Locale="es-ES" Value="Informe Proyectos"/>
         </bt:String>
         <bt:String id="L.data-quality-report" DefaultValue="Veri Kalitesi Raporu">
-          <bt:Override Locale="en-US" Value="Report Data Quality"/>
+          <bt:Override Locale="en-US" Value="Data Quality Report"/>
           <bt:Override Locale="az-Latn-AZ" Value="Məlumat Keyfiyyəti Hesabatı"/>
           <bt:Override Locale="es-ES" Value="Informe Calidad de Datos"/>
         </bt:String>
-        <bt:String id="L.general-report" DefaultValue="Genel Raporu">
-          <bt:Override Locale="en-US" Value="Report General"/>
+        <bt:String id="L.general-report" DefaultValue="Genel Rapor">
+          <bt:Override Locale="en-US" Value="General Report"/>
           <bt:Override Locale="az-Latn-AZ" Value="Ümumi Hesabatı"/>
           <bt:Override Locale="es-ES" Value="Informe General"/>
         </bt:String>
