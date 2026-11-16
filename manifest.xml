@@ -5,7 +5,7 @@
            xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
            xsi:type="TaskPaneApp">
   <Id>f69a7bc2-42e8-4e6a-9db8-55c71a75db34</Id>
-  <Version>3.13.0.0</Version>
+  <Version>3.14.0.0</Version>
   <ProviderName>Datacellia</ProviderName>
   <DefaultLocale>tr-TR</DefaultLocale>
   <DisplayName DefaultValue="Datacellia"/>
@@ -26,7 +26,7 @@
     </Sets>
   </Requirements>
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://addin.datacellia.com/index.html"/>
+    <SourceLocation DefaultValue="https://addin.datacellia.com/index.html?v=3.14.0.0"/>
   </DefaultSettings>
   <Permissions>ReadWriteDocument</Permissions>
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
@@ -732,6 +732,118 @@
                   </Action>
                 </Control>
               </Group>
+              <Group id="Group.combine">
+                <Label resid="Cat.combine"/>
+                <Icon>
+                  <bt:Image size="16" resid="Category.combine.16"/>
+                  <bt:Image size="32" resid="Category.combine.32"/>
+                  <bt:Image size="80" resid="Category.combine.80"/>
+                </Icon>
+                <Control xsi:type="Button" id="Cmd.append-worksheets">
+                  <Label resid="L.append-worksheets"/>
+                  <Supertip>
+                    <Title resid="L.append-worksheets"/>
+                    <Description resid="D.append-worksheets"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Tool.39.16"/>
+                    <bt:Image size="32" resid="Tool.39.32"/>
+                    <bt:Image size="80" resid="Tool.39.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.39"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.append-tables">
+                  <Label resid="L.append-tables"/>
+                  <Supertip>
+                    <Title resid="L.append-tables"/>
+                    <Description resid="D.append-tables"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Tool.40.16"/>
+                    <bt:Image size="32" resid="Tool.40.32"/>
+                    <bt:Image size="80" resid="Tool.40.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.40"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.lookup-from-table">
+                  <Label resid="L.lookup-from-table"/>
+                  <Supertip>
+                    <Title resid="L.lookup-from-table"/>
+                    <Description resid="D.lookup-from-table"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Tool.41.16"/>
+                    <bt:Image size="32" resid="Tool.41.32"/>
+                    <bt:Image size="80" resid="Tool.41.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.41"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.multi-lookup">
+                  <Label resid="L.multi-lookup"/>
+                  <Supertip>
+                    <Title resid="L.multi-lookup"/>
+                    <Description resid="D.multi-lookup"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Tool.42.16"/>
+                    <bt:Image size="32" resid="Tool.42.32"/>
+                    <bt:Image size="80" resid="Tool.42.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.42"/>
+                  </Action>
+                </Control>
+              </Group>
+              <Group id="Group.summarize">
+                <Label resid="Cat.summarize"/>
+                <Icon>
+                  <bt:Image size="16" resid="Category.summarize.16"/>
+                  <bt:Image size="32" resid="Category.summarize.32"/>
+                  <bt:Image size="80" resid="Category.summarize.80"/>
+                </Icon>
+                <Control xsi:type="Button" id="Cmd.group-summarize">
+                  <Label resid="L.group-summarize"/>
+                  <Supertip>
+                    <Title resid="L.group-summarize"/>
+                    <Description resid="D.group-summarize"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Tool.43.16"/>
+                    <bt:Image size="32" resid="Tool.43.32"/>
+                    <bt:Image size="80" resid="Tool.43.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.43"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.unpivot-columns">
+                  <Label resid="L.unpivot-columns"/>
+                  <Supertip>
+                    <Title resid="L.unpivot-columns"/>
+                    <Description resid="D.unpivot-columns"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Tool.44.16"/>
+                    <bt:Image size="32" resid="Tool.44.32"/>
+                    <bt:Image size="80" resid="Tool.44.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.44"/>
+                  </Action>
+                </Control>
+              </Group>
 <!-- END GENERATED GROUPS -->
               <Label resid="Datacellia.TabLabel"/>
             </CustomTab>
@@ -897,52 +1009,82 @@
         <bt:Image id="Tool.38.16" DefaultValue="https://addin.datacellia.com/icons/tools/compare-health-check-2dd5add9-16.png"/>
         <bt:Image id="Tool.38.32" DefaultValue="https://addin.datacellia.com/icons/tools/compare-health-check-2dd5add9-32.png"/>
         <bt:Image id="Tool.38.80" DefaultValue="https://addin.datacellia.com/icons/tools/compare-health-check-2dd5add9-80.png"/>
+        <bt:Image id="Category.combine.16" DefaultValue="https://addin.datacellia.com/icons/tools/category-combine-723bbd1d-16.png"/>
+        <bt:Image id="Category.combine.32" DefaultValue="https://addin.datacellia.com/icons/tools/category-combine-723bbd1d-32.png"/>
+        <bt:Image id="Category.combine.80" DefaultValue="https://addin.datacellia.com/icons/tools/category-combine-723bbd1d-80.png"/>
+        <bt:Image id="Tool.39.16" DefaultValue="https://addin.datacellia.com/icons/tools/append-worksheets-1b3e1790-16.png"/>
+        <bt:Image id="Tool.39.32" DefaultValue="https://addin.datacellia.com/icons/tools/append-worksheets-1b3e1790-32.png"/>
+        <bt:Image id="Tool.39.80" DefaultValue="https://addin.datacellia.com/icons/tools/append-worksheets-1b3e1790-80.png"/>
+        <bt:Image id="Tool.40.16" DefaultValue="https://addin.datacellia.com/icons/tools/append-tables-a60e6689-16.png"/>
+        <bt:Image id="Tool.40.32" DefaultValue="https://addin.datacellia.com/icons/tools/append-tables-a60e6689-32.png"/>
+        <bt:Image id="Tool.40.80" DefaultValue="https://addin.datacellia.com/icons/tools/append-tables-a60e6689-80.png"/>
+        <bt:Image id="Tool.41.16" DefaultValue="https://addin.datacellia.com/icons/tools/lookup-from-table-97f37a9b-16.png"/>
+        <bt:Image id="Tool.41.32" DefaultValue="https://addin.datacellia.com/icons/tools/lookup-from-table-97f37a9b-32.png"/>
+        <bt:Image id="Tool.41.80" DefaultValue="https://addin.datacellia.com/icons/tools/lookup-from-table-97f37a9b-80.png"/>
+        <bt:Image id="Tool.42.16" DefaultValue="https://addin.datacellia.com/icons/tools/multi-lookup-2cc518f6-16.png"/>
+        <bt:Image id="Tool.42.32" DefaultValue="https://addin.datacellia.com/icons/tools/multi-lookup-2cc518f6-32.png"/>
+        <bt:Image id="Tool.42.80" DefaultValue="https://addin.datacellia.com/icons/tools/multi-lookup-2cc518f6-80.png"/>
+        <bt:Image id="Category.summarize.16" DefaultValue="https://addin.datacellia.com/icons/tools/category-summarize-eb63fe40-16.png"/>
+        <bt:Image id="Category.summarize.32" DefaultValue="https://addin.datacellia.com/icons/tools/category-summarize-eb63fe40-32.png"/>
+        <bt:Image id="Category.summarize.80" DefaultValue="https://addin.datacellia.com/icons/tools/category-summarize-eb63fe40-80.png"/>
+        <bt:Image id="Tool.43.16" DefaultValue="https://addin.datacellia.com/icons/tools/group-summarize-eb0b90fb-16.png"/>
+        <bt:Image id="Tool.43.32" DefaultValue="https://addin.datacellia.com/icons/tools/group-summarize-eb0b90fb-32.png"/>
+        <bt:Image id="Tool.43.80" DefaultValue="https://addin.datacellia.com/icons/tools/group-summarize-eb0b90fb-80.png"/>
+        <bt:Image id="Tool.44.16" DefaultValue="https://addin.datacellia.com/icons/tools/unpivot-columns-bf77b160-16.png"/>
+        <bt:Image id="Tool.44.32" DefaultValue="https://addin.datacellia.com/icons/tools/unpivot-columns-bf77b160-32.png"/>
+        <bt:Image id="Tool.44.80" DefaultValue="https://addin.datacellia.com/icons/tools/unpivot-columns-bf77b160-80.png"/>
 <!-- END GENERATED IMAGES -->
       </bt:Images>
       <bt:Urls>
         <bt:Url id="Commands.Url" DefaultValue="https://addin.datacellia.com/commands.html"/>
-        <bt:Url id="Taskpane.Url" DefaultValue="https://addin.datacellia.com/index.html"/>
-        <bt:Url id="Context.PickDate.Url" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date&amp;source=context-menu"/>
+        <bt:Url id="Taskpane.Url" DefaultValue="https://addin.datacellia.com/index.html?v=3.14.0.0"/>
+        <bt:Url id="Context.PickDate.Url" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date&amp;source=context-menu&amp;v=3.14.0.0"/>
         <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://addin.datacellia.com/"/>
         <!-- BEGIN GENERATED URLS -->
-        <bt:Url id="TP.1" DefaultValue="https://addin.datacellia.com/index.html?tool=trim-whitespace"/>
-        <bt:Url id="TP.2" DefaultValue="https://addin.datacellia.com/index.html?tool=clean-invisible-characters"/>
-        <bt:Url id="TP.3" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-empty-rows"/>
-        <bt:Url id="TP.4" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-empty-columns"/>
-        <bt:Url id="TP.5" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-duplicates"/>
-        <bt:Url id="TP.6" DefaultValue="https://addin.datacellia.com/index.html?tool=to-upper-case"/>
-        <bt:Url id="TP.7" DefaultValue="https://addin.datacellia.com/index.html?tool=to-lower-case"/>
-        <bt:Url id="TP.8" DefaultValue="https://addin.datacellia.com/index.html?tool=capitalize-words"/>
-        <bt:Url id="TP.9" DefaultValue="https://addin.datacellia.com/index.html?tool=split-by-delimiter"/>
-        <bt:Url id="TP.10" DefaultValue="https://addin.datacellia.com/index.html?tool=extract-email"/>
-        <bt:Url id="TP.11" DefaultValue="https://addin.datacellia.com/index.html?tool=extract-first-number"/>
-        <bt:Url id="TP.12" DefaultValue="https://addin.datacellia.com/index.html?tool=data-profile"/>
-        <bt:Url id="TP.13" DefaultValue="https://addin.datacellia.com/index.html?tool=formulas-to-values"/>
-        <bt:Url id="TP.14" DefaultValue="https://addin.datacellia.com/index.html?tool=fill-down"/>
-        <bt:Url id="TP.15" DefaultValue="https://addin.datacellia.com/index.html?tool=fill-blanks"/>
-        <bt:Url id="TP.16" DefaultValue="https://addin.datacellia.com/index.html?tool=text-to-number"/>
-        <bt:Url id="TP.17" DefaultValue="https://addin.datacellia.com/index.html?tool=unique-values"/>
-        <bt:Url id="TP.18" DefaultValue="https://addin.datacellia.com/index.html?tool=date-parts"/>
-        <bt:Url id="TP.19" DefaultValue="https://addin.datacellia.com/index.html?tool=round-number"/>
-        <bt:Url id="TP.20" DefaultValue="https://addin.datacellia.com/index.html?tool=change-decimal-display"/>
-        <bt:Url id="TP.21" DefaultValue="https://addin.datacellia.com/index.html?tool=absolute-numbers"/>
-        <bt:Url id="TP.22" DefaultValue="https://addin.datacellia.com/index.html?tool=flip-number-signs"/>
-        <bt:Url id="TP.23" DefaultValue="https://addin.datacellia.com/index.html?tool=convert-to-percent"/>
-        <bt:Url id="TP.24" DefaultValue="https://addin.datacellia.com/index.html?tool=convert-percent-to-number"/>
-        <bt:Url id="TP.25" DefaultValue="https://addin.datacellia.com/index.html?tool=fix-number-separators"/>
-        <bt:Url id="TP.26" DefaultValue="https://addin.datacellia.com/index.html?tool=scale-numbers"/>
-        <bt:Url id="TP.27" DefaultValue="https://addin.datacellia.com/index.html?tool=clear-zero-values"/>
-        <bt:Url id="TP.28" DefaultValue="https://addin.datacellia.com/index.html?tool=number-health-check"/>
-        <bt:Url id="TP.29" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date"/>
-        <bt:Url id="TP.30" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-time"/>
-        <bt:Url id="TP.31" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date-time"/>
-        <bt:Url id="TP.32" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-today"/>
-        <bt:Url id="TP.33" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-current-time"/>
-        <bt:Url id="TP.34" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-date-time"/>
-        <bt:Url id="TP.35" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-lists"/>
-        <bt:Url id="TP.36" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-tables-by-key"/>
-        <bt:Url id="TP.37" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-rows"/>
-        <bt:Url id="TP.38" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-health-check"/>
+        <bt:Url id="TP.1" DefaultValue="https://addin.datacellia.com/index.html?tool=trim-whitespace&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.2" DefaultValue="https://addin.datacellia.com/index.html?tool=clean-invisible-characters&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.3" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-empty-rows&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.4" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-empty-columns&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.5" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-duplicates&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.6" DefaultValue="https://addin.datacellia.com/index.html?tool=to-upper-case&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.7" DefaultValue="https://addin.datacellia.com/index.html?tool=to-lower-case&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.8" DefaultValue="https://addin.datacellia.com/index.html?tool=capitalize-words&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.9" DefaultValue="https://addin.datacellia.com/index.html?tool=split-by-delimiter&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.10" DefaultValue="https://addin.datacellia.com/index.html?tool=extract-email&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.11" DefaultValue="https://addin.datacellia.com/index.html?tool=extract-first-number&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.12" DefaultValue="https://addin.datacellia.com/index.html?tool=data-profile&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.13" DefaultValue="https://addin.datacellia.com/index.html?tool=formulas-to-values&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.14" DefaultValue="https://addin.datacellia.com/index.html?tool=fill-down&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.15" DefaultValue="https://addin.datacellia.com/index.html?tool=fill-blanks&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.16" DefaultValue="https://addin.datacellia.com/index.html?tool=text-to-number&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.17" DefaultValue="https://addin.datacellia.com/index.html?tool=unique-values&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.18" DefaultValue="https://addin.datacellia.com/index.html?tool=date-parts&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.19" DefaultValue="https://addin.datacellia.com/index.html?tool=round-number&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.20" DefaultValue="https://addin.datacellia.com/index.html?tool=change-decimal-display&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.21" DefaultValue="https://addin.datacellia.com/index.html?tool=absolute-numbers&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.22" DefaultValue="https://addin.datacellia.com/index.html?tool=flip-number-signs&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.23" DefaultValue="https://addin.datacellia.com/index.html?tool=convert-to-percent&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.24" DefaultValue="https://addin.datacellia.com/index.html?tool=convert-percent-to-number&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.25" DefaultValue="https://addin.datacellia.com/index.html?tool=fix-number-separators&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.26" DefaultValue="https://addin.datacellia.com/index.html?tool=scale-numbers&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.27" DefaultValue="https://addin.datacellia.com/index.html?tool=clear-zero-values&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.28" DefaultValue="https://addin.datacellia.com/index.html?tool=number-health-check&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.29" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.30" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-time&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.31" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date-time&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.32" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-today&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.33" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-current-time&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.34" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-date-time&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.35" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-lists&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.36" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-tables-by-key&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.37" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-rows&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.38" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-health-check&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.39" DefaultValue="https://addin.datacellia.com/index.html?tool=append-worksheets&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.40" DefaultValue="https://addin.datacellia.com/index.html?tool=append-tables&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.41" DefaultValue="https://addin.datacellia.com/index.html?tool=lookup-from-table&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.42" DefaultValue="https://addin.datacellia.com/index.html?tool=multi-lookup&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.43" DefaultValue="https://addin.datacellia.com/index.html?tool=group-summarize&amp;v=3.14.0.0"/>
+        <bt:Url id="TP.44" DefaultValue="https://addin.datacellia.com/index.html?tool=unpivot-columns&amp;v=3.14.0.0"/>
 <!-- END GENERATED URLS -->
       </bt:Urls>
       <bt:ShortStrings>
@@ -1171,6 +1313,46 @@
           <bt:Override Locale="az-Latn-AZ" Value="Müqayisə Sağlamlıq Yoxlaması"/>
           <bt:Override Locale="es-ES" Value="Comprobación Previa A La Comparación"/>
         </bt:String>
+        <bt:String id="Cat.combine" DefaultValue="Birleştir ve Getir">
+          <bt:Override Locale="en-US" Value="Combine and Lookup"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Birləşdir və Gətir"/>
+          <bt:Override Locale="es-ES" Value="Combinar y Buscar"/>
+        </bt:String>
+        <bt:String id="L.append-worksheets" DefaultValue="Sayfaları Alt Alta Birleştir">
+          <bt:Override Locale="en-US" Value="Append Worksheets"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Vərəqləri Alt-alta Birləşdir"/>
+          <bt:Override Locale="es-ES" Value="Anexar Hojas"/>
+        </bt:String>
+        <bt:String id="L.append-tables" DefaultValue="Tabloları Alt Alta Birleştir">
+          <bt:Override Locale="en-US" Value="Append Tables"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Cədvəlləri Alt-alta Birləşdir"/>
+          <bt:Override Locale="es-ES" Value="Anexar Tablas"/>
+        </bt:String>
+        <bt:String id="L.lookup-from-table" DefaultValue="Tablodan Veri Getir">
+          <bt:Override Locale="en-US" Value="Lookup from Table"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Cədvəldən Məlumat Gətir"/>
+          <bt:Override Locale="es-ES" Value="Buscar en Tabla"/>
+        </bt:String>
+        <bt:String id="L.multi-lookup" DefaultValue="Çoklu Veri Getir">
+          <bt:Override Locale="en-US" Value="Lookup All Matches"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Bütün Uyğunluqları Gətir"/>
+          <bt:Override Locale="es-ES" Value="Buscar Todas las Coincidencias"/>
+        </bt:String>
+        <bt:String id="Cat.summarize" DefaultValue="Özetle ve Dönüştür">
+          <bt:Override Locale="en-US" Value="Summarize and Reshape"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Yekunlaşdır və Çevir"/>
+          <bt:Override Locale="es-ES" Value="Resumir y Transformar"/>
+        </bt:String>
+        <bt:String id="L.group-summarize" DefaultValue="Grupla ve Özetle">
+          <bt:Override Locale="en-US" Value="Group and Summarize"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Qruplaşdır və Yekunlaşdır"/>
+          <bt:Override Locale="es-ES" Value="Agrupar y Resumir"/>
+        </bt:String>
+        <bt:String id="L.unpivot-columns" DefaultValue="Sütunları Satırlara Dönüştür">
+          <bt:Override Locale="en-US" Value="Unpivot Columns"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Sütunları Sətirlərə Çevir"/>
+          <bt:Override Locale="es-ES" Value="Anular Dinamización de Columnas"/>
+        </bt:String>
 <!-- END GENERATED SHORTSTRINGS -->
       </bt:ShortStrings>
       <bt:LongStrings>
@@ -1366,6 +1548,36 @@
           <bt:Override Locale="en-US" Value="Reports key, header and data type problems before you compare. Writes nothing."/>
           <bt:Override Locale="az-Latn-AZ" Value="İki cədvəli müqayisə etmədən əvvəl açar, başlıq və məlumat tipi problemlərini bildirir. Heç nə yazmır."/>
           <bt:Override Locale="es-ES" Value="Informa de problemas de clave, encabezado y tipo de datos antes de comparar. No escribe nada."/>
+        </bt:String>
+        <bt:String id="D.append-worksheets" DefaultValue="Seçtiğiniz sayfaların veri aralıklarını başlıklara göre hizalayıp tek bir sonuç sayfasında birleştirir. Her kaynak sayfadan bir hücre seçip kaynaklara ekleyin.">
+          <bt:Override Locale="en-US" Value="Align the used ranges of chosen worksheets by header and combine them on a new worksheet. Select a cell on each source sheet and capture it in order."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Seçilmiş vərəqlərin məlumat aralıqlarını başlıqlara görə uyğunlaşdırıb yeni vərəqdə birləşdirir. Hər mənbə vərəqdən bir xana seçib əlavə edin."/>
+          <bt:Override Locale="es-ES" Value="Alinea por encabezado los rangos usados de las hojas elegidas y los combina en una hoja nueva. Seleccione una celda de cada hoja y capture las fuentes en orden."/>
+        </bt:String>
+        <bt:String id="D.append-tables" DefaultValue="İki veya daha fazla seçili tabloyu başlıklara göre hizalayıp yeni bir sayfada birleştirir. Aralıkları başlık satırlarıyla birlikte sırayla ekleyin.">
+          <bt:Override Locale="en-US" Value="Align two or more captured tables by header and append them to a new worksheet. Capture each range including its header row."/>
+          <bt:Override Locale="az-Latn-AZ" Value="İki və ya daha çox seçilmiş cədvəli başlıqlara görə uyğunlaşdırıb yeni vərəqdə birləşdirir. Aralıqları başlıqları ilə əlavə edin."/>
+          <bt:Override Locale="es-ES" Value="Alinea por encabezado dos o más tablas capturadas y las anexa en una hoja nueva. Incluya los encabezados al capturar cada rango."/>
+        </bt:String>
+        <bt:String id="D.lookup-from-table" DefaultValue="Anahtar sütunları eşleştirip seçtiğiniz sütunu ana tabloya eklenmiş olarak yeni bir sayfada oluşturur. Eşleşme durumunu her satırda gösterir.">
+          <bt:Override Locale="en-US" Value="Match key columns and add a selected reference column to the main table on a new worksheet. Include a match status for every row."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Açar sütunları uyğunlaşdırıb seçilmiş sütunu əsas cədvələ əlavə edərək yeni vərəq yaradır. Hər sətirdə uyğunluq vəziyyətini göstərir."/>
+          <bt:Override Locale="es-ES" Value="Relaciona las columnas clave y agrega una columna de referencia a la tabla principal en una hoja nueva. Muestra el estado de cada coincidencia."/>
+        </bt:String>
+        <bt:String id="D.multi-lookup" DefaultValue="Her anahtarın bütün eşleşmelerini ayrı satırlarda getirir. Ana tablo ve getirilen sütun yeni sonuç sayfasında birlikte gösterilir.">
+          <bt:Override Locale="en-US" Value="Return every matching reference row for each key and retain unmatched main rows on a new result worksheet."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Hər açarın bütün uyğunluqlarını ayrıca sətirlərdə yeni nəticə vərəqinə gətirir."/>
+          <bt:Override Locale="es-ES" Value="Devuelve todas las filas coincidentes para cada clave y conserva las filas sin coincidencia en una hoja nueva."/>
+        </bt:String>
+        <bt:String id="D.group-summarize" DefaultValue="Tabloyu seçilen sütuna göre gruplayıp satır adedi, sayısal adet, toplam, ortalama, en küçük ve en büyük değerleri yeni sayfada oluşturur.">
+          <bt:Override Locale="en-US" Value="Group by a selected column and create row count, numeric count, sum, average, minimum and maximum on a new worksheet."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Seçilmiş sütuna görə qruplaşdırıb say, ədədi say, cəm, orta, minimum və maksimumu yeni vərəqdə yaradır."/>
+          <bt:Override Locale="es-ES" Value="Agrupa por una columna y calcula recuento de filas, recuento numérico, suma, promedio, mínimo y máximo en una hoja nueva."/>
+        </bt:String>
+        <bt:String id="D.unpivot-columns" DefaultValue="Kimlik sütunlarını koruyarak diğer sütunları özellik ve değer satırlarına dönüştürür. Sonucu yeni sayfada oluşturur.">
+          <bt:Override Locale="en-US" Value="Keep the identifier columns and turn the remaining columns into attribute and value rows on a new worksheet."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Kimlik sütunlarını saxlayaraq digər sütunları xüsusiyyət və dəyər sətirlərinə çevirir."/>
+          <bt:Override Locale="es-ES" Value="Conserva las columnas identificadoras y transforma las demás columnas en filas de atributo y valor en una hoja nueva."/>
         </bt:String>
 <!-- END GENERATED LONGSTRINGS -->
       </bt:LongStrings>
