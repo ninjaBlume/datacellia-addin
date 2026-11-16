@@ -1,0 +1,1240 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+           xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
+           xsi:type="TaskPaneApp">
+  <Id>f69a7bc2-42e8-4e6a-9db8-55c71a75db34</Id>
+  <Version>3.12.0.0</Version>
+  <ProviderName>Datacellia</ProviderName>
+  <DefaultLocale>tr-TR</DefaultLocale>
+  <DisplayName DefaultValue="Datacellia"/>
+  <Description DefaultValue="Free Excel Toolkit — Excel verilerinizi yerel ve güvenli araçlarla düzenleyin."/>
+  <IconUrl DefaultValue="https://addin.datacellia.com/icons/icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://addin.datacellia.com/icons/icon-64.png"/>
+  <SupportUrl DefaultValue="https://addin.datacellia.com/"/>
+  <AppDomains>
+    <AppDomain>https://addin.datacellia.com</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Workbook"/>
+  </Hosts>
+  <Requirements>
+    <Sets DefaultMinVersion="1.1">
+      <Set Name="ExcelApi" MinVersion="1.1"/>
+      <Set Name="SharedRuntime" MinVersion="1.1"/>
+    </Sets>
+  </Requirements>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://addin.datacellia.com/index.html"/>
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
+                    xsi:type="VersionOverridesV1_0">
+    <Requirements>
+      <bt:Sets DefaultMinVersion="1.1">
+        <bt:Set Name="ExcelApi" MinVersion="1.1"/>
+        <bt:Set Name="SharedRuntime" MinVersion="1.1"/>
+      </bt:Sets>
+    </Requirements>
+    <Hosts>
+      <Host xsi:type="Workbook">
+        <Runtimes>
+          <Runtime resid="Taskpane.Url" lifetime="long"/>
+        </Runtimes>
+        <DesktopFormFactor>
+          <GetStarted>
+            <Title resid="GetStarted.Title"/>
+            <Description resid="GetStarted.Description"/>
+            <LearnMoreUrl resid="GetStarted.LearnMoreUrl"/>
+          </GetStarted>
+          <FunctionFile resid="Taskpane.Url"/>
+          <ExtensionPoint xsi:type="PrimaryCommandSurface">
+            <CustomTab id="Datacellia.Tab">
+              <Group id="Datacellia.Group">
+                <Label resid="Datacellia.GroupLabel"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon.16"/>
+                  <bt:Image size="32" resid="Icon.32"/>
+                  <bt:Image size="80" resid="Icon.80"/>
+                </Icon>
+                <Control xsi:type="Button" id="Datacellia.OpenTaskpane">
+                  <Label resid="Datacellia.ButtonLabel"/>
+                  <Supertip>
+                    <Title resid="Datacellia.ButtonLabel"/>
+                    <Description resid="Datacellia.ButtonDescription"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="Taskpane.Url"/>
+                  </Action>
+                </Control>
+              </Group>
+              <!-- BEGIN GENERATED GROUPS -->
+              <Group id="Group.clean">
+                <Label resid="Cat.clean"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon.16"/>
+                  <bt:Image size="32" resid="Icon.32"/>
+                  <bt:Image size="80" resid="Icon.80"/>
+                </Icon>
+                <Control xsi:type="Button" id="Cmd.trim-whitespace">
+                  <Label resid="L.trim-whitespace"/>
+                  <Supertip>
+                    <Title resid="L.trim-whitespace"/>
+                    <Description resid="D.trim-whitespace"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.1"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.clean-invisible-characters">
+                  <Label resid="L.clean-invisible-characters"/>
+                  <Supertip>
+                    <Title resid="L.clean-invisible-characters"/>
+                    <Description resid="D.clean-invisible-characters"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.2"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.remove-empty-rows">
+                  <Label resid="L.remove-empty-rows"/>
+                  <Supertip>
+                    <Title resid="L.remove-empty-rows"/>
+                    <Description resid="D.remove-empty-rows"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.3"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.remove-empty-columns">
+                  <Label resid="L.remove-empty-columns"/>
+                  <Supertip>
+                    <Title resid="L.remove-empty-columns"/>
+                    <Description resid="D.remove-empty-columns"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.4"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.remove-duplicates">
+                  <Label resid="L.remove-duplicates"/>
+                  <Supertip>
+                    <Title resid="L.remove-duplicates"/>
+                    <Description resid="D.remove-duplicates"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.5"/>
+                  </Action>
+                </Control>
+              </Group>
+              <Group id="Group.text">
+                <Label resid="Cat.text"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon.16"/>
+                  <bt:Image size="32" resid="Icon.32"/>
+                  <bt:Image size="80" resid="Icon.80"/>
+                </Icon>
+                <Control xsi:type="Button" id="Cmd.to-upper-case">
+                  <Label resid="L.to-upper-case"/>
+                  <Supertip>
+                    <Title resid="L.to-upper-case"/>
+                    <Description resid="D.to-upper-case"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.6"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.to-lower-case">
+                  <Label resid="L.to-lower-case"/>
+                  <Supertip>
+                    <Title resid="L.to-lower-case"/>
+                    <Description resid="D.to-lower-case"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.7"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.capitalize-words">
+                  <Label resid="L.capitalize-words"/>
+                  <Supertip>
+                    <Title resid="L.capitalize-words"/>
+                    <Description resid="D.capitalize-words"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.8"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.split-by-delimiter">
+                  <Label resid="L.split-by-delimiter"/>
+                  <Supertip>
+                    <Title resid="L.split-by-delimiter"/>
+                    <Description resid="D.split-by-delimiter"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.9"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.extract-email">
+                  <Label resid="L.extract-email"/>
+                  <Supertip>
+                    <Title resid="L.extract-email"/>
+                    <Description resid="D.extract-email"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.10"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.extract-first-number">
+                  <Label resid="L.extract-first-number"/>
+                  <Supertip>
+                    <Title resid="L.extract-first-number"/>
+                    <Description resid="D.extract-first-number"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.11"/>
+                  </Action>
+                </Control>
+              </Group>
+              <Group id="Group.data">
+                <Label resid="Cat.data"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon.16"/>
+                  <bt:Image size="32" resid="Icon.32"/>
+                  <bt:Image size="80" resid="Icon.80"/>
+                </Icon>
+                <Control xsi:type="Button" id="Cmd.data-profile">
+                  <Label resid="L.data-profile"/>
+                  <Supertip>
+                    <Title resid="L.data-profile"/>
+                    <Description resid="D.data-profile"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.12"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.formulas-to-values">
+                  <Label resid="L.formulas-to-values"/>
+                  <Supertip>
+                    <Title resid="L.formulas-to-values"/>
+                    <Description resid="D.formulas-to-values"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.13"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.fill-down">
+                  <Label resid="L.fill-down"/>
+                  <Supertip>
+                    <Title resid="L.fill-down"/>
+                    <Description resid="D.fill-down"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.14"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.fill-blanks">
+                  <Label resid="L.fill-blanks"/>
+                  <Supertip>
+                    <Title resid="L.fill-blanks"/>
+                    <Description resid="D.fill-blanks"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.15"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.text-to-number">
+                  <Label resid="L.text-to-number"/>
+                  <Supertip>
+                    <Title resid="L.text-to-number"/>
+                    <Description resid="D.text-to-number"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.16"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.unique-values">
+                  <Label resid="L.unique-values"/>
+                  <Supertip>
+                    <Title resid="L.unique-values"/>
+                    <Description resid="D.unique-values"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.17"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.date-parts">
+                  <Label resid="L.date-parts"/>
+                  <Supertip>
+                    <Title resid="L.date-parts"/>
+                    <Description resid="D.date-parts"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.18"/>
+                  </Action>
+                </Control>
+              </Group>
+              <Group id="Group.number">
+                <Label resid="Cat.number"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon.16"/>
+                  <bt:Image size="32" resid="Icon.32"/>
+                  <bt:Image size="80" resid="Icon.80"/>
+                </Icon>
+                <Control xsi:type="Button" id="Cmd.round-number">
+                  <Label resid="L.round-number"/>
+                  <Supertip>
+                    <Title resid="L.round-number"/>
+                    <Description resid="D.round-number"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.19"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.change-decimal-display">
+                  <Label resid="L.change-decimal-display"/>
+                  <Supertip>
+                    <Title resid="L.change-decimal-display"/>
+                    <Description resid="D.change-decimal-display"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.20"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.absolute-numbers">
+                  <Label resid="L.absolute-numbers"/>
+                  <Supertip>
+                    <Title resid="L.absolute-numbers"/>
+                    <Description resid="D.absolute-numbers"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.21"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.flip-number-signs">
+                  <Label resid="L.flip-number-signs"/>
+                  <Supertip>
+                    <Title resid="L.flip-number-signs"/>
+                    <Description resid="D.flip-number-signs"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.22"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.convert-to-percent">
+                  <Label resid="L.convert-to-percent"/>
+                  <Supertip>
+                    <Title resid="L.convert-to-percent"/>
+                    <Description resid="D.convert-to-percent"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.23"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.convert-percent-to-number">
+                  <Label resid="L.convert-percent-to-number"/>
+                  <Supertip>
+                    <Title resid="L.convert-percent-to-number"/>
+                    <Description resid="D.convert-percent-to-number"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.24"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.fix-number-separators">
+                  <Label resid="L.fix-number-separators"/>
+                  <Supertip>
+                    <Title resid="L.fix-number-separators"/>
+                    <Description resid="D.fix-number-separators"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.25"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.scale-numbers">
+                  <Label resid="L.scale-numbers"/>
+                  <Supertip>
+                    <Title resid="L.scale-numbers"/>
+                    <Description resid="D.scale-numbers"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.26"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.clear-zero-values">
+                  <Label resid="L.clear-zero-values"/>
+                  <Supertip>
+                    <Title resid="L.clear-zero-values"/>
+                    <Description resid="D.clear-zero-values"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.27"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.number-health-check">
+                  <Label resid="L.number-health-check"/>
+                  <Supertip>
+                    <Title resid="L.number-health-check"/>
+                    <Description resid="D.number-health-check"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.28"/>
+                  </Action>
+                </Control>
+              </Group>
+              <Group id="Group.dateTime">
+                <Label resid="Cat.dateTime"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon.16"/>
+                  <bt:Image size="32" resid="Icon.32"/>
+                  <bt:Image size="80" resid="Icon.80"/>
+                </Icon>
+                <Control xsi:type="Button" id="Cmd.pick-date">
+                  <Label resid="L.pick-date"/>
+                  <Supertip>
+                    <Title resid="L.pick-date"/>
+                    <Description resid="D.pick-date"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.29"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.pick-time">
+                  <Label resid="L.pick-time"/>
+                  <Supertip>
+                    <Title resid="L.pick-time"/>
+                    <Description resid="D.pick-time"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.30"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.pick-date-time">
+                  <Label resid="L.pick-date-time"/>
+                  <Supertip>
+                    <Title resid="L.pick-date-time"/>
+                    <Description resid="D.pick-date-time"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.31"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.insert-today">
+                  <Label resid="L.insert-today"/>
+                  <Supertip>
+                    <Title resid="L.insert-today"/>
+                    <Description resid="D.insert-today"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.32"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.insert-current-time">
+                  <Label resid="L.insert-current-time"/>
+                  <Supertip>
+                    <Title resid="L.insert-current-time"/>
+                    <Description resid="D.insert-current-time"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.33"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.insert-date-time">
+                  <Label resid="L.insert-date-time"/>
+                  <Supertip>
+                    <Title resid="L.insert-date-time"/>
+                    <Description resid="D.insert-date-time"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.34"/>
+                  </Action>
+                </Control>
+              </Group>
+              <Group id="Group.compare">
+                <Label resid="Cat.compare"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon.16"/>
+                  <bt:Image size="32" resid="Icon.32"/>
+                  <bt:Image size="80" resid="Icon.80"/>
+                </Icon>
+                <Control xsi:type="Button" id="Cmd.compare-lists">
+                  <Label resid="L.compare-lists"/>
+                  <Supertip>
+                    <Title resid="L.compare-lists"/>
+                    <Description resid="D.compare-lists"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.35"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.compare-tables-by-key">
+                  <Label resid="L.compare-tables-by-key"/>
+                  <Supertip>
+                    <Title resid="L.compare-tables-by-key"/>
+                    <Description resid="D.compare-tables-by-key"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.36"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.compare-rows">
+                  <Label resid="L.compare-rows"/>
+                  <Supertip>
+                    <Title resid="L.compare-rows"/>
+                    <Description resid="D.compare-rows"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.37"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.compare-health-check">
+                  <Label resid="L.compare-health-check"/>
+                  <Supertip>
+                    <Title resid="L.compare-health-check"/>
+                    <Description resid="D.compare-health-check"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16"/>
+                    <bt:Image size="32" resid="Icon.32"/>
+                    <bt:Image size="80" resid="Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.38"/>
+                  </Action>
+                </Control>
+              </Group>
+<!-- END GENERATED GROUPS -->
+              <Label resid="Datacellia.TabLabel"/>
+            </CustomTab>
+          </ExtensionPoint>
+          <ExtensionPoint xsi:type="ContextMenu">
+            <OfficeMenu id="ContextMenuCell">
+              <Control xsi:type="Button" id="Context.PickDate">
+                <Label resid="L.pick-date"/>
+                <Supertip>
+                  <Title resid="L.pick-date"/>
+                  <Description resid="D.pick-date"/>
+                </Supertip>
+                <Icon>
+                  <bt:Image size="16" resid="Icon.16"/>
+                  <bt:Image size="32" resid="Icon.32"/>
+                  <bt:Image size="80" resid="Icon.80"/>
+                </Icon>
+                <Action xsi:type="ShowTaskpane">
+                  <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                  <SourceLocation resid="Context.PickDate.Url"/>
+                </Action>
+              </Control>
+            </OfficeMenu>
+          </ExtensionPoint>
+        </DesktopFormFactor>
+      </Host>
+    </Hosts>
+    <Resources>
+      <bt:Images>
+        <bt:Image id="Icon.16" DefaultValue="https://addin.datacellia.com/icons/icon-16.png"/>
+        <bt:Image id="Icon.32" DefaultValue="https://addin.datacellia.com/icons/icon-32.png"/>
+        <bt:Image id="Icon.80" DefaultValue="https://addin.datacellia.com/icons/icon-80.png"/>
+      </bt:Images>
+      <bt:Urls>
+        <bt:Url id="Commands.Url" DefaultValue="https://addin.datacellia.com/commands.html"/>
+        <bt:Url id="Taskpane.Url" DefaultValue="https://addin.datacellia.com/index.html"/>
+        <bt:Url id="Context.PickDate.Url" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date&amp;source=context-menu"/>
+        <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://addin.datacellia.com/"/>
+        <!-- BEGIN GENERATED URLS -->
+        <bt:Url id="TP.1" DefaultValue="https://addin.datacellia.com/index.html?tool=trim-whitespace"/>
+        <bt:Url id="TP.2" DefaultValue="https://addin.datacellia.com/index.html?tool=clean-invisible-characters"/>
+        <bt:Url id="TP.3" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-empty-rows"/>
+        <bt:Url id="TP.4" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-empty-columns"/>
+        <bt:Url id="TP.5" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-duplicates"/>
+        <bt:Url id="TP.6" DefaultValue="https://addin.datacellia.com/index.html?tool=to-upper-case"/>
+        <bt:Url id="TP.7" DefaultValue="https://addin.datacellia.com/index.html?tool=to-lower-case"/>
+        <bt:Url id="TP.8" DefaultValue="https://addin.datacellia.com/index.html?tool=capitalize-words"/>
+        <bt:Url id="TP.9" DefaultValue="https://addin.datacellia.com/index.html?tool=split-by-delimiter"/>
+        <bt:Url id="TP.10" DefaultValue="https://addin.datacellia.com/index.html?tool=extract-email"/>
+        <bt:Url id="TP.11" DefaultValue="https://addin.datacellia.com/index.html?tool=extract-first-number"/>
+        <bt:Url id="TP.12" DefaultValue="https://addin.datacellia.com/index.html?tool=data-profile"/>
+        <bt:Url id="TP.13" DefaultValue="https://addin.datacellia.com/index.html?tool=formulas-to-values"/>
+        <bt:Url id="TP.14" DefaultValue="https://addin.datacellia.com/index.html?tool=fill-down"/>
+        <bt:Url id="TP.15" DefaultValue="https://addin.datacellia.com/index.html?tool=fill-blanks"/>
+        <bt:Url id="TP.16" DefaultValue="https://addin.datacellia.com/index.html?tool=text-to-number"/>
+        <bt:Url id="TP.17" DefaultValue="https://addin.datacellia.com/index.html?tool=unique-values"/>
+        <bt:Url id="TP.18" DefaultValue="https://addin.datacellia.com/index.html?tool=date-parts"/>
+        <bt:Url id="TP.19" DefaultValue="https://addin.datacellia.com/index.html?tool=round-number"/>
+        <bt:Url id="TP.20" DefaultValue="https://addin.datacellia.com/index.html?tool=change-decimal-display"/>
+        <bt:Url id="TP.21" DefaultValue="https://addin.datacellia.com/index.html?tool=absolute-numbers"/>
+        <bt:Url id="TP.22" DefaultValue="https://addin.datacellia.com/index.html?tool=flip-number-signs"/>
+        <bt:Url id="TP.23" DefaultValue="https://addin.datacellia.com/index.html?tool=convert-to-percent"/>
+        <bt:Url id="TP.24" DefaultValue="https://addin.datacellia.com/index.html?tool=convert-percent-to-number"/>
+        <bt:Url id="TP.25" DefaultValue="https://addin.datacellia.com/index.html?tool=fix-number-separators"/>
+        <bt:Url id="TP.26" DefaultValue="https://addin.datacellia.com/index.html?tool=scale-numbers"/>
+        <bt:Url id="TP.27" DefaultValue="https://addin.datacellia.com/index.html?tool=clear-zero-values"/>
+        <bt:Url id="TP.28" DefaultValue="https://addin.datacellia.com/index.html?tool=number-health-check"/>
+        <bt:Url id="TP.29" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date"/>
+        <bt:Url id="TP.30" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-time"/>
+        <bt:Url id="TP.31" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date-time"/>
+        <bt:Url id="TP.32" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-today"/>
+        <bt:Url id="TP.33" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-current-time"/>
+        <bt:Url id="TP.34" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-date-time"/>
+        <bt:Url id="TP.35" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-lists"/>
+        <bt:Url id="TP.36" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-tables-by-key"/>
+        <bt:Url id="TP.37" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-rows"/>
+        <bt:Url id="TP.38" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-health-check"/>
+<!-- END GENERATED URLS -->
+      </bt:Urls>
+      <bt:ShortStrings>
+        <bt:String id="GetStarted.Title" DefaultValue="Datacellia hazır"/>
+        <bt:String id="Datacellia.GroupLabel" DefaultValue="Datacellia"/>
+        <bt:String id="Datacellia.TabLabel" DefaultValue="Datacellia"/>
+        <bt:String id="Datacellia.ButtonLabel" DefaultValue="Datacellia"/>
+        <!-- BEGIN GENERATED SHORTSTRINGS -->
+        <bt:String id="Cat.clean" DefaultValue="Temizle">
+          <bt:Override Locale="en-US" Value="Clean"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Təmizlə"/>
+          <bt:Override Locale="es-ES" Value="Limpiar"/>
+        </bt:String>
+        <bt:String id="L.trim-whitespace" DefaultValue="Boşlukları Temizle">
+          <bt:Override Locale="en-US" Value="Trim Whitespace"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Boşluqları Təmizlə"/>
+          <bt:Override Locale="es-ES" Value="Limpiar Espacios"/>
+        </bt:String>
+        <bt:String id="L.clean-invisible-characters" DefaultValue="Görünmeyen Karakterleri Temizle">
+          <bt:Override Locale="en-US" Value="Remove Invisible Characters"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Görünməyən Simvolları Təmizlə"/>
+          <bt:Override Locale="es-ES" Value="Eliminar Caracteres Invisibles"/>
+        </bt:String>
+        <bt:String id="L.remove-empty-rows" DefaultValue="Boş Satırları Sil">
+          <bt:Override Locale="en-US" Value="Delete Empty Rows"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Boş Sətirləri Sil"/>
+          <bt:Override Locale="es-ES" Value="Eliminar Filas Vacías"/>
+        </bt:String>
+        <bt:String id="L.remove-empty-columns" DefaultValue="Boş Sütunları Sil">
+          <bt:Override Locale="en-US" Value="Delete Empty Columns"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Boş Sütunları Sil"/>
+          <bt:Override Locale="es-ES" Value="Eliminar Columnas Vacías"/>
+        </bt:String>
+        <bt:String id="L.remove-duplicates" DefaultValue="Mükerrerleri Kaldır">
+          <bt:Override Locale="en-US" Value="Remove Duplicates"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Təkrarları Sil"/>
+          <bt:Override Locale="es-ES" Value="Quitar Duplicados"/>
+        </bt:String>
+        <bt:String id="Cat.text" DefaultValue="Metin">
+          <bt:Override Locale="en-US" Value="Text"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Mətn"/>
+          <bt:Override Locale="es-ES" Value="Texto"/>
+        </bt:String>
+        <bt:String id="L.to-upper-case" DefaultValue="BÜYÜK HARFE ÇEVİR">
+          <bt:Override Locale="en-US" Value="UPPERCASE"/>
+          <bt:Override Locale="az-Latn-AZ" Value="BÖYÜK HƏRFƏ ÇEVİR"/>
+          <bt:Override Locale="es-ES" Value="CONVERTIR A MAYÚSCULAS"/>
+        </bt:String>
+        <bt:String id="L.to-lower-case" DefaultValue="küçük harfe çevir">
+          <bt:Override Locale="en-US" Value="lowercase"/>
+          <bt:Override Locale="az-Latn-AZ" Value="kiçik hərfə çevir"/>
+          <bt:Override Locale="es-ES" Value="convertir a minúsculas"/>
+        </bt:String>
+        <bt:String id="L.capitalize-words" DefaultValue="Her Kelimeyi Büyük Harfle Başlat">
+          <bt:Override Locale="en-US" Value="Capitalise Each Word"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Hər Sözü Böyük Hərflə Başlat"/>
+          <bt:Override Locale="es-ES" Value="Poner Cada Palabra En Mayúscula"/>
+        </bt:String>
+        <bt:String id="L.split-by-delimiter" DefaultValue="Metni Böl (Ayırıcıya Göre)">
+          <bt:Override Locale="en-US" Value="Split Text (By Delimiter)"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Mətni Böl (Ayırıcıya Görə)"/>
+          <bt:Override Locale="es-ES" Value="Dividir Texto (Por Delimitador)"/>
+        </bt:String>
+        <bt:String id="L.extract-email" DefaultValue="E-posta Adreslerini Ayıkla">
+          <bt:Override Locale="en-US" Value="Extract Email Addresses"/>
+          <bt:Override Locale="az-Latn-AZ" Value="E-poçt Ünvanlarını Çıxar"/>
+          <bt:Override Locale="es-ES" Value="Extraer Direcciones de Correo"/>
+        </bt:String>
+        <bt:String id="L.extract-first-number" DefaultValue="İlk Sayıyı Ayıkla">
+          <bt:Override Locale="en-US" Value="Extract First Number"/>
+          <bt:Override Locale="az-Latn-AZ" Value="İlk Rəqəmi Çıxar"/>
+          <bt:Override Locale="es-ES" Value="Extraer El Primer Número"/>
+        </bt:String>
+        <bt:String id="Cat.data" DefaultValue="Veri">
+          <bt:Override Locale="en-US" Value="Data"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Məlumat"/>
+          <bt:Override Locale="es-ES" Value="Datos"/>
+        </bt:String>
+        <bt:String id="L.data-profile" DefaultValue="Veri Profili">
+          <bt:Override Locale="en-US" Value="Data Profile"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Veri Profili"/>
+          <bt:Override Locale="es-ES" Value="Perfil de Datos"/>
+        </bt:String>
+        <bt:String id="L.formulas-to-values" DefaultValue="Formülleri Değere Dönüştür">
+          <bt:Override Locale="en-US" Value="Convert Formulas to Values"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Düsturları Dəyərə Çevir"/>
+          <bt:Override Locale="es-ES" Value="Convertir Fórmulas En Valores"/>
+        </bt:String>
+        <bt:String id="L.fill-down" DefaultValue="Yukarıdaki Değerle Doldur">
+          <bt:Override Locale="en-US" Value="Fill Down From Above"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Yuxarıdakı Dəyərlə Doldur"/>
+          <bt:Override Locale="es-ES" Value="Rellenar Con El Valor Superior"/>
+        </bt:String>
+        <bt:String id="L.fill-blanks" DefaultValue="Boş Hücreleri Doldur">
+          <bt:Override Locale="en-US" Value="Fill Empty Cells"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Boş Xanaları Doldur"/>
+          <bt:Override Locale="es-ES" Value="Rellenar Celdas Vacías"/>
+        </bt:String>
+        <bt:String id="L.text-to-number" DefaultValue="Metni Sayıya Dönüştür">
+          <bt:Override Locale="en-US" Value="Convert Text to Numbers"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Mətni Rəqəmə Çevir"/>
+          <bt:Override Locale="es-ES" Value="Convertir Texto En Números"/>
+        </bt:String>
+        <bt:String id="L.unique-values" DefaultValue="Benzersiz Değerleri Listele">
+          <bt:Override Locale="en-US" Value="List Unique Values"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Unikal Dəyərləri Sadala"/>
+          <bt:Override Locale="es-ES" Value="Listar Valores Únicos"/>
+        </bt:String>
+        <bt:String id="L.date-parts" DefaultValue="Tarih Parçalarını Çıkar">
+          <bt:Override Locale="en-US" Value="Extract Date Parts"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Tarix Hissələrini Çıxar"/>
+          <bt:Override Locale="es-ES" Value="Extraer Partes De La Fecha"/>
+        </bt:String>
+        <bt:String id="Cat.number" DefaultValue="Sayı">
+          <bt:Override Locale="en-US" Value="Number"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Rəqəm"/>
+          <bt:Override Locale="es-ES" Value="Número"/>
+        </bt:String>
+        <bt:String id="L.round-number" DefaultValue="Sayıyı Yuvarla">
+          <bt:Override Locale="en-US" Value="Round Numbers"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Rəqəmi Yuvarlaqlaşdır"/>
+          <bt:Override Locale="es-ES" Value="Redondear números"/>
+        </bt:String>
+        <bt:String id="L.change-decimal-display" DefaultValue="Ondalık Basamak Görünümünü Değiştir">
+          <bt:Override Locale="en-US" Value="Change Decimal Display"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Onluq Görünüşünü Dəyiş"/>
+          <bt:Override Locale="es-ES" Value="Cambiar decimales visibles"/>
+        </bt:String>
+        <bt:String id="L.absolute-numbers" DefaultValue="Negatifleri Pozitife Çevir">
+          <bt:Override Locale="en-US" Value="Convert Negatives to Positive"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Mənfiləri Müsbətə Çevir"/>
+          <bt:Override Locale="es-ES" Value="Convertir negativos en positivos"/>
+        </bt:String>
+        <bt:String id="L.flip-number-signs" DefaultValue="İşareti Tersine Çevir">
+          <bt:Override Locale="en-US" Value="Flip Number Signs"/>
+          <bt:Override Locale="az-Latn-AZ" Value="İşarəni Tərsinə Çevir"/>
+          <bt:Override Locale="es-ES" Value="Invertir signo"/>
+        </bt:String>
+        <bt:String id="L.convert-to-percent" DefaultValue="Yüzdeye Dönüştür">
+          <bt:Override Locale="en-US" Value="Convert to Percent"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Faizə Çevir"/>
+          <bt:Override Locale="es-ES" Value="Convertir a porcentaje"/>
+        </bt:String>
+        <bt:String id="L.convert-percent-to-number" DefaultValue="Yüzdeden Sayıya Dönüştür">
+          <bt:Override Locale="en-US" Value="Convert Percent to Number"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Faizdən Rəqəmə Çevir"/>
+          <bt:Override Locale="es-ES" Value="Convertir porcentaje a número"/>
+        </bt:String>
+        <bt:String id="L.fix-number-separators" DefaultValue="Binlik / Ondalık Ayırıcıyı Düzelt">
+          <bt:Override Locale="en-US" Value="Fix Thousands / Decimal Separators"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Minlik / Onluq Ayırıcıları Düzəlt"/>
+          <bt:Override Locale="es-ES" Value="Corregir separadores de miles / decimales"/>
+        </bt:String>
+        <bt:String id="L.scale-numbers" DefaultValue="Sayıları Ölçekle">
+          <bt:Override Locale="en-US" Value="Scale Numbers"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Rəqəmləri Ölçəklə"/>
+          <bt:Override Locale="es-ES" Value="Escalar números"/>
+        </bt:String>
+        <bt:String id="L.clear-zero-values" DefaultValue="Sıfır Değerleri Temizle">
+          <bt:Override Locale="en-US" Value="Clear Zero Values"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Sıfır Dəyərləri Təmizlə"/>
+          <bt:Override Locale="es-ES" Value="Limpiar valores cero"/>
+        </bt:String>
+        <bt:String id="L.number-health-check" DefaultValue="Sayısal Sağlık Kontrolü">
+          <bt:Override Locale="en-US" Value="Numeric Health Check"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Rəqəm Sağlamlıq Yoxlaması"/>
+          <bt:Override Locale="es-ES" Value="Comprobación numérica"/>
+        </bt:String>
+        <bt:String id="Cat.dateTime" DefaultValue="Tarih &amp; Saat">
+          <bt:Override Locale="en-US" Value="Date &amp; Time"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Tarix və Saat"/>
+          <bt:Override Locale="es-ES" Value="Fecha y hora"/>
+        </bt:String>
+        <bt:String id="L.pick-date" DefaultValue="Tarih Seç">
+          <bt:Override Locale="en-US" Value="Pick Date"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Tarix Seç"/>
+          <bt:Override Locale="es-ES" Value="Elegir fecha"/>
+        </bt:String>
+        <bt:String id="L.pick-time" DefaultValue="Saat Seç">
+          <bt:Override Locale="en-US" Value="Pick Time"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Saat Seç"/>
+          <bt:Override Locale="es-ES" Value="Elegir hora"/>
+        </bt:String>
+        <bt:String id="L.pick-date-time" DefaultValue="Tarih ve Saat Seç">
+          <bt:Override Locale="en-US" Value="Pick Date &amp; Time"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Tarix və Saat Seç"/>
+          <bt:Override Locale="es-ES" Value="Elegir fecha y hora"/>
+        </bt:String>
+        <bt:String id="L.insert-today" DefaultValue="Bugünün Tarihini Yaz">
+          <bt:Override Locale="en-US" Value="Insert Today's Date"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Bugünkü Tarixi Yaz"/>
+          <bt:Override Locale="es-ES" Value="Insertar fecha de hoy"/>
+        </bt:String>
+        <bt:String id="L.insert-current-time" DefaultValue="Şimdiki Saati Yaz">
+          <bt:Override Locale="en-US" Value="Insert Current Time"/>
+          <bt:Override Locale="az-Latn-AZ" Value="İndiki Saatı Yaz"/>
+          <bt:Override Locale="es-ES" Value="Insertar hora actual"/>
+        </bt:String>
+        <bt:String id="L.insert-date-time" DefaultValue="Tarih ve Saat Yaz">
+          <bt:Override Locale="en-US" Value="Insert Date &amp; Time"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Tarix və Saatı Yaz"/>
+          <bt:Override Locale="es-ES" Value="Insertar fecha y hora"/>
+        </bt:String>
+        <bt:String id="Cat.compare" DefaultValue="Karşılaştır">
+          <bt:Override Locale="en-US" Value="Compare"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Müqayisə et"/>
+          <bt:Override Locale="es-ES" Value="Comparar"/>
+        </bt:String>
+        <bt:String id="L.compare-lists" DefaultValue="İki Listeyi Karşılaştır">
+          <bt:Override Locale="en-US" Value="Compare Two Lists"/>
+          <bt:Override Locale="az-Latn-AZ" Value="İki Siyahını Müqayisə Et"/>
+          <bt:Override Locale="es-ES" Value="Comparar Dos Listas"/>
+        </bt:String>
+        <bt:String id="L.compare-tables-by-key" DefaultValue="İki Tabloyu Anahtarla Karşılaştır">
+          <bt:Override Locale="en-US" Value="Compare Two Tables By Key"/>
+          <bt:Override Locale="az-Latn-AZ" Value="İki Cədvəli Açarla Müqayisə Et"/>
+          <bt:Override Locale="es-ES" Value="Comparar Dos Tablas Por Clave"/>
+        </bt:String>
+        <bt:String id="L.compare-rows" DefaultValue="Satır Satır Karşılaştır">
+          <bt:Override Locale="en-US" Value="Compare Row By Row"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Sətir-Sətir Müqayisə Et"/>
+          <bt:Override Locale="es-ES" Value="Comparar Fila Por Fila"/>
+        </bt:String>
+        <bt:String id="L.compare-health-check" DefaultValue="Karşılaştırma Sağlık Kontrolü">
+          <bt:Override Locale="en-US" Value="Comparison Health Check"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Müqayisə Sağlamlıq Yoxlaması"/>
+          <bt:Override Locale="es-ES" Value="Comprobación Previa A La Comparación"/>
+        </bt:String>
+<!-- END GENERATED SHORTSTRINGS -->
+      </bt:ShortStrings>
+      <bt:LongStrings>
+        <bt:String id="GetStarted.Description" DefaultValue="Datacellia araçlarını kullanmak için Giriş sekmesindeki Datacellia düğmesini seçin."/>
+        <bt:String id="Datacellia.ButtonDescription" DefaultValue="Datacellia Free Excel Toolkit görev bölmesini açar."/>
+        <!-- BEGIN GENERATED LONGSTRINGS -->
+        <bt:String id="D.trim-whitespace" DefaultValue="Metinlerdeki gereksiz boşlukları düzeltir; sekme ve satır sonlarını korur.">
+          <bt:Override Locale="en-US" Value="Fixes stray spaces in text, keeping tabs and line breaks intact."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Mətnlərdəki artıq boşluqları düzəldir; tabulyasiya və sətir sonlarını qoruyur."/>
+          <bt:Override Locale="es-ES" Value="Corrige los espacios sobrantes del texto y conserva las tabulaciones y los saltos de línea."/>
+        </bt:String>
+        <bt:String id="D.clean-invisible-characters" DefaultValue="Metinlerdeki görünmez karakterleri temizler; sekme ve satır sonlarını korur.">
+          <bt:Override Locale="en-US" Value="Removes invisible characters from text, keeping tabs and line breaks intact."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Mətnlərdəki görünməyən simvolları silir; tabulyasiya və sətir sonlarını qoruyur."/>
+          <bt:Override Locale="es-ES" Value="Elimina los caracteres invisibles del texto y conserva las tabulaciones y los saltos de línea."/>
+        </bt:String>
+        <bt:String id="D.remove-empty-rows" DefaultValue="Seçim içindeki boş satırları kaldırır ve kalan satırları yukarı kaydırır. Çalışma sayfası satırı silinmez.">
+          <bt:Override Locale="en-US" Value="Removes empty rows inside the selection and moves the rest up. No worksheet row is deleted."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Seçim daxilindəki boş sətirləri silir və qalan sətirləri yuxarı sürüşdürür. Vərəq sətri silinmir."/>
+          <bt:Override Locale="es-ES" Value="Elimina las filas vacías dentro de la selección y sube las demás. No se elimina ninguna fila de la hoja."/>
+        </bt:String>
+        <bt:String id="D.remove-empty-columns" DefaultValue="Seçim içindeki boş sütunları kaldırır ve kalan sütunları sola kaydırır. Çalışma sayfası sütunu silinmez.">
+          <bt:Override Locale="en-US" Value="Removes empty columns inside the selection and moves the rest left. No worksheet column is deleted."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Seçim daxilindəki boş sütunları silir və qalan sütunları sola sürüşdürür. Vərəq sütunu silinmir."/>
+          <bt:Override Locale="es-ES" Value="Elimina las columnas vacías dentro de la selección y desplaza las demás a la izquierda. No se elimina ninguna columna de la hoja."/>
+        </bt:String>
+        <bt:String id="D.remove-duplicates" DefaultValue="Seçim içindeki mükerrer satırları kaldırır ve ilk kaydı saklar. Başlık satırı varsayılmaz.">
+          <bt:Override Locale="en-US" Value="Removes duplicate rows inside the selection and keeps the first record. No header row is assumed."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Seçim daxilindəki təkrar sətirləri silir və ilk qeydi saxlayır. Başlıq sətri güman edilmir."/>
+          <bt:Override Locale="es-ES" Value="Quita las filas duplicadas dentro de la selección y conserva el primer registro. No se supone una fila de encabezado."/>
+        </bt:String>
+        <bt:String id="D.to-upper-case" DefaultValue="Metin hücrelerini büyük harfe çevirir. Excel dilinize uygun dönüşüm yapar.">
+          <bt:Override Locale="en-US" Value="Converts text cells to uppercase, following your Excel language."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Mətn xanalarını böyük hərfə çevirir. Excel dilinizə uyğun çevirmə aparır."/>
+          <bt:Override Locale="es-ES" Value="Convierte las celdas de texto a mayúsculas según el idioma de tu Excel."/>
+        </bt:String>
+        <bt:String id="D.to-lower-case" DefaultValue="Metin hücrelerini küçük harfe çevirir. Excel dilinize uygun dönüşüm yapar.">
+          <bt:Override Locale="en-US" Value="Converts text cells to lowercase, following your Excel language."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Mətn xanalarını kiçik hərfə çevirir. Excel dilinizə uyğun çevirmə aparır."/>
+          <bt:Override Locale="es-ES" Value="Convierte las celdas de texto a minúsculas según el idioma de tu Excel."/>
+        </bt:String>
+        <bt:String id="D.capitalize-words" DefaultValue="Yalnızca tamamen küçük harfli kelimelerin ilk harfini büyütür; NASA, iPhone gibi yazımları korur.">
+          <bt:Override Locale="en-US" Value="Capitalises only fully lowercase words, so spellings like NASA and iPhone are preserved."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Yalnız tamamilə kiçik hərfli sözlərin ilk hərfini böyüdür; NASA, iPhone kimi yazılışları qoruyur."/>
+          <bt:Override Locale="es-ES" Value="Solo pone en mayúscula las palabras escritas totalmente en minúsculas, así se conservan grafías como NASA o iPhone."/>
+        </bt:String>
+        <bt:String id="D.split-by-delimiter" DefaultValue="Metni ayırıcıya göre böler; tek bir parçayı ya da tüm parçaları sağdaki boş sütunlara yazar.">
+          <bt:Override Locale="en-US" Value="Splits text by a delimiter and writes one part, or every part, into the empty columns on the right."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Mətni ayırıcıya görə bölür; bir hissəni və ya bütün hissələri sağdakı boş sütunlara yazır."/>
+          <bt:Override Locale="es-ES" Value="Divide el texto por un delimitador y escribe una parte, o todas, en las columnas vacías de la derecha."/>
+        </bt:String>
+        <bt:String id="D.extract-email" DefaultValue="Her hücredeki ilk e-posta adresini sağdaki boş sütuna yazar. Kaynak hücreler değişmez.">
+          <bt:Override Locale="en-US" Value="Writes the first email address of each cell into the empty column on the right. Source cells are untouched."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Hər xanadakı ilk e-poçt ünvanını sağdakı boş sütuna yazır. Mənbə xanalar dəyişmir."/>
+          <bt:Override Locale="es-ES" Value="Escribe la primera dirección de correo de cada celda en la columna vacía de la derecha. Las celdas de origen no cambian."/>
+        </bt:String>
+        <bt:String id="D.extract-first-number" DefaultValue="Metindeki ilk rakam dizisini sağdaki boş sütuna metin olarak yazar. Baştaki sıfırlar korunur.">
+          <bt:Override Locale="en-US" Value="Writes the first run of digits into the empty column on the right, as text, so leading zeros survive."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Mətndəki ilk rəqəm ardıcıllığını sağdakı boş sütuna mətn kimi yazır. Baştakı sıfırlar qorunur."/>
+          <bt:Override Locale="es-ES" Value="Escribe la primera secuencia de dígitos en la columna vacía de la derecha, como texto, para conservar los ceros iniciales."/>
+        </bt:String>
+        <bt:String id="D.data-profile" DefaultValue="Seçimi değiştirmeden boş hücre, tekrarlanan satır, hata, karma veri tipi ve metin temizliği bulgularını tarar.">
+          <bt:Override Locale="en-US" Value="Scans the selection for blanks, repeated rows, errors, mixed types and text cleanup findings without changing data."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Seçimi dəyişmədən boş xanalar, təkrarlanan sətirlər, xətalar, qarışıq tiplər və mətn təmizliyi tapıntılarını yoxlayır."/>
+          <bt:Override Locale="es-ES" Value="Analiza vacíos, filas repetidas, errores, tipos mixtos y limpieza de texto sin cambiar los datos."/>
+        </bt:String>
+        <bt:String id="D.formulas-to-values" DefaultValue="Seçimdeki formülleri mevcut sonuçlarıyla değiştirir. Dinamik dizi ve hata veren formüller atlanır.">
+          <bt:Override Locale="en-US" Value="Replaces formulas with their current results. Dynamic array and error formulas are skipped."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Seçimdəki düsturları cari nəticələri ilə əvəz edir. Dinamik massiv və xəta verən düsturlar buraxılır."/>
+          <bt:Override Locale="es-ES" Value="Sustituye las fórmulas por sus resultados actuales. Se omiten las fórmulas de matriz dinámica y las que dan error."/>
+        </bt:String>
+        <bt:String id="D.fill-down" DefaultValue="Boş hücreleri üstteki dolu hücrenin değeriyle doldurur. Formül değil, hesaplanmış değer kopyalanır.">
+          <bt:Override Locale="en-US" Value="Fills empty cells with the value of the cell above. The computed value is copied, not the formula."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Boş xanaları yuxarıdakı dolu xananın dəyəri ilə doldurur. Düstur deyil, hesablanmış dəyər köçürülür."/>
+          <bt:Override Locale="es-ES" Value="Rellena las celdas vacías con el valor de la celda de arriba. Se copia el valor calculado, no la fórmula."/>
+        </bt:String>
+        <bt:String id="D.fill-blanks" DefaultValue="Seçimdeki boş hücrelere girdiğiniz değeri yazar. Girdiğiniz değer hiçbir zaman formül olarak çalıştırılmaz.">
+          <bt:Override Locale="en-US" Value="Writes your value into the empty cells of the selection. What you type is never run as a formula."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Seçimdəki boş xanalara daxil etdiyiniz dəyəri yazır. Yazdığınız dəyər heç vaxt düstur kimi işə salınmır."/>
+          <bt:Override Locale="es-ES" Value="Escribe tu valor en las celdas vacías de la selección. Lo que escribas nunca se ejecuta como fórmula."/>
+        </bt:String>
+        <bt:String id="D.text-to-number" DefaultValue="Sayı olduğu kesin olan metin hücrelerini gerçek sayıya çevirir. Yorumlanamayan hücreler değiştirilmez.">
+          <bt:Override Locale="en-US" Value="Converts text that is unambiguously numeric. Cells that cannot be read safely are left alone."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Rəqəm olduğu dəqiq olan mətn xanalarını həqiqi rəqəmə çevirir. Şərh edilə bilməyən xanalar dəyişdirilmir."/>
+          <bt:Override Locale="es-ES" Value="Convierte el texto que es inequívocamente numérico. Las celdas que no pueden leerse con seguridad no se tocan."/>
+        </bt:String>
+        <bt:String id="D.unique-values" DefaultValue="Seçili sütundaki tekrarsız değerleri ilk görülme sırasıyla sağdaki boş sütuna yazar. Kaynak değişmez.">
+          <bt:Override Locale="en-US" Value="Writes the distinct values of the selected column, in first-seen order, into the empty column on the right."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Seçilmiş sütundakı təkrarsız dəyərləri ilk görünmə sırası ilə sağdakı boş sütuna yazır. Mənbə dəyişmir."/>
+          <bt:Override Locale="es-ES" Value="Escribe los valores distintos de la columna seleccionada, en su orden de aparición, en la columna vacía de la derecha."/>
+        </bt:String>
+        <bt:String id="D.date-parts" DefaultValue="Tarih hücrelerinden yıl, ay, gün ve çeyrek değerlerini sağdaki boş sütunlara sayı olarak yazar.">
+          <bt:Override Locale="en-US" Value="Writes the year, month, day and quarter of date cells into the empty columns on the right, as numbers."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Tarix xanalarından il, ay, gün və rüb dəyərlərini sağdakı boş sütunlara rəqəm kimi yazır."/>
+          <bt:Override Locale="es-ES" Value="Escribe el año, el mes, el día y el trimestre de las celdas de fecha en las columnas vacías de la derecha, como números."/>
+        </bt:String>
+        <bt:String id="D.round-number" DefaultValue="Gerçek sayısal değerleri istenen ondalık basamağa yuvarlayarak değiştirir.">
+          <bt:Override Locale="en-US" Value="Changes the real numeric values by rounding them to the requested decimal places."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Həqiqi rəqəm dəyərlərini istənən onluq mərtəbəyə yuvarlaqlaşdıraraq dəyişir."/>
+          <bt:Override Locale="es-ES" Value="Cambia los valores numéricos reales redondeándolos a los decimales indicados."/>
+        </bt:String>
+        <bt:String id="D.change-decimal-display" DefaultValue="Yalnızca sayı biçimini değiştirir; hücrenin gerçek değeri aynı kalır.">
+          <bt:Override Locale="en-US" Value="Changes only the number format so values display with the requested decimals; underlying values stay unchanged."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Yalnız rəqəm formatını dəyişir; xananın həqiqi dəyəri eyni qalır."/>
+          <bt:Override Locale="es-ES" Value="Cambia solo el formato numérico para mostrar los decimales indicados; el valor real no cambia."/>
+        </bt:String>
+        <bt:String id="D.absolute-numbers" DefaultValue="Gerçek sayısal hücrelere mutlak değer uygular ve biçimlerini korur.">
+          <bt:Override Locale="en-US" Value="Applies absolute value to real numeric cells while preserving their formats."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Həqiqi rəqəm xanalarına mütləq dəyər tətbiq edir və formatı qoruyur."/>
+          <bt:Override Locale="es-ES" Value="Aplica valor absoluto a celdas numéricas reales conservando sus formatos."/>
+        </bt:String>
+        <bt:String id="D.flip-number-signs" DefaultValue="Pozitif sayıları negatife, negatif sayıları pozitife çevirir; metinleri parse etmez.">
+          <bt:Override Locale="en-US" Value="Turns positive numbers negative and negative numbers positive without parsing text."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Müsbət rəqəmləri mənfiyə, mənfi rəqəmləri müsbətə çevirir; mətnləri parse etmir."/>
+          <bt:Override Locale="es-ES" Value="Convierte positivos en negativos y negativos en positivos sin interpretar texto."/>
+        </bt:String>
+        <bt:String id="D.convert-to-percent" DefaultValue="25 gibi sayıları 100'e bölüp yüzde biçimi uygulayarak 25% haline getirir.">
+          <bt:Override Locale="en-US" Value="Converts numbers such as 25 to 25% by dividing the value by 100 and applying percent format."/>
+          <bt:Override Locale="az-Latn-AZ" Value="25 kimi rəqəmləri 100-ə bölüb faiz formatı tətbiq edərək 25% edir."/>
+          <bt:Override Locale="es-ES" Value="Convierte números como 25 en 25% dividiendo el valor entre 100 y aplicando formato porcentual."/>
+        </bt:String>
+        <bt:String id="D.convert-percent-to-number" DefaultValue="Yüzde biçimli 25% gibi değerleri 25 gibi normal sayılara çevirir.">
+          <bt:Override Locale="en-US" Value="Converts percentage-formatted values such as 25% back to ordinary numbers such as 25."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Faiz formatlı 25% kimi dəyərləri 25 kimi adi rəqəmə çevirir."/>
+          <bt:Override Locale="es-ES" Value="Convierte valores con formato porcentual como 25% de vuelta a números ordinarios como 25."/>
+        </bt:String>
+        <bt:String id="D.fix-number-separators" DefaultValue="Türkçe/Avrupa veya İngilizce/US ayırıcılı güvenli sayısal metinleri gerçek sayıya dönüştürür.">
+          <bt:Override Locale="en-US" Value="Converts safely recognised numeric text with Turkish/European or English/US separators into real numbers."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Türk/Avropa və ya İngilis/US ayırıcılı təhlükəsiz rəqəm mətnlərini həqiqi rəqəmə çevirir."/>
+          <bt:Override Locale="es-ES" Value="Convierte texto numérico seguro con separadores turcos/europeos o ingleses/US en números reales."/>
+        </bt:String>
+        <bt:String id="D.scale-numbers" DefaultValue="Gerçek sayısal hücreleri sonlu bir katsayıyla çarpar veya böler; biçimleri korur.">
+          <bt:Override Locale="en-US" Value="Multiplies or divides real numeric cells by a finite factor while preserving formats."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Həqiqi rəqəm xanalarını sonlu əmsalla vurur və ya bölür; formatı qoruyur."/>
+          <bt:Override Locale="es-ES" Value="Multiplica o divide celdas numéricas reales por un factor finito conservando formatos."/>
+        </bt:String>
+        <bt:String id="D.clear-zero-values" DefaultValue="Metin sıfırlarına, formüllere, boşlara veya tarih/saat serial değerlerine dokunmadan gerçek sayısal sıfırları temizler.">
+          <bt:Override Locale="en-US" Value="Clears real numeric zero values without touching text zeros, formulas, blanks, or date/time serials."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Mətn sıfırlarına, düsturlara, boşlara və tarix/saat seriallarına toxunmadan həqiqi rəqəm sıfırlarını təmizləyir."/>
+          <bt:Override Locale="es-ES" Value="Borra ceros numéricos reales sin tocar ceros de texto, fórmulas, vacías ni series de fecha/hora."/>
+        </bt:String>
+        <bt:String id="D.number-health-check" DefaultValue="Sayı, metin, yüzde, tarih/saat, formül, boş ve hata hücrelerini yazma yapmadan analiz eder.">
+          <bt:Override Locale="en-US" Value="Analyses numeric, text, percentage, date/time, formula, blank and error cells without writing anything."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Rəqəm, mətn, faiz, tarix/saat, düstur, boş və xəta xanalarını yazmadan analiz edir."/>
+          <bt:Override Locale="es-ES" Value="Analiza celdas numéricas, texto, porcentajes, fecha/hora, fórmulas, vacías y errores sin escribir nada."/>
+        </bt:String>
+        <bt:String id="D.pick-date" DefaultValue="Kompakt takvimi açar ve seçilen tarihi gerçek Excel değeri olarak yazar.">
+          <bt:Override Locale="en-US" Value="Opens a compact calendar and writes the selected date as a real Excel value."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Yığcam təqvimi açır və seçilmiş tarixi həqiqi Excel dəyəri kimi yazır."/>
+          <bt:Override Locale="es-ES" Value="Abre un calendario compacto y escribe la fecha elegida como un valor real de Excel."/>
+        </bt:String>
+        <bt:String id="D.pick-time" DefaultValue="Kompakt saat seçiciyi açar ve seçilen saati gerçek Excel değeri olarak yazar.">
+          <bt:Override Locale="en-US" Value="Opens a compact time picker and writes the selected time as a real Excel value."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Yığcam saat seçicini açır və seçilmiş saatı həqiqi Excel dəyəri kimi yazır."/>
+          <bt:Override Locale="es-ES" Value="Abre un selector compacto y escribe la hora elegida como un valor real de Excel."/>
+        </bt:String>
+        <bt:String id="D.pick-date-time" DefaultValue="Tarih ve saati birlikte seçtirir ve tek bir gerçek Excel değeri olarak yazar.">
+          <bt:Override Locale="en-US" Value="Lets you pick a date and time together and writes one real Excel value."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Tarix və saatı birlikdə seçir və tək həqiqi Excel dəyəri kimi yazır."/>
+          <bt:Override Locale="es-ES" Value="Permite elegir fecha y hora juntas y escribe un único valor real de Excel."/>
+        </bt:String>
+        <bt:String id="D.insert-today" DefaultValue="Bugünün yerel tarihini TODAY formülü değil, sabit Excel değeri olarak yazar.">
+          <bt:Override Locale="en-US" Value="Writes today's local date as a fixed Excel value, not a TODAY formula."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Bugünkü yerli tarixi TODAY düsturu deyil, sabit Excel dəyəri kimi yazır."/>
+          <bt:Override Locale="es-ES" Value="Escribe la fecha local de hoy como valor fijo de Excel, no como fórmula HOY."/>
+        </bt:String>
+        <bt:String id="D.insert-current-time" DefaultValue="Şimdiki yerel saati NOW formülü değil, sabit Excel değeri olarak yazar.">
+          <bt:Override Locale="en-US" Value="Writes the current local time as a fixed Excel value, not a NOW formula."/>
+          <bt:Override Locale="az-Latn-AZ" Value="İndiki yerli saatı NOW düsturu deyil, sabit Excel dəyəri kimi yazır."/>
+          <bt:Override Locale="es-ES" Value="Escribe la hora local actual como valor fijo de Excel, no como fórmula AHORA."/>
+        </bt:String>
+        <bt:String id="D.insert-date-time" DefaultValue="Şimdiki yerel tarih ve saati tek bir sabit Excel değeri olarak yazar.">
+          <bt:Override Locale="en-US" Value="Writes the current local date and time as one fixed Excel value."/>
+          <bt:Override Locale="az-Latn-AZ" Value="İndiki yerli tarix və saatı bir sabit Excel dəyəri kimi yazır."/>
+          <bt:Override Locale="es-ES" Value="Escribe la fecha y hora locales actuales como un único valor fijo de Excel."/>
+        </bt:String>
+        <bt:String id="D.compare-lists" DefaultValue="Tek sütunluk iki listeyi karşılaştırır; sonucu yeni bir sayfaya yazar. Kaynak listeler değişmez.">
+          <bt:Override Locale="en-US" Value="Compares two single-column lists and writes the result to a new sheet. The source lists are untouched."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Tək sütunlu iki siyahını müqayisə edir; nəticəni yeni vərəqə yazır. Mənbə siyahılar dəyişmir."/>
+          <bt:Override Locale="es-ES" Value="Compara dos listas de una sola columna y escribe el resultado en una hoja nueva. Las listas de origen no cambian."/>
+        </bt:String>
+        <bt:String id="D.compare-tables-by-key" DefaultValue="Başlık satırlı iki tabloyu anahtar sütuna göre karşılaştırır; yeni, eksik ve değişen kayıtları yeni bir sayfaya yazar.">
+          <bt:Override Locale="en-US" Value="Compares two tables with header rows by a key column and writes new, missing and changed records to a new sheet."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Başlıq sətirli iki cədvəli açar sütuna görə müqayisə edir; yeni, əskik və dəyişən qeydləri yeni vərəqə yazır."/>
+          <bt:Override Locale="es-ES" Value="Compara dos tablas con encabezado por una columna clave y escribe los registros nuevos, ausentes y modificados en una hoja nueva."/>
+        </bt:String>
+        <bt:String id="D.compare-rows" DefaultValue="Aynı satır sayısına sahip iki aralığı sırayla karşılaştırır ve farklı satırları yeni bir sayfaya yazar.">
+          <bt:Override Locale="en-US" Value="Compares two ranges of equal height in order and writes the differing rows to a new sheet."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Eyni sayda sətrə malik iki aralığı ardıcıl müqayisə edir və fərqli sətirləri yeni vərəqə yazır."/>
+          <bt:Override Locale="es-ES" Value="Compara en orden dos rangos de la misma altura y escribe las filas distintas en una hoja nueva."/>
+        </bt:String>
+        <bt:String id="D.compare-health-check" DefaultValue="İki tabloyu karşılaştırmadan önce anahtar, başlık ve veri tipi sorunlarını raporlar. Hiçbir şey yazmaz.">
+          <bt:Override Locale="en-US" Value="Reports key, header and data type problems before you compare. Writes nothing."/>
+          <bt:Override Locale="az-Latn-AZ" Value="İki cədvəli müqayisə etmədən əvvəl açar, başlıq və məlumat tipi problemlərini bildirir. Heç nə yazmır."/>
+          <bt:Override Locale="es-ES" Value="Informa de problemas de clave, encabezado y tipo de datos antes de comparar. No escribe nada."/>
+        </bt:String>
+<!-- END GENERATED LONGSTRINGS -->
+      </bt:LongStrings>
+    </Resources>
+  </VersionOverrides>
+</OfficeApp>
