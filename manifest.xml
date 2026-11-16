@@ -5,7 +5,7 @@
            xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
            xsi:type="TaskPaneApp">
   <Id>f69a7bc2-42e8-4e6a-9db8-55c71a75db34</Id>
-  <Version>3.17.0.0</Version>
+  <Version>3.18.0.0</Version>
   <ProviderName>Datacellia</ProviderName>
   <DefaultLocale>tr-TR</DefaultLocale>
   <DisplayName DefaultValue="Datacellia"/>
@@ -26,7 +26,7 @@
     </Sets>
   </Requirements>
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://addin.datacellia.com/index.html?v=3.17.0.0"/>
+    <SourceLocation DefaultValue="https://addin.datacellia.com/index.html?v=3.18.0.0"/>
   </DefaultSettings>
   <Permissions>ReadWriteDocument</Permissions>
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
@@ -1468,6 +1468,110 @@
                   </Action>
                 </Control>
               </Group>
+              <Group id="Group.charts">
+                <Label resid="Cat.charts"/>
+                <Icon>
+                  <bt:Image size="16" resid="Category.charts.16"/>
+                  <bt:Image size="32" resid="Category.charts.32"/>
+                  <bt:Image size="80" resid="Category.charts.80"/>
+                </Icon>
+                <Control xsi:type="Button" id="Cmd.create-chart">
+                  <Label resid="L.create-chart"/>
+                  <Supertip>
+                    <Title resid="L.create-chart"/>
+                    <Description resid="D.create-chart"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Tool.83.16"/>
+                    <bt:Image size="32" resid="Tool.83.32"/>
+                    <bt:Image size="80" resid="Tool.83.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.83"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.category-chart">
+                  <Label resid="L.category-chart"/>
+                  <Supertip>
+                    <Title resid="L.category-chart"/>
+                    <Description resid="D.category-chart"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Tool.84.16"/>
+                    <bt:Image size="32" resid="Tool.84.32"/>
+                    <bt:Image size="80" resid="Tool.84.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.84"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.trend-chart">
+                  <Label resid="L.trend-chart"/>
+                  <Supertip>
+                    <Title resid="L.trend-chart"/>
+                    <Description resid="D.trend-chart"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Tool.85.16"/>
+                    <bt:Image size="32" resid="Tool.85.32"/>
+                    <bt:Image size="80" resid="Tool.85.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.85"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.share-chart">
+                  <Label resid="L.share-chart"/>
+                  <Supertip>
+                    <Title resid="L.share-chart"/>
+                    <Description resid="D.share-chart"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Tool.86.16"/>
+                    <bt:Image size="32" resid="Tool.86.32"/>
+                    <bt:Image size="80" resid="Tool.86.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.86"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.target-chart">
+                  <Label resid="L.target-chart"/>
+                  <Supertip>
+                    <Title resid="L.target-chart"/>
+                    <Description resid="D.target-chart"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Tool.87.16"/>
+                    <bt:Image size="32" resid="Tool.87.32"/>
+                    <bt:Image size="80" resid="Tool.87.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.87"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Cmd.pareto-chart">
+                  <Label resid="L.pareto-chart"/>
+                  <Supertip>
+                    <Title resid="L.pareto-chart"/>
+                    <Description resid="D.pareto-chart"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Tool.88.16"/>
+                    <bt:Image size="32" resid="Tool.88.32"/>
+                    <bt:Image size="80" resid="Tool.88.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.88"/>
+                  </Action>
+                </Control>
+              </Group>
 <!-- END GENERATED GROUPS -->
               <Label resid="Datacellia.TabLabel"/>
             </CustomTab>
@@ -1777,96 +1881,123 @@
         <bt:Image id="Tool.82.16" DefaultValue="https://addin.datacellia.com/icons/tools/general-report-93bc7fbf-16.png"/>
         <bt:Image id="Tool.82.32" DefaultValue="https://addin.datacellia.com/icons/tools/general-report-93bc7fbf-32.png"/>
         <bt:Image id="Tool.82.80" DefaultValue="https://addin.datacellia.com/icons/tools/general-report-93bc7fbf-80.png"/>
+        <bt:Image id="Category.charts.16" DefaultValue="https://addin.datacellia.com/icons/tools/category-charts-60efe1ae-16.png"/>
+        <bt:Image id="Category.charts.32" DefaultValue="https://addin.datacellia.com/icons/tools/category-charts-60efe1ae-32.png"/>
+        <bt:Image id="Category.charts.80" DefaultValue="https://addin.datacellia.com/icons/tools/category-charts-60efe1ae-80.png"/>
+        <bt:Image id="Tool.83.16" DefaultValue="https://addin.datacellia.com/icons/tools/create-chart-ac3ed028-16.png"/>
+        <bt:Image id="Tool.83.32" DefaultValue="https://addin.datacellia.com/icons/tools/create-chart-ac3ed028-32.png"/>
+        <bt:Image id="Tool.83.80" DefaultValue="https://addin.datacellia.com/icons/tools/create-chart-ac3ed028-80.png"/>
+        <bt:Image id="Tool.84.16" DefaultValue="https://addin.datacellia.com/icons/tools/category-chart-ea9c5fa2-16.png"/>
+        <bt:Image id="Tool.84.32" DefaultValue="https://addin.datacellia.com/icons/tools/category-chart-ea9c5fa2-32.png"/>
+        <bt:Image id="Tool.84.80" DefaultValue="https://addin.datacellia.com/icons/tools/category-chart-ea9c5fa2-80.png"/>
+        <bt:Image id="Tool.85.16" DefaultValue="https://addin.datacellia.com/icons/tools/trend-chart-4dea53c2-16.png"/>
+        <bt:Image id="Tool.85.32" DefaultValue="https://addin.datacellia.com/icons/tools/trend-chart-4dea53c2-32.png"/>
+        <bt:Image id="Tool.85.80" DefaultValue="https://addin.datacellia.com/icons/tools/trend-chart-4dea53c2-80.png"/>
+        <bt:Image id="Tool.86.16" DefaultValue="https://addin.datacellia.com/icons/tools/share-chart-bc81df88-16.png"/>
+        <bt:Image id="Tool.86.32" DefaultValue="https://addin.datacellia.com/icons/tools/share-chart-bc81df88-32.png"/>
+        <bt:Image id="Tool.86.80" DefaultValue="https://addin.datacellia.com/icons/tools/share-chart-bc81df88-80.png"/>
+        <bt:Image id="Tool.87.16" DefaultValue="https://addin.datacellia.com/icons/tools/target-chart-e55beab8-16.png"/>
+        <bt:Image id="Tool.87.32" DefaultValue="https://addin.datacellia.com/icons/tools/target-chart-e55beab8-32.png"/>
+        <bt:Image id="Tool.87.80" DefaultValue="https://addin.datacellia.com/icons/tools/target-chart-e55beab8-80.png"/>
+        <bt:Image id="Tool.88.16" DefaultValue="https://addin.datacellia.com/icons/tools/pareto-chart-ab2ac275-16.png"/>
+        <bt:Image id="Tool.88.32" DefaultValue="https://addin.datacellia.com/icons/tools/pareto-chart-ab2ac275-32.png"/>
+        <bt:Image id="Tool.88.80" DefaultValue="https://addin.datacellia.com/icons/tools/pareto-chart-ab2ac275-80.png"/>
 <!-- END GENERATED IMAGES -->
       </bt:Images>
       <bt:Urls>
         <bt:Url id="Commands.Url" DefaultValue="https://addin.datacellia.com/commands.html"/>
-        <bt:Url id="Taskpane.Url" DefaultValue="https://addin.datacellia.com/index.html?v=3.17.0.0"/>
-        <bt:Url id="Context.PickDate.Url" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date&amp;source=context-menu&amp;v=3.17.0.0"/>
+        <bt:Url id="Taskpane.Url" DefaultValue="https://addin.datacellia.com/index.html?v=3.18.0.0"/>
+        <bt:Url id="Context.PickDate.Url" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date&amp;source=context-menu&amp;v=3.18.0.0"/>
         <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://addin.datacellia.com/"/>
         <!-- BEGIN GENERATED URLS -->
-        <bt:Url id="TP.1" DefaultValue="https://addin.datacellia.com/index.html?tool=trim-whitespace&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.2" DefaultValue="https://addin.datacellia.com/index.html?tool=clean-invisible-characters&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.3" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-empty-rows&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.4" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-empty-columns&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.5" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-duplicates&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.6" DefaultValue="https://addin.datacellia.com/index.html?tool=to-upper-case&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.7" DefaultValue="https://addin.datacellia.com/index.html?tool=to-lower-case&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.8" DefaultValue="https://addin.datacellia.com/index.html?tool=capitalize-words&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.9" DefaultValue="https://addin.datacellia.com/index.html?tool=split-by-delimiter&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.10" DefaultValue="https://addin.datacellia.com/index.html?tool=extract-email&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.11" DefaultValue="https://addin.datacellia.com/index.html?tool=extract-first-number&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.12" DefaultValue="https://addin.datacellia.com/index.html?tool=data-profile&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.13" DefaultValue="https://addin.datacellia.com/index.html?tool=formulas-to-values&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.14" DefaultValue="https://addin.datacellia.com/index.html?tool=fill-down&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.15" DefaultValue="https://addin.datacellia.com/index.html?tool=fill-blanks&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.16" DefaultValue="https://addin.datacellia.com/index.html?tool=text-to-number&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.17" DefaultValue="https://addin.datacellia.com/index.html?tool=unique-values&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.18" DefaultValue="https://addin.datacellia.com/index.html?tool=date-parts&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.19" DefaultValue="https://addin.datacellia.com/index.html?tool=round-number&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.20" DefaultValue="https://addin.datacellia.com/index.html?tool=change-decimal-display&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.21" DefaultValue="https://addin.datacellia.com/index.html?tool=absolute-numbers&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.22" DefaultValue="https://addin.datacellia.com/index.html?tool=flip-number-signs&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.23" DefaultValue="https://addin.datacellia.com/index.html?tool=convert-to-percent&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.24" DefaultValue="https://addin.datacellia.com/index.html?tool=convert-percent-to-number&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.25" DefaultValue="https://addin.datacellia.com/index.html?tool=fix-number-separators&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.26" DefaultValue="https://addin.datacellia.com/index.html?tool=scale-numbers&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.27" DefaultValue="https://addin.datacellia.com/index.html?tool=clear-zero-values&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.28" DefaultValue="https://addin.datacellia.com/index.html?tool=number-health-check&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.29" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.30" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-time&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.31" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date-time&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.32" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-today&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.33" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-current-time&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.34" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-date-time&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.35" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-lists&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.36" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-tables-by-key&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.37" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-rows&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.38" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-health-check&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.39" DefaultValue="https://addin.datacellia.com/index.html?tool=append-worksheets&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.40" DefaultValue="https://addin.datacellia.com/index.html?tool=append-tables&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.41" DefaultValue="https://addin.datacellia.com/index.html?tool=lookup-from-table&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.42" DefaultValue="https://addin.datacellia.com/index.html?tool=multi-lookup&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.43" DefaultValue="https://addin.datacellia.com/index.html?tool=group-summarize&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.44" DefaultValue="https://addin.datacellia.com/index.html?tool=unpivot-columns&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.45" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-formulas&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.46" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-errors&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.47" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-external-formulas&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.48" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-constants&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.49" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-blanks&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.50" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-inconsistent&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.51" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-data-validation&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.52" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-conditional-formats&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.53" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-locked-cells&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.54" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-unlocked-cells&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.55" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-error-rows&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.56" DefaultValue="https://addin.datacellia.com/index.html?tool=select-formulas&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.57" DefaultValue="https://addin.datacellia.com/index.html?tool=select-constants&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.58" DefaultValue="https://addin.datacellia.com/index.html?tool=select-errors&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.59" DefaultValue="https://addin.datacellia.com/index.html?tool=select-blanks&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.60" DefaultValue="https://addin.datacellia.com/index.html?tool=select-visible-cells&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.61" DefaultValue="https://addin.datacellia.com/index.html?tool=formula-map-summary&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.62" DefaultValue="https://addin.datacellia.com/index.html?tool=extract-formulas-as-text&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.63" DefaultValue="https://addin.datacellia.com/index.html?tool=list-external-formulas&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.64" DefaultValue="https://addin.datacellia.com/index.html?tool=list-named-ranges&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.65" DefaultValue="https://addin.datacellia.com/index.html?tool=list-hyperlinks&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.66" DefaultValue="https://addin.datacellia.com/index.html?tool=list-comments-and-notes&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.67" DefaultValue="https://addin.datacellia.com/index.html?tool=list-worksheets&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.68" DefaultValue="https://addin.datacellia.com/index.html?tool=worksheet-protection-summary&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.69" DefaultValue="https://addin.datacellia.com/index.html?tool=create-dashboard&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.70" DefaultValue="https://addin.datacellia.com/index.html?tool=create-report&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.71" DefaultValue="https://addin.datacellia.com/index.html?tool=executive-dashboard&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.72" DefaultValue="https://addin.datacellia.com/index.html?tool=sales-dashboard&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.73" DefaultValue="https://addin.datacellia.com/index.html?tool=hr-dashboard&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.74" DefaultValue="https://addin.datacellia.com/index.html?tool=finance-dashboard&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.75" DefaultValue="https://addin.datacellia.com/index.html?tool=executive-report&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.76" DefaultValue="https://addin.datacellia.com/index.html?tool=sales-report&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.77" DefaultValue="https://addin.datacellia.com/index.html?tool=hr-report&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.78" DefaultValue="https://addin.datacellia.com/index.html?tool=finance-report&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.79" DefaultValue="https://addin.datacellia.com/index.html?tool=stock-report&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.80" DefaultValue="https://addin.datacellia.com/index.html?tool=project-report&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.81" DefaultValue="https://addin.datacellia.com/index.html?tool=data-quality-report&amp;v=3.17.0.0"/>
-        <bt:Url id="TP.82" DefaultValue="https://addin.datacellia.com/index.html?tool=general-report&amp;v=3.17.0.0"/>
+        <bt:Url id="TP.1" DefaultValue="https://addin.datacellia.com/index.html?tool=trim-whitespace&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.2" DefaultValue="https://addin.datacellia.com/index.html?tool=clean-invisible-characters&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.3" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-empty-rows&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.4" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-empty-columns&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.5" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-duplicates&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.6" DefaultValue="https://addin.datacellia.com/index.html?tool=to-upper-case&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.7" DefaultValue="https://addin.datacellia.com/index.html?tool=to-lower-case&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.8" DefaultValue="https://addin.datacellia.com/index.html?tool=capitalize-words&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.9" DefaultValue="https://addin.datacellia.com/index.html?tool=split-by-delimiter&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.10" DefaultValue="https://addin.datacellia.com/index.html?tool=extract-email&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.11" DefaultValue="https://addin.datacellia.com/index.html?tool=extract-first-number&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.12" DefaultValue="https://addin.datacellia.com/index.html?tool=data-profile&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.13" DefaultValue="https://addin.datacellia.com/index.html?tool=formulas-to-values&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.14" DefaultValue="https://addin.datacellia.com/index.html?tool=fill-down&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.15" DefaultValue="https://addin.datacellia.com/index.html?tool=fill-blanks&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.16" DefaultValue="https://addin.datacellia.com/index.html?tool=text-to-number&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.17" DefaultValue="https://addin.datacellia.com/index.html?tool=unique-values&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.18" DefaultValue="https://addin.datacellia.com/index.html?tool=date-parts&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.19" DefaultValue="https://addin.datacellia.com/index.html?tool=round-number&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.20" DefaultValue="https://addin.datacellia.com/index.html?tool=change-decimal-display&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.21" DefaultValue="https://addin.datacellia.com/index.html?tool=absolute-numbers&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.22" DefaultValue="https://addin.datacellia.com/index.html?tool=flip-number-signs&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.23" DefaultValue="https://addin.datacellia.com/index.html?tool=convert-to-percent&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.24" DefaultValue="https://addin.datacellia.com/index.html?tool=convert-percent-to-number&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.25" DefaultValue="https://addin.datacellia.com/index.html?tool=fix-number-separators&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.26" DefaultValue="https://addin.datacellia.com/index.html?tool=scale-numbers&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.27" DefaultValue="https://addin.datacellia.com/index.html?tool=clear-zero-values&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.28" DefaultValue="https://addin.datacellia.com/index.html?tool=number-health-check&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.29" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.30" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-time&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.31" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date-time&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.32" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-today&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.33" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-current-time&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.34" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-date-time&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.35" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-lists&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.36" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-tables-by-key&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.37" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-rows&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.38" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-health-check&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.39" DefaultValue="https://addin.datacellia.com/index.html?tool=append-worksheets&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.40" DefaultValue="https://addin.datacellia.com/index.html?tool=append-tables&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.41" DefaultValue="https://addin.datacellia.com/index.html?tool=lookup-from-table&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.42" DefaultValue="https://addin.datacellia.com/index.html?tool=multi-lookup&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.43" DefaultValue="https://addin.datacellia.com/index.html?tool=group-summarize&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.44" DefaultValue="https://addin.datacellia.com/index.html?tool=unpivot-columns&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.45" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-formulas&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.46" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-errors&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.47" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-external-formulas&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.48" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-constants&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.49" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-blanks&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.50" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-inconsistent&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.51" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-data-validation&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.52" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-conditional-formats&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.53" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-locked-cells&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.54" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-unlocked-cells&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.55" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-error-rows&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.56" DefaultValue="https://addin.datacellia.com/index.html?tool=select-formulas&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.57" DefaultValue="https://addin.datacellia.com/index.html?tool=select-constants&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.58" DefaultValue="https://addin.datacellia.com/index.html?tool=select-errors&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.59" DefaultValue="https://addin.datacellia.com/index.html?tool=select-blanks&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.60" DefaultValue="https://addin.datacellia.com/index.html?tool=select-visible-cells&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.61" DefaultValue="https://addin.datacellia.com/index.html?tool=formula-map-summary&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.62" DefaultValue="https://addin.datacellia.com/index.html?tool=extract-formulas-as-text&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.63" DefaultValue="https://addin.datacellia.com/index.html?tool=list-external-formulas&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.64" DefaultValue="https://addin.datacellia.com/index.html?tool=list-named-ranges&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.65" DefaultValue="https://addin.datacellia.com/index.html?tool=list-hyperlinks&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.66" DefaultValue="https://addin.datacellia.com/index.html?tool=list-comments-and-notes&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.67" DefaultValue="https://addin.datacellia.com/index.html?tool=list-worksheets&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.68" DefaultValue="https://addin.datacellia.com/index.html?tool=worksheet-protection-summary&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.69" DefaultValue="https://addin.datacellia.com/index.html?tool=create-dashboard&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.70" DefaultValue="https://addin.datacellia.com/index.html?tool=create-report&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.71" DefaultValue="https://addin.datacellia.com/index.html?tool=executive-dashboard&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.72" DefaultValue="https://addin.datacellia.com/index.html?tool=sales-dashboard&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.73" DefaultValue="https://addin.datacellia.com/index.html?tool=hr-dashboard&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.74" DefaultValue="https://addin.datacellia.com/index.html?tool=finance-dashboard&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.75" DefaultValue="https://addin.datacellia.com/index.html?tool=executive-report&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.76" DefaultValue="https://addin.datacellia.com/index.html?tool=sales-report&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.77" DefaultValue="https://addin.datacellia.com/index.html?tool=hr-report&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.78" DefaultValue="https://addin.datacellia.com/index.html?tool=finance-report&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.79" DefaultValue="https://addin.datacellia.com/index.html?tool=stock-report&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.80" DefaultValue="https://addin.datacellia.com/index.html?tool=project-report&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.81" DefaultValue="https://addin.datacellia.com/index.html?tool=data-quality-report&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.82" DefaultValue="https://addin.datacellia.com/index.html?tool=general-report&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.83" DefaultValue="https://addin.datacellia.com/index.html?tool=create-chart&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.84" DefaultValue="https://addin.datacellia.com/index.html?tool=category-chart&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.85" DefaultValue="https://addin.datacellia.com/index.html?tool=trend-chart&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.86" DefaultValue="https://addin.datacellia.com/index.html?tool=share-chart&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.87" DefaultValue="https://addin.datacellia.com/index.html?tool=target-chart&amp;v=3.18.0.0"/>
+        <bt:Url id="TP.88" DefaultValue="https://addin.datacellia.com/index.html?tool=pareto-chart&amp;v=3.18.0.0"/>
 <!-- END GENERATED URLS -->
       </bt:Urls>
       <bt:ShortStrings>
@@ -2335,6 +2466,41 @@
           <bt:Override Locale="az-Latn-AZ" Value="Ümumi Hesabatı"/>
           <bt:Override Locale="es-ES" Value="Informe General"/>
         </bt:String>
+        <bt:String id="Cat.charts" DefaultValue="Grafikler">
+          <bt:Override Locale="en-US" Value="Charts"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Qrafiklər"/>
+          <bt:Override Locale="es-ES" Value="Gráficos"/>
+        </bt:String>
+        <bt:String id="L.create-chart" DefaultValue="Grafik Oluşturucu">
+          <bt:Override Locale="en-US" Value="Chart Builder"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Qrafik Yaradıcısı"/>
+          <bt:Override Locale="es-ES" Value="Creador de Gráficos"/>
+        </bt:String>
+        <bt:String id="L.category-chart" DefaultValue="Kategori Karşılaştırma">
+          <bt:Override Locale="en-US" Value="Category Comparison"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Kateqoriya Müqayisəsi"/>
+          <bt:Override Locale="es-ES" Value="Comparación por Categoría"/>
+        </bt:String>
+        <bt:String id="L.trend-chart" DefaultValue="Zaman İçinde Eğilim">
+          <bt:Override Locale="en-US" Value="Trend Over Time"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Zaman Üzrə Meyil"/>
+          <bt:Override Locale="es-ES" Value="Tendencia Temporal"/>
+        </bt:String>
+        <bt:String id="L.share-chart" DefaultValue="Pasta ve Halka Grafik">
+          <bt:Override Locale="en-US" Value="Pie and Doughnut Chart"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Dairə və Halqa Qrafiki"/>
+          <bt:Override Locale="es-ES" Value="Gráfico Circular y de Anillos"/>
+        </bt:String>
+        <bt:String id="L.target-chart" DefaultValue="Gerçekleşen–Hedef Karşılaştırması">
+          <bt:Override Locale="en-US" Value="Actual vs Target"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Fakt–Hədəf Müqayisəsi"/>
+          <bt:Override Locale="es-ES" Value="Real frente a Objetivo"/>
+        </bt:String>
+        <bt:String id="L.pareto-chart" DefaultValue="Pareto Analizi — %80/%20">
+          <bt:Override Locale="en-US" Value="Pareto Analysis — 80/20"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Pareto Təhlili — 80/20"/>
+          <bt:Override Locale="es-ES" Value="Análisis de Pareto — 80/20"/>
+        </bt:String>
 <!-- END GENERATED SHORTSTRINGS -->
       </bt:ShortStrings>
       <bt:LongStrings>
@@ -2750,6 +2916,36 @@
           <bt:Override Locale="en-US" Value="Map columns, preview and create editable Excel charts. Use Refresh after source changes."/>
           <bt:Override Locale="az-Latn-AZ" Value="Sütunları seçin, önbaxışa baxın və redaktə edilən Excel diaqramları yaradın. Mənbə dəyişəndə Yenilə istifadə edin."/>
           <bt:Override Locale="es-ES" Value="Asigne columnas, revise la vista previa y cree gráficos editables de Excel. Actualice tras cambiar el origen."/>
+        </bt:String>
+        <bt:String id="D.create-chart" DefaultValue="Sütunları eşleyin, sonucu önizleyin ve düzenlenebilir Excel grafiği oluşturun. Kaynak değiştiğinde Yenile kullanın.">
+          <bt:Override Locale="en-US" Value="Map columns, preview the results and create an editable Excel chart. Use Refresh after source changes."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Sütunları uyğunlaşdırın, nəticəni öncədən baxın və redaktə edilən Excel qrafiki yaradın. Mənbə dəyişəndə Yenilə istifadə edin."/>
+          <bt:Override Locale="es-ES" Value="Asigne columnas, revise la vista previa y cree un gráfico editable de Excel. Actualice después de cambiar el origen."/>
+        </bt:String>
+        <bt:String id="D.category-chart" DefaultValue="Sütunları eşleyin, sonucu önizleyin ve düzenlenebilir Excel grafiği oluşturun. Kaynak değiştiğinde Yenile kullanın.">
+          <bt:Override Locale="en-US" Value="Map columns, preview the results and create an editable Excel chart. Use Refresh after source changes."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Sütunları uyğunlaşdırın, nəticəni öncədən baxın və redaktə edilən Excel qrafiki yaradın. Mənbə dəyişəndə Yenilə istifadə edin."/>
+          <bt:Override Locale="es-ES" Value="Asigne columnas, revise la vista previa y cree un gráfico editable de Excel. Actualice después de cambiar el origen."/>
+        </bt:String>
+        <bt:String id="D.trend-chart" DefaultValue="Sütunları eşleyin, sonucu önizleyin ve düzenlenebilir Excel grafiği oluşturun. Kaynak değiştiğinde Yenile kullanın.">
+          <bt:Override Locale="en-US" Value="Map columns, preview the results and create an editable Excel chart. Use Refresh after source changes."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Sütunları uyğunlaşdırın, nəticəni öncədən baxın və redaktə edilən Excel qrafiki yaradın. Mənbə dəyişəndə Yenilə istifadə edin."/>
+          <bt:Override Locale="es-ES" Value="Asigne columnas, revise la vista previa y cree un gráfico editable de Excel. Actualice después de cambiar el origen."/>
+        </bt:String>
+        <bt:String id="D.share-chart" DefaultValue="Sütunları eşleyin, sonucu önizleyin ve düzenlenebilir Excel grafiği oluşturun. Kaynak değiştiğinde Yenile kullanın.">
+          <bt:Override Locale="en-US" Value="Map columns, preview the results and create an editable Excel chart. Use Refresh after source changes."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Sütunları uyğunlaşdırın, nəticəni öncədən baxın və redaktə edilən Excel qrafiki yaradın. Mənbə dəyişəndə Yenilə istifadə edin."/>
+          <bt:Override Locale="es-ES" Value="Asigne columnas, revise la vista previa y cree un gráfico editable de Excel. Actualice después de cambiar el origen."/>
+        </bt:String>
+        <bt:String id="D.target-chart" DefaultValue="Sütunları eşleyin, sonucu önizleyin ve düzenlenebilir Excel grafiği oluşturun. Kaynak değiştiğinde Yenile kullanın.">
+          <bt:Override Locale="en-US" Value="Map columns, preview the results and create an editable Excel chart. Use Refresh after source changes."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Sütunları uyğunlaşdırın, nəticəni öncədən baxın və redaktə edilən Excel qrafiki yaradın. Mənbə dəyişəndə Yenilə istifadə edin."/>
+          <bt:Override Locale="es-ES" Value="Asigne columnas, revise la vista previa y cree un gráfico editable de Excel. Actualice después de cambiar el origen."/>
+        </bt:String>
+        <bt:String id="D.pareto-chart" DefaultValue="Sütunları eşleyin, sonucu önizleyin ve düzenlenebilir Excel grafiği oluşturun. Kaynak değiştiğinde Yenile kullanın.">
+          <bt:Override Locale="en-US" Value="Map columns, preview the results and create an editable Excel chart. Use Refresh after source changes."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Sütunları uyğunlaşdırın, nəticəni öncədən baxın və redaktə edilən Excel qrafiki yaradın. Mənbə dəyişəndə Yenilə istifadə edin."/>
+          <bt:Override Locale="es-ES" Value="Asigne columnas, revise la vista previa y cree un gráfico editable de Excel. Actualice después de cambiar el origen."/>
         </bt:String>
 <!-- END GENERATED LONGSTRINGS -->
       </bt:LongStrings>
