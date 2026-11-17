@@ -5,7 +5,7 @@
            xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
            xsi:type="TaskPaneApp">
   <Id>f69a7bc2-42e8-4e6a-9db8-55c71a75db34</Id>
-  <Version>3.32.0.0</Version>
+  <Version>3.33.0.0</Version>
   <ProviderName>Datacellia</ProviderName>
   <DefaultLocale>tr-TR</DefaultLocale>
   <DisplayName DefaultValue="Datacellia"/>
@@ -26,7 +26,7 @@
     </Sets>
   </Requirements>
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://addin.datacellia.com/index.html?v=3.32.0.0"/>
+    <SourceLocation DefaultValue="https://addin.datacellia.com/index.html?v=3.33.0.0"/>
   </DefaultSettings>
   <Permissions>ReadWriteDocument</Permissions>
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
@@ -2237,105 +2237,105 @@
       </bt:Images>
       <bt:Urls>
         <bt:Url id="Commands.Url" DefaultValue="https://addin.datacellia.com/commands.html"/>
-        <bt:Url id="Taskpane.Url" DefaultValue="https://addin.datacellia.com/index.html?v=3.32.0.0"/>
-        <bt:Url id="AllTools.Url" DefaultValue="https://addin.datacellia.com/index.html?view=tools&amp;v=3.32.0.0"/>
-        <bt:Url id="Context.PickDate.Url" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date&amp;source=context-menu&amp;v=3.32.0.0"/>
+        <bt:Url id="Taskpane.Url" DefaultValue="https://addin.datacellia.com/index.html?v=3.33.0.0"/>
+        <bt:Url id="AllTools.Url" DefaultValue="https://addin.datacellia.com/index.html?view=tools&amp;v=3.33.0.0"/>
+        <bt:Url id="Context.PickDate.Url" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date&amp;source=context-menu&amp;v=3.33.0.0"/>
         <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://addin.datacellia.com/"/>
         <!-- BEGIN GENERATED URLS -->
-        <bt:Url id="TP.1" DefaultValue="https://addin.datacellia.com/index.html?tool=trim-whitespace&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.2" DefaultValue="https://addin.datacellia.com/index.html?tool=clean-invisible-characters&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.3" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-empty-rows&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.4" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-empty-columns&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.5" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-duplicates&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.6" DefaultValue="https://addin.datacellia.com/index.html?tool=to-upper-case&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.7" DefaultValue="https://addin.datacellia.com/index.html?tool=to-lower-case&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.8" DefaultValue="https://addin.datacellia.com/index.html?tool=capitalize-words&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.9" DefaultValue="https://addin.datacellia.com/index.html?tool=split-by-delimiter&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.10" DefaultValue="https://addin.datacellia.com/index.html?tool=extract-email&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.11" DefaultValue="https://addin.datacellia.com/index.html?tool=extract-first-number&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.12" DefaultValue="https://addin.datacellia.com/index.html?tool=data-profile&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.13" DefaultValue="https://addin.datacellia.com/index.html?tool=formulas-to-values&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.14" DefaultValue="https://addin.datacellia.com/index.html?tool=fill-down&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.15" DefaultValue="https://addin.datacellia.com/index.html?tool=fill-blanks&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.16" DefaultValue="https://addin.datacellia.com/index.html?tool=text-to-number&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.17" DefaultValue="https://addin.datacellia.com/index.html?tool=unique-values&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.18" DefaultValue="https://addin.datacellia.com/index.html?tool=date-parts&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.19" DefaultValue="https://addin.datacellia.com/index.html?tool=round-number&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.20" DefaultValue="https://addin.datacellia.com/index.html?tool=change-decimal-display&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.21" DefaultValue="https://addin.datacellia.com/index.html?tool=absolute-numbers&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.22" DefaultValue="https://addin.datacellia.com/index.html?tool=flip-number-signs&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.23" DefaultValue="https://addin.datacellia.com/index.html?tool=convert-to-percent&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.24" DefaultValue="https://addin.datacellia.com/index.html?tool=convert-percent-to-number&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.25" DefaultValue="https://addin.datacellia.com/index.html?tool=fix-number-separators&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.26" DefaultValue="https://addin.datacellia.com/index.html?tool=scale-numbers&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.27" DefaultValue="https://addin.datacellia.com/index.html?tool=clear-zero-values&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.28" DefaultValue="https://addin.datacellia.com/index.html?tool=number-health-check&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.29" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.30" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-time&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.31" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date-time&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.32" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-today&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.33" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-current-time&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.34" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-date-time&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.35" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-lists&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.36" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-tables-by-key&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.37" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-rows&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.38" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-health-check&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.39" DefaultValue="https://addin.datacellia.com/index.html?tool=append-worksheets&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.40" DefaultValue="https://addin.datacellia.com/index.html?tool=append-tables&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.41" DefaultValue="https://addin.datacellia.com/index.html?tool=lookup-from-table&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.42" DefaultValue="https://addin.datacellia.com/index.html?tool=multi-lookup&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.43" DefaultValue="https://addin.datacellia.com/index.html?tool=group-summarize&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.44" DefaultValue="https://addin.datacellia.com/index.html?tool=unpivot-columns&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.45" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-formulas&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.46" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-errors&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.47" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-external-formulas&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.48" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-constants&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.49" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-blanks&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.50" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-inconsistent&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.51" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-data-validation&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.52" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-conditional-formats&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.53" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-locked-cells&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.54" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-unlocked-cells&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.55" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-error-rows&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.56" DefaultValue="https://addin.datacellia.com/index.html?tool=select-formulas&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.57" DefaultValue="https://addin.datacellia.com/index.html?tool=select-constants&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.58" DefaultValue="https://addin.datacellia.com/index.html?tool=select-errors&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.59" DefaultValue="https://addin.datacellia.com/index.html?tool=select-blanks&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.60" DefaultValue="https://addin.datacellia.com/index.html?tool=select-visible-cells&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.61" DefaultValue="https://addin.datacellia.com/index.html?tool=formula-map-summary&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.62" DefaultValue="https://addin.datacellia.com/index.html?tool=extract-formulas-as-text&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.63" DefaultValue="https://addin.datacellia.com/index.html?tool=list-external-formulas&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.64" DefaultValue="https://addin.datacellia.com/index.html?tool=list-named-ranges&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.65" DefaultValue="https://addin.datacellia.com/index.html?tool=list-hyperlinks&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.66" DefaultValue="https://addin.datacellia.com/index.html?tool=list-comments-and-notes&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.67" DefaultValue="https://addin.datacellia.com/index.html?tool=list-worksheets&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.68" DefaultValue="https://addin.datacellia.com/index.html?tool=worksheet-protection-summary&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.69" DefaultValue="https://addin.datacellia.com/index.html?tool=create-dashboard&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.70" DefaultValue="https://addin.datacellia.com/index.html?tool=create-report&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.71" DefaultValue="https://addin.datacellia.com/index.html?tool=executive-dashboard&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.72" DefaultValue="https://addin.datacellia.com/index.html?tool=sales-dashboard&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.73" DefaultValue="https://addin.datacellia.com/index.html?tool=hr-dashboard&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.74" DefaultValue="https://addin.datacellia.com/index.html?tool=finance-dashboard&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.75" DefaultValue="https://addin.datacellia.com/index.html?tool=executive-report&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.76" DefaultValue="https://addin.datacellia.com/index.html?tool=sales-report&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.77" DefaultValue="https://addin.datacellia.com/index.html?tool=hr-report&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.78" DefaultValue="https://addin.datacellia.com/index.html?tool=finance-report&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.79" DefaultValue="https://addin.datacellia.com/index.html?tool=stock-report&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.80" DefaultValue="https://addin.datacellia.com/index.html?tool=project-report&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.81" DefaultValue="https://addin.datacellia.com/index.html?tool=data-quality-report&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.82" DefaultValue="https://addin.datacellia.com/index.html?tool=general-report&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.83" DefaultValue="https://addin.datacellia.com/index.html?tool=create-chart&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.84" DefaultValue="https://addin.datacellia.com/index.html?tool=category-chart&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.85" DefaultValue="https://addin.datacellia.com/index.html?tool=trend-chart&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.86" DefaultValue="https://addin.datacellia.com/index.html?tool=share-chart&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.87" DefaultValue="https://addin.datacellia.com/index.html?tool=target-chart&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.88" DefaultValue="https://addin.datacellia.com/index.html?tool=pareto-chart&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.89" DefaultValue="https://addin.datacellia.com/index.html?tool=create-dropdown-list&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.90" DefaultValue="https://addin.datacellia.com/index.html?tool=set-number-validation&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.91" DefaultValue="https://addin.datacellia.com/index.html?tool=set-date-validation&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.92" DefaultValue="https://addin.datacellia.com/index.html?tool=set-text-length-validation&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.93" DefaultValue="https://addin.datacellia.com/index.html?tool=prevent-duplicate-entry&amp;v=3.32.0.0"/>
-        <bt:Url id="TP.94" DefaultValue="https://addin.datacellia.com/index.html?tool=report-invalid-data&amp;v=3.32.0.0"/>
+        <bt:Url id="TP.1" DefaultValue="https://addin.datacellia.com/index.html?tool=trim-whitespace&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.2" DefaultValue="https://addin.datacellia.com/index.html?tool=clean-invisible-characters&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.3" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-empty-rows&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.4" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-empty-columns&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.5" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-duplicates&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.6" DefaultValue="https://addin.datacellia.com/index.html?tool=to-upper-case&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.7" DefaultValue="https://addin.datacellia.com/index.html?tool=to-lower-case&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.8" DefaultValue="https://addin.datacellia.com/index.html?tool=capitalize-words&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.9" DefaultValue="https://addin.datacellia.com/index.html?tool=split-by-delimiter&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.10" DefaultValue="https://addin.datacellia.com/index.html?tool=extract-email&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.11" DefaultValue="https://addin.datacellia.com/index.html?tool=extract-first-number&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.12" DefaultValue="https://addin.datacellia.com/index.html?tool=data-profile&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.13" DefaultValue="https://addin.datacellia.com/index.html?tool=formulas-to-values&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.14" DefaultValue="https://addin.datacellia.com/index.html?tool=fill-down&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.15" DefaultValue="https://addin.datacellia.com/index.html?tool=fill-blanks&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.16" DefaultValue="https://addin.datacellia.com/index.html?tool=text-to-number&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.17" DefaultValue="https://addin.datacellia.com/index.html?tool=unique-values&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.18" DefaultValue="https://addin.datacellia.com/index.html?tool=date-parts&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.19" DefaultValue="https://addin.datacellia.com/index.html?tool=round-number&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.20" DefaultValue="https://addin.datacellia.com/index.html?tool=change-decimal-display&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.21" DefaultValue="https://addin.datacellia.com/index.html?tool=absolute-numbers&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.22" DefaultValue="https://addin.datacellia.com/index.html?tool=flip-number-signs&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.23" DefaultValue="https://addin.datacellia.com/index.html?tool=convert-to-percent&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.24" DefaultValue="https://addin.datacellia.com/index.html?tool=convert-percent-to-number&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.25" DefaultValue="https://addin.datacellia.com/index.html?tool=fix-number-separators&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.26" DefaultValue="https://addin.datacellia.com/index.html?tool=scale-numbers&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.27" DefaultValue="https://addin.datacellia.com/index.html?tool=clear-zero-values&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.28" DefaultValue="https://addin.datacellia.com/index.html?tool=number-health-check&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.29" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.30" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-time&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.31" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date-time&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.32" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-today&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.33" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-current-time&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.34" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-date-time&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.35" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-lists&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.36" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-tables-by-key&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.37" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-rows&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.38" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-health-check&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.39" DefaultValue="https://addin.datacellia.com/index.html?tool=append-worksheets&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.40" DefaultValue="https://addin.datacellia.com/index.html?tool=append-tables&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.41" DefaultValue="https://addin.datacellia.com/index.html?tool=lookup-from-table&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.42" DefaultValue="https://addin.datacellia.com/index.html?tool=multi-lookup&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.43" DefaultValue="https://addin.datacellia.com/index.html?tool=group-summarize&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.44" DefaultValue="https://addin.datacellia.com/index.html?tool=unpivot-columns&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.45" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-formulas&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.46" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-errors&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.47" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-external-formulas&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.48" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-constants&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.49" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-blanks&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.50" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-inconsistent&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.51" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-data-validation&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.52" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-conditional-formats&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.53" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-locked-cells&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.54" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-unlocked-cells&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.55" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-error-rows&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.56" DefaultValue="https://addin.datacellia.com/index.html?tool=select-formulas&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.57" DefaultValue="https://addin.datacellia.com/index.html?tool=select-constants&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.58" DefaultValue="https://addin.datacellia.com/index.html?tool=select-errors&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.59" DefaultValue="https://addin.datacellia.com/index.html?tool=select-blanks&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.60" DefaultValue="https://addin.datacellia.com/index.html?tool=select-visible-cells&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.61" DefaultValue="https://addin.datacellia.com/index.html?tool=formula-map-summary&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.62" DefaultValue="https://addin.datacellia.com/index.html?tool=extract-formulas-as-text&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.63" DefaultValue="https://addin.datacellia.com/index.html?tool=list-external-formulas&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.64" DefaultValue="https://addin.datacellia.com/index.html?tool=list-named-ranges&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.65" DefaultValue="https://addin.datacellia.com/index.html?tool=list-hyperlinks&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.66" DefaultValue="https://addin.datacellia.com/index.html?tool=list-comments-and-notes&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.67" DefaultValue="https://addin.datacellia.com/index.html?tool=list-worksheets&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.68" DefaultValue="https://addin.datacellia.com/index.html?tool=worksheet-protection-summary&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.69" DefaultValue="https://addin.datacellia.com/index.html?tool=create-dashboard&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.70" DefaultValue="https://addin.datacellia.com/index.html?tool=create-report&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.71" DefaultValue="https://addin.datacellia.com/index.html?tool=executive-dashboard&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.72" DefaultValue="https://addin.datacellia.com/index.html?tool=sales-dashboard&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.73" DefaultValue="https://addin.datacellia.com/index.html?tool=hr-dashboard&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.74" DefaultValue="https://addin.datacellia.com/index.html?tool=finance-dashboard&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.75" DefaultValue="https://addin.datacellia.com/index.html?tool=executive-report&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.76" DefaultValue="https://addin.datacellia.com/index.html?tool=sales-report&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.77" DefaultValue="https://addin.datacellia.com/index.html?tool=hr-report&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.78" DefaultValue="https://addin.datacellia.com/index.html?tool=finance-report&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.79" DefaultValue="https://addin.datacellia.com/index.html?tool=stock-report&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.80" DefaultValue="https://addin.datacellia.com/index.html?tool=project-report&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.81" DefaultValue="https://addin.datacellia.com/index.html?tool=data-quality-report&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.82" DefaultValue="https://addin.datacellia.com/index.html?tool=general-report&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.83" DefaultValue="https://addin.datacellia.com/index.html?tool=create-chart&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.84" DefaultValue="https://addin.datacellia.com/index.html?tool=category-chart&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.85" DefaultValue="https://addin.datacellia.com/index.html?tool=trend-chart&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.86" DefaultValue="https://addin.datacellia.com/index.html?tool=share-chart&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.87" DefaultValue="https://addin.datacellia.com/index.html?tool=target-chart&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.88" DefaultValue="https://addin.datacellia.com/index.html?tool=pareto-chart&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.89" DefaultValue="https://addin.datacellia.com/index.html?tool=create-dropdown-list&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.90" DefaultValue="https://addin.datacellia.com/index.html?tool=set-number-validation&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.91" DefaultValue="https://addin.datacellia.com/index.html?tool=set-date-validation&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.92" DefaultValue="https://addin.datacellia.com/index.html?tool=set-text-length-validation&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.93" DefaultValue="https://addin.datacellia.com/index.html?tool=prevent-duplicate-entry&amp;v=3.33.0.0"/>
+        <bt:Url id="TP.94" DefaultValue="https://addin.datacellia.com/index.html?tool=report-invalid-data&amp;v=3.33.0.0"/>
 <!-- END GENERATED URLS -->
       </bt:Urls>
       <bt:ShortStrings>
