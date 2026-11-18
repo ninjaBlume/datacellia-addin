@@ -5,7 +5,7 @@
            xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
            xsi:type="TaskPaneApp">
   <Id>f69a7bc2-42e8-4e6a-9db8-55c71a75db34</Id>
-  <Version>3.36.0.0</Version>
+  <Version>3.37.0.0</Version>
   <ProviderName>Datacellia</ProviderName>
   <DefaultLocale>tr-TR</DefaultLocale>
   <DisplayName DefaultValue="Datacellia"/>
@@ -26,7 +26,7 @@
     </Sets>
   </Requirements>
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://addin.datacellia.com/index.html?v=3.36.0.0"/>
+    <SourceLocation DefaultValue="https://addin.datacellia.com/index.html?v=3.37.0.0"/>
   </DefaultSettings>
   <Permissions>ReadWriteDocument</Permissions>
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
@@ -1030,11 +1030,11 @@
                     <SourceLocation resid="TP.47"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.highlight-constants">
-                  <Label resid="L.highlight-constants"/>
+                <Item id="Cmd.highlight-inconsistent">
+                  <Label resid="L.highlight-inconsistent"/>
                   <Supertip>
-                    <Title resid="L.highlight-constants"/>
-                    <Description resid="D.highlight-constants"/>
+                    <Title resid="L.highlight-inconsistent"/>
+                    <Description resid="D.highlight-inconsistent"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.48.16"/>
@@ -1047,11 +1047,11 @@
                     <SourceLocation resid="TP.48"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.highlight-blanks">
-                  <Label resid="L.highlight-blanks"/>
+                <Item id="Cmd.highlight-error-rows">
+                  <Label resid="L.highlight-error-rows"/>
                   <Supertip>
-                    <Title resid="L.highlight-blanks"/>
-                    <Description resid="D.highlight-blanks"/>
+                    <Title resid="L.highlight-error-rows"/>
+                    <Description resid="D.highlight-error-rows"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.49.16"/>
@@ -1064,11 +1064,11 @@
                     <SourceLocation resid="TP.49"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.highlight-inconsistent">
-                  <Label resid="L.highlight-inconsistent"/>
+                <Item id="Cmd.formula-map-summary">
+                  <Label resid="L.formula-map-summary"/>
                   <Supertip>
-                    <Title resid="L.highlight-inconsistent"/>
-                    <Description resid="D.highlight-inconsistent"/>
+                    <Title resid="L.formula-map-summary"/>
+                    <Description resid="D.formula-map-summary"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.50.16"/>
@@ -1081,11 +1081,11 @@
                     <SourceLocation resid="TP.50"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.highlight-data-validation">
-                  <Label resid="L.highlight-data-validation"/>
+                <Item id="Cmd.extract-formulas-as-text">
+                  <Label resid="L.extract-formulas-as-text"/>
                   <Supertip>
-                    <Title resid="L.highlight-data-validation"/>
-                    <Description resid="D.highlight-data-validation"/>
+                    <Title resid="L.extract-formulas-as-text"/>
+                    <Description resid="D.extract-formulas-as-text"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.51.16"/>
@@ -1098,11 +1098,11 @@
                     <SourceLocation resid="TP.51"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.highlight-conditional-formats">
-                  <Label resid="L.highlight-conditional-formats"/>
+                <Item id="Cmd.list-external-formulas">
+                  <Label resid="L.list-external-formulas"/>
                   <Supertip>
-                    <Title resid="L.highlight-conditional-formats"/>
-                    <Description resid="D.highlight-conditional-formats"/>
+                    <Title resid="L.list-external-formulas"/>
+                    <Description resid="D.list-external-formulas"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.52.16"/>
@@ -1115,11 +1115,25 @@
                     <SourceLocation resid="TP.52"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.highlight-locked-cells">
-                  <Label resid="L.highlight-locked-cells"/>
+                  </Items>
+                </Control>
+                <Control xsi:type="Menu" id="Menu.selection">
+                  <Label resid="Cat.selection"/>
                   <Supertip>
-                    <Title resid="L.highlight-locked-cells"/>
-                    <Description resid="D.highlight-locked-cells"/>
+                    <Title resid="Cat.selection"/>
+                    <Description resid="MenuDesc.selection"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Category.selection.16"/>
+                    <bt:Image size="32" resid="Category.selection.32"/>
+                    <bt:Image size="80" resid="Category.selection.80"/>
+                  </Icon>
+                  <Items>
+                <Item id="Cmd.highlight-constants">
+                  <Label resid="L.highlight-constants"/>
+                  <Supertip>
+                    <Title resid="L.highlight-constants"/>
+                    <Description resid="D.highlight-constants"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.53.16"/>
@@ -1132,11 +1146,11 @@
                     <SourceLocation resid="TP.53"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.highlight-unlocked-cells">
-                  <Label resid="L.highlight-unlocked-cells"/>
+                <Item id="Cmd.highlight-blanks">
+                  <Label resid="L.highlight-blanks"/>
                   <Supertip>
-                    <Title resid="L.highlight-unlocked-cells"/>
-                    <Description resid="D.highlight-unlocked-cells"/>
+                    <Title resid="L.highlight-blanks"/>
+                    <Description resid="D.highlight-blanks"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.54.16"/>
@@ -1149,11 +1163,11 @@
                     <SourceLocation resid="TP.54"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.highlight-error-rows">
-                  <Label resid="L.highlight-error-rows"/>
+                <Item id="Cmd.highlight-conditional-formats">
+                  <Label resid="L.highlight-conditional-formats"/>
                   <Supertip>
-                    <Title resid="L.highlight-error-rows"/>
-                    <Description resid="D.highlight-error-rows"/>
+                    <Title resid="L.highlight-conditional-formats"/>
+                    <Description resid="D.highlight-conditional-formats"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.55.16"/>
@@ -1251,11 +1265,25 @@
                     <SourceLocation resid="TP.60"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.formula-map-summary">
-                  <Label resid="L.formula-map-summary"/>
+                  </Items>
+                </Control>
+                <Control xsi:type="Menu" id="Menu.workbook">
+                  <Label resid="Cat.workbook"/>
                   <Supertip>
-                    <Title resid="L.formula-map-summary"/>
-                    <Description resid="D.formula-map-summary"/>
+                    <Title resid="Cat.workbook"/>
+                    <Description resid="MenuDesc.workbook"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Category.workbook.16"/>
+                    <bt:Image size="32" resid="Category.workbook.32"/>
+                    <bt:Image size="80" resid="Category.workbook.80"/>
+                  </Icon>
+                  <Items>
+                <Item id="Cmd.highlight-locked-cells">
+                  <Label resid="L.highlight-locked-cells"/>
+                  <Supertip>
+                    <Title resid="L.highlight-locked-cells"/>
+                    <Description resid="D.highlight-locked-cells"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.61.16"/>
@@ -1268,11 +1296,11 @@
                     <SourceLocation resid="TP.61"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.extract-formulas-as-text">
-                  <Label resid="L.extract-formulas-as-text"/>
+                <Item id="Cmd.highlight-unlocked-cells">
+                  <Label resid="L.highlight-unlocked-cells"/>
                   <Supertip>
-                    <Title resid="L.extract-formulas-as-text"/>
-                    <Description resid="D.extract-formulas-as-text"/>
+                    <Title resid="L.highlight-unlocked-cells"/>
+                    <Description resid="D.highlight-unlocked-cells"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.62.16"/>
@@ -1285,11 +1313,11 @@
                     <SourceLocation resid="TP.62"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.list-external-formulas">
-                  <Label resid="L.list-external-formulas"/>
+                <Item id="Cmd.list-named-ranges">
+                  <Label resid="L.list-named-ranges"/>
                   <Supertip>
-                    <Title resid="L.list-external-formulas"/>
-                    <Description resid="D.list-external-formulas"/>
+                    <Title resid="L.list-named-ranges"/>
+                    <Description resid="D.list-named-ranges"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.63.16"/>
@@ -1302,11 +1330,11 @@
                     <SourceLocation resid="TP.63"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.list-named-ranges">
-                  <Label resid="L.list-named-ranges"/>
+                <Item id="Cmd.list-hyperlinks">
+                  <Label resid="L.list-hyperlinks"/>
                   <Supertip>
-                    <Title resid="L.list-named-ranges"/>
-                    <Description resid="D.list-named-ranges"/>
+                    <Title resid="L.list-hyperlinks"/>
+                    <Description resid="D.list-hyperlinks"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.64.16"/>
@@ -1319,11 +1347,11 @@
                     <SourceLocation resid="TP.64"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.list-hyperlinks">
-                  <Label resid="L.list-hyperlinks"/>
+                <Item id="Cmd.list-comments-and-notes">
+                  <Label resid="L.list-comments-and-notes"/>
                   <Supertip>
-                    <Title resid="L.list-hyperlinks"/>
-                    <Description resid="D.list-hyperlinks"/>
+                    <Title resid="L.list-comments-and-notes"/>
+                    <Description resid="D.list-comments-and-notes"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.65.16"/>
@@ -1336,11 +1364,11 @@
                     <SourceLocation resid="TP.65"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.list-comments-and-notes">
-                  <Label resid="L.list-comments-and-notes"/>
+                <Item id="Cmd.list-worksheets">
+                  <Label resid="L.list-worksheets"/>
                   <Supertip>
-                    <Title resid="L.list-comments-and-notes"/>
-                    <Description resid="D.list-comments-and-notes"/>
+                    <Title resid="L.list-worksheets"/>
+                    <Description resid="D.list-worksheets"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.66.16"/>
@@ -1353,11 +1381,11 @@
                     <SourceLocation resid="TP.66"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.list-worksheets">
-                  <Label resid="L.list-worksheets"/>
+                <Item id="Cmd.worksheet-protection-summary">
+                  <Label resid="L.worksheet-protection-summary"/>
                   <Supertip>
-                    <Title resid="L.list-worksheets"/>
-                    <Description resid="D.list-worksheets"/>
+                    <Title resid="L.worksheet-protection-summary"/>
+                    <Description resid="D.worksheet-protection-summary"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.67.16"/>
@@ -1368,23 +1396,6 @@
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.67"/>
-                  </Action>
-                </Item>
-                <Item id="Cmd.worksheet-protection-summary">
-                  <Label resid="L.worksheet-protection-summary"/>
-                  <Supertip>
-                    <Title resid="L.worksheet-protection-summary"/>
-                    <Description resid="D.worksheet-protection-summary"/>
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Tool.68.16"/>
-                    <bt:Image size="32" resid="Tool.68.32"/>
-                    <bt:Image size="80" resid="Tool.68.80"/>
-                    <bt:Image size="64" resid="Tool.68.16"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.68"/>
                   </Action>
                 </Item>
                   </Items>
@@ -1408,6 +1419,23 @@
                     <Description resid="D.create-dropdown-list"/>
                   </Supertip>
                   <Icon>
+                    <bt:Image size="16" resid="Tool.88.16"/>
+                    <bt:Image size="32" resid="Tool.88.32"/>
+                    <bt:Image size="80" resid="Tool.88.80"/>
+                    <bt:Image size="64" resid="Tool.88.16"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.88"/>
+                  </Action>
+                </Item>
+                <Item id="Cmd.set-number-validation">
+                  <Label resid="L.set-number-validation"/>
+                  <Supertip>
+                    <Title resid="L.set-number-validation"/>
+                    <Description resid="D.set-number-validation"/>
+                  </Supertip>
+                  <Icon>
                     <bt:Image size="16" resid="Tool.89.16"/>
                     <bt:Image size="32" resid="Tool.89.32"/>
                     <bt:Image size="80" resid="Tool.89.80"/>
@@ -1418,11 +1446,11 @@
                     <SourceLocation resid="TP.89"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.set-number-validation">
-                  <Label resid="L.set-number-validation"/>
+                <Item id="Cmd.set-date-validation">
+                  <Label resid="L.set-date-validation"/>
                   <Supertip>
-                    <Title resid="L.set-number-validation"/>
-                    <Description resid="D.set-number-validation"/>
+                    <Title resid="L.set-date-validation"/>
+                    <Description resid="D.set-date-validation"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.90.16"/>
@@ -1435,11 +1463,11 @@
                     <SourceLocation resid="TP.90"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.set-date-validation">
-                  <Label resid="L.set-date-validation"/>
+                <Item id="Cmd.set-text-length-validation">
+                  <Label resid="L.set-text-length-validation"/>
                   <Supertip>
-                    <Title resid="L.set-date-validation"/>
-                    <Description resid="D.set-date-validation"/>
+                    <Title resid="L.set-text-length-validation"/>
+                    <Description resid="D.set-text-length-validation"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.91.16"/>
@@ -1452,11 +1480,11 @@
                     <SourceLocation resid="TP.91"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.set-text-length-validation">
-                  <Label resid="L.set-text-length-validation"/>
+                <Item id="Cmd.prevent-duplicate-entry">
+                  <Label resid="L.prevent-duplicate-entry"/>
                   <Supertip>
-                    <Title resid="L.set-text-length-validation"/>
-                    <Description resid="D.set-text-length-validation"/>
+                    <Title resid="L.prevent-duplicate-entry"/>
+                    <Description resid="D.prevent-duplicate-entry"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.92.16"/>
@@ -1469,11 +1497,11 @@
                     <SourceLocation resid="TP.92"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.prevent-duplicate-entry">
-                  <Label resid="L.prevent-duplicate-entry"/>
+                <Item id="Cmd.report-invalid-data">
+                  <Label resid="L.report-invalid-data"/>
                   <Supertip>
-                    <Title resid="L.prevent-duplicate-entry"/>
-                    <Description resid="D.prevent-duplicate-entry"/>
+                    <Title resid="L.report-invalid-data"/>
+                    <Description resid="D.report-invalid-data"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.93.16"/>
@@ -1486,11 +1514,11 @@
                     <SourceLocation resid="TP.93"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.report-invalid-data">
-                  <Label resid="L.report-invalid-data"/>
+                <Item id="Cmd.highlight-data-validation">
+                  <Label resid="L.highlight-data-validation"/>
                   <Supertip>
-                    <Title resid="L.report-invalid-data"/>
-                    <Description resid="D.report-invalid-data"/>
+                    <Title resid="L.highlight-data-validation"/>
+                    <Description resid="D.highlight-data-validation"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.94.16"/>
@@ -1532,6 +1560,23 @@
                     <Description resid="D.create-chart"/>
                   </Supertip>
                   <Icon>
+                    <bt:Image size="16" resid="Tool.82.16"/>
+                    <bt:Image size="32" resid="Tool.82.32"/>
+                    <bt:Image size="80" resid="Tool.82.80"/>
+                    <bt:Image size="64" resid="Tool.82.16"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.82"/>
+                  </Action>
+                </Item>
+                <Item id="Cmd.category-chart">
+                  <Label resid="L.category-chart"/>
+                  <Supertip>
+                    <Title resid="L.category-chart"/>
+                    <Description resid="D.category-chart"/>
+                  </Supertip>
+                  <Icon>
                     <bt:Image size="16" resid="Tool.83.16"/>
                     <bt:Image size="32" resid="Tool.83.32"/>
                     <bt:Image size="80" resid="Tool.83.80"/>
@@ -1542,11 +1587,11 @@
                     <SourceLocation resid="TP.83"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.category-chart">
-                  <Label resid="L.category-chart"/>
+                <Item id="Cmd.trend-chart">
+                  <Label resid="L.trend-chart"/>
                   <Supertip>
-                    <Title resid="L.category-chart"/>
-                    <Description resid="D.category-chart"/>
+                    <Title resid="L.trend-chart"/>
+                    <Description resid="D.trend-chart"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.84.16"/>
@@ -1559,11 +1604,11 @@
                     <SourceLocation resid="TP.84"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.trend-chart">
-                  <Label resid="L.trend-chart"/>
+                <Item id="Cmd.share-chart">
+                  <Label resid="L.share-chart"/>
                   <Supertip>
-                    <Title resid="L.trend-chart"/>
-                    <Description resid="D.trend-chart"/>
+                    <Title resid="L.share-chart"/>
+                    <Description resid="D.share-chart"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.85.16"/>
@@ -1576,11 +1621,11 @@
                     <SourceLocation resid="TP.85"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.share-chart">
-                  <Label resid="L.share-chart"/>
+                <Item id="Cmd.target-chart">
+                  <Label resid="L.target-chart"/>
                   <Supertip>
-                    <Title resid="L.share-chart"/>
-                    <Description resid="D.share-chart"/>
+                    <Title resid="L.target-chart"/>
+                    <Description resid="D.target-chart"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.86.16"/>
@@ -1593,11 +1638,11 @@
                     <SourceLocation resid="TP.86"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.target-chart">
-                  <Label resid="L.target-chart"/>
+                <Item id="Cmd.pareto-chart">
+                  <Label resid="L.pareto-chart"/>
                   <Supertip>
-                    <Title resid="L.target-chart"/>
-                    <Description resid="D.target-chart"/>
+                    <Title resid="L.pareto-chart"/>
+                    <Description resid="D.pareto-chart"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.87.16"/>
@@ -1608,23 +1653,6 @@
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.87"/>
-                  </Action>
-                </Item>
-                <Item id="Cmd.pareto-chart">
-                  <Label resid="L.pareto-chart"/>
-                  <Supertip>
-                    <Title resid="L.pareto-chart"/>
-                    <Description resid="D.pareto-chart"/>
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Tool.88.16"/>
-                    <bt:Image size="32" resid="Tool.88.32"/>
-                    <bt:Image size="80" resid="Tool.88.80"/>
-                    <bt:Image size="64" resid="Tool.88.16"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.88"/>
                   </Action>
                 </Item>
                   </Items>
@@ -1648,6 +1676,23 @@
                     <Description resid="D.create-dashboard"/>
                   </Supertip>
                   <Icon>
+                    <bt:Image size="16" resid="Tool.68.16"/>
+                    <bt:Image size="32" resid="Tool.68.32"/>
+                    <bt:Image size="80" resid="Tool.68.80"/>
+                    <bt:Image size="64" resid="Tool.68.16"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
+                    <SourceLocation resid="TP.68"/>
+                  </Action>
+                </Item>
+                <Item id="Cmd.create-report">
+                  <Label resid="L.create-report"/>
+                  <Supertip>
+                    <Title resid="L.create-report"/>
+                    <Description resid="D.create-report"/>
+                  </Supertip>
+                  <Icon>
                     <bt:Image size="16" resid="Tool.69.16"/>
                     <bt:Image size="32" resid="Tool.69.32"/>
                     <bt:Image size="80" resid="Tool.69.80"/>
@@ -1658,11 +1703,11 @@
                     <SourceLocation resid="TP.69"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.create-report">
-                  <Label resid="L.create-report"/>
+                <Item id="Cmd.executive-dashboard">
+                  <Label resid="L.executive-dashboard"/>
                   <Supertip>
-                    <Title resid="L.create-report"/>
-                    <Description resid="D.create-report"/>
+                    <Title resid="L.executive-dashboard"/>
+                    <Description resid="D.executive-dashboard"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.70.16"/>
@@ -1675,11 +1720,11 @@
                     <SourceLocation resid="TP.70"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.executive-dashboard">
-                  <Label resid="L.executive-dashboard"/>
+                <Item id="Cmd.sales-dashboard">
+                  <Label resid="L.sales-dashboard"/>
                   <Supertip>
-                    <Title resid="L.executive-dashboard"/>
-                    <Description resid="D.executive-dashboard"/>
+                    <Title resid="L.sales-dashboard"/>
+                    <Description resid="D.sales-dashboard"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.71.16"/>
@@ -1692,11 +1737,11 @@
                     <SourceLocation resid="TP.71"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.sales-dashboard">
-                  <Label resid="L.sales-dashboard"/>
+                <Item id="Cmd.hr-dashboard">
+                  <Label resid="L.hr-dashboard"/>
                   <Supertip>
-                    <Title resid="L.sales-dashboard"/>
-                    <Description resid="D.sales-dashboard"/>
+                    <Title resid="L.hr-dashboard"/>
+                    <Description resid="D.hr-dashboard"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.72.16"/>
@@ -1709,11 +1754,11 @@
                     <SourceLocation resid="TP.72"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.hr-dashboard">
-                  <Label resid="L.hr-dashboard"/>
+                <Item id="Cmd.finance-dashboard">
+                  <Label resid="L.finance-dashboard"/>
                   <Supertip>
-                    <Title resid="L.hr-dashboard"/>
-                    <Description resid="D.hr-dashboard"/>
+                    <Title resid="L.finance-dashboard"/>
+                    <Description resid="D.finance-dashboard"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.73.16"/>
@@ -1726,11 +1771,11 @@
                     <SourceLocation resid="TP.73"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.finance-dashboard">
-                  <Label resid="L.finance-dashboard"/>
+                <Item id="Cmd.executive-report">
+                  <Label resid="L.executive-report"/>
                   <Supertip>
-                    <Title resid="L.finance-dashboard"/>
-                    <Description resid="D.finance-dashboard"/>
+                    <Title resid="L.executive-report"/>
+                    <Description resid="D.executive-report"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.74.16"/>
@@ -1743,11 +1788,11 @@
                     <SourceLocation resid="TP.74"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.executive-report">
-                  <Label resid="L.executive-report"/>
+                <Item id="Cmd.sales-report">
+                  <Label resid="L.sales-report"/>
                   <Supertip>
-                    <Title resid="L.executive-report"/>
-                    <Description resid="D.executive-report"/>
+                    <Title resid="L.sales-report"/>
+                    <Description resid="D.sales-report"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.75.16"/>
@@ -1760,11 +1805,11 @@
                     <SourceLocation resid="TP.75"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.sales-report">
-                  <Label resid="L.sales-report"/>
+                <Item id="Cmd.hr-report">
+                  <Label resid="L.hr-report"/>
                   <Supertip>
-                    <Title resid="L.sales-report"/>
-                    <Description resid="D.sales-report"/>
+                    <Title resid="L.hr-report"/>
+                    <Description resid="D.hr-report"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.76.16"/>
@@ -1777,11 +1822,11 @@
                     <SourceLocation resid="TP.76"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.hr-report">
-                  <Label resid="L.hr-report"/>
+                <Item id="Cmd.finance-report">
+                  <Label resid="L.finance-report"/>
                   <Supertip>
-                    <Title resid="L.hr-report"/>
-                    <Description resid="D.hr-report"/>
+                    <Title resid="L.finance-report"/>
+                    <Description resid="D.finance-report"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.77.16"/>
@@ -1794,11 +1839,11 @@
                     <SourceLocation resid="TP.77"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.finance-report">
-                  <Label resid="L.finance-report"/>
+                <Item id="Cmd.stock-report">
+                  <Label resid="L.stock-report"/>
                   <Supertip>
-                    <Title resid="L.finance-report"/>
-                    <Description resid="D.finance-report"/>
+                    <Title resid="L.stock-report"/>
+                    <Description resid="D.stock-report"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.78.16"/>
@@ -1811,11 +1856,11 @@
                     <SourceLocation resid="TP.78"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.stock-report">
-                  <Label resid="L.stock-report"/>
+                <Item id="Cmd.project-report">
+                  <Label resid="L.project-report"/>
                   <Supertip>
-                    <Title resid="L.stock-report"/>
-                    <Description resid="D.stock-report"/>
+                    <Title resid="L.project-report"/>
+                    <Description resid="D.project-report"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.79.16"/>
@@ -1828,11 +1873,11 @@
                     <SourceLocation resid="TP.79"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.project-report">
-                  <Label resid="L.project-report"/>
+                <Item id="Cmd.data-quality-report">
+                  <Label resid="L.data-quality-report"/>
                   <Supertip>
-                    <Title resid="L.project-report"/>
-                    <Description resid="D.project-report"/>
+                    <Title resid="L.data-quality-report"/>
+                    <Description resid="D.data-quality-report"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.80.16"/>
@@ -1845,11 +1890,11 @@
                     <SourceLocation resid="TP.80"/>
                   </Action>
                 </Item>
-                <Item id="Cmd.data-quality-report">
-                  <Label resid="L.data-quality-report"/>
+                <Item id="Cmd.general-report">
+                  <Label resid="L.general-report"/>
                   <Supertip>
-                    <Title resid="L.data-quality-report"/>
-                    <Description resid="D.data-quality-report"/>
+                    <Title resid="L.general-report"/>
+                    <Description resid="D.general-report"/>
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="Tool.81.16"/>
@@ -1860,23 +1905,6 @@
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
                     <SourceLocation resid="TP.81"/>
-                  </Action>
-                </Item>
-                <Item id="Cmd.general-report">
-                  <Label resid="L.general-report"/>
-                  <Supertip>
-                    <Title resid="L.general-report"/>
-                    <Description resid="D.general-report"/>
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Tool.82.16"/>
-                    <bt:Image size="32" resid="Tool.82.32"/>
-                    <bt:Image size="80" resid="Tool.82.80"/>
-                    <bt:Image size="64" resid="Tool.82.16"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.82"/>
                   </Action>
                 </Item>
                   </Items>
@@ -2083,259 +2111,265 @@
         <bt:Image id="Tool.47.16" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-external-formulas-c5ebd2df-16.png"/>
         <bt:Image id="Tool.47.32" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-external-formulas-c5ebd2df-32.png"/>
         <bt:Image id="Tool.47.80" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-external-formulas-c5ebd2df-80.png"/>
-        <bt:Image id="Tool.48.16" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-constants-f449ae0c-16.png"/>
-        <bt:Image id="Tool.48.32" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-constants-f449ae0c-32.png"/>
-        <bt:Image id="Tool.48.80" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-constants-f449ae0c-80.png"/>
-        <bt:Image id="Tool.49.16" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-blanks-06b759d2-16.png"/>
-        <bt:Image id="Tool.49.32" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-blanks-06b759d2-32.png"/>
-        <bt:Image id="Tool.49.80" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-blanks-06b759d2-80.png"/>
-        <bt:Image id="Tool.50.16" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-inconsistent-e7ea3c00-16.png"/>
-        <bt:Image id="Tool.50.32" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-inconsistent-e7ea3c00-32.png"/>
-        <bt:Image id="Tool.50.80" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-inconsistent-e7ea3c00-80.png"/>
-        <bt:Image id="Tool.51.16" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-data-validation-f63d3eef-16.png"/>
-        <bt:Image id="Tool.51.32" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-data-validation-f63d3eef-32.png"/>
-        <bt:Image id="Tool.51.80" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-data-validation-f63d3eef-80.png"/>
-        <bt:Image id="Tool.52.16" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-conditional-formats-f3748d67-16.png"/>
-        <bt:Image id="Tool.52.32" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-conditional-formats-f3748d67-32.png"/>
-        <bt:Image id="Tool.52.80" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-conditional-formats-f3748d67-80.png"/>
-        <bt:Image id="Tool.53.16" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-locked-cells-3794c037-16.png"/>
-        <bt:Image id="Tool.53.32" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-locked-cells-3794c037-32.png"/>
-        <bt:Image id="Tool.53.80" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-locked-cells-3794c037-80.png"/>
-        <bt:Image id="Tool.54.16" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-unlocked-cells-55d5df04-16.png"/>
-        <bt:Image id="Tool.54.32" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-unlocked-cells-55d5df04-32.png"/>
-        <bt:Image id="Tool.54.80" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-unlocked-cells-55d5df04-80.png"/>
-        <bt:Image id="Tool.55.16" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-error-rows-71d062a3-16.png"/>
-        <bt:Image id="Tool.55.32" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-error-rows-71d062a3-32.png"/>
-        <bt:Image id="Tool.55.80" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-error-rows-71d062a3-80.png"/>
-        <bt:Image id="Tool.56.16" DefaultValue="https://addin.datacellia.com/icons/tools/select-formulas-6a05e47f-16.png"/>
-        <bt:Image id="Tool.56.32" DefaultValue="https://addin.datacellia.com/icons/tools/select-formulas-6a05e47f-32.png"/>
-        <bt:Image id="Tool.56.80" DefaultValue="https://addin.datacellia.com/icons/tools/select-formulas-6a05e47f-80.png"/>
-        <bt:Image id="Tool.57.16" DefaultValue="https://addin.datacellia.com/icons/tools/select-constants-d62a27de-16.png"/>
-        <bt:Image id="Tool.57.32" DefaultValue="https://addin.datacellia.com/icons/tools/select-constants-d62a27de-32.png"/>
-        <bt:Image id="Tool.57.80" DefaultValue="https://addin.datacellia.com/icons/tools/select-constants-d62a27de-80.png"/>
-        <bt:Image id="Tool.58.16" DefaultValue="https://addin.datacellia.com/icons/tools/select-errors-af6e5f7e-16.png"/>
-        <bt:Image id="Tool.58.32" DefaultValue="https://addin.datacellia.com/icons/tools/select-errors-af6e5f7e-32.png"/>
-        <bt:Image id="Tool.58.80" DefaultValue="https://addin.datacellia.com/icons/tools/select-errors-af6e5f7e-80.png"/>
-        <bt:Image id="Tool.59.16" DefaultValue="https://addin.datacellia.com/icons/tools/select-blanks-2294d9da-16.png"/>
-        <bt:Image id="Tool.59.32" DefaultValue="https://addin.datacellia.com/icons/tools/select-blanks-2294d9da-32.png"/>
-        <bt:Image id="Tool.59.80" DefaultValue="https://addin.datacellia.com/icons/tools/select-blanks-2294d9da-80.png"/>
-        <bt:Image id="Tool.60.16" DefaultValue="https://addin.datacellia.com/icons/tools/select-visible-cells-a1985e53-16.png"/>
-        <bt:Image id="Tool.60.32" DefaultValue="https://addin.datacellia.com/icons/tools/select-visible-cells-a1985e53-32.png"/>
-        <bt:Image id="Tool.60.80" DefaultValue="https://addin.datacellia.com/icons/tools/select-visible-cells-a1985e53-80.png"/>
-        <bt:Image id="Tool.61.16" DefaultValue="https://addin.datacellia.com/icons/tools/formula-map-summary-16efa45e-16.png"/>
-        <bt:Image id="Tool.61.32" DefaultValue="https://addin.datacellia.com/icons/tools/formula-map-summary-16efa45e-32.png"/>
-        <bt:Image id="Tool.61.80" DefaultValue="https://addin.datacellia.com/icons/tools/formula-map-summary-16efa45e-80.png"/>
-        <bt:Image id="Tool.62.16" DefaultValue="https://addin.datacellia.com/icons/tools/extract-formulas-as-text-4ce20532-16.png"/>
-        <bt:Image id="Tool.62.32" DefaultValue="https://addin.datacellia.com/icons/tools/extract-formulas-as-text-4ce20532-32.png"/>
-        <bt:Image id="Tool.62.80" DefaultValue="https://addin.datacellia.com/icons/tools/extract-formulas-as-text-4ce20532-80.png"/>
-        <bt:Image id="Tool.63.16" DefaultValue="https://addin.datacellia.com/icons/tools/list-external-formulas-37d39870-16.png"/>
-        <bt:Image id="Tool.63.32" DefaultValue="https://addin.datacellia.com/icons/tools/list-external-formulas-37d39870-32.png"/>
-        <bt:Image id="Tool.63.80" DefaultValue="https://addin.datacellia.com/icons/tools/list-external-formulas-37d39870-80.png"/>
-        <bt:Image id="Tool.64.16" DefaultValue="https://addin.datacellia.com/icons/tools/list-named-ranges-4d8ee97c-16.png"/>
-        <bt:Image id="Tool.64.32" DefaultValue="https://addin.datacellia.com/icons/tools/list-named-ranges-4d8ee97c-32.png"/>
-        <bt:Image id="Tool.64.80" DefaultValue="https://addin.datacellia.com/icons/tools/list-named-ranges-4d8ee97c-80.png"/>
-        <bt:Image id="Tool.65.16" DefaultValue="https://addin.datacellia.com/icons/tools/list-hyperlinks-ae67494a-16.png"/>
-        <bt:Image id="Tool.65.32" DefaultValue="https://addin.datacellia.com/icons/tools/list-hyperlinks-ae67494a-32.png"/>
-        <bt:Image id="Tool.65.80" DefaultValue="https://addin.datacellia.com/icons/tools/list-hyperlinks-ae67494a-80.png"/>
-        <bt:Image id="Tool.66.16" DefaultValue="https://addin.datacellia.com/icons/tools/list-comments-and-notes-6b8ade27-16.png"/>
-        <bt:Image id="Tool.66.32" DefaultValue="https://addin.datacellia.com/icons/tools/list-comments-and-notes-6b8ade27-32.png"/>
-        <bt:Image id="Tool.66.80" DefaultValue="https://addin.datacellia.com/icons/tools/list-comments-and-notes-6b8ade27-80.png"/>
-        <bt:Image id="Tool.67.16" DefaultValue="https://addin.datacellia.com/icons/tools/list-worksheets-f1d55320-16.png"/>
-        <bt:Image id="Tool.67.32" DefaultValue="https://addin.datacellia.com/icons/tools/list-worksheets-f1d55320-32.png"/>
-        <bt:Image id="Tool.67.80" DefaultValue="https://addin.datacellia.com/icons/tools/list-worksheets-f1d55320-80.png"/>
-        <bt:Image id="Tool.68.16" DefaultValue="https://addin.datacellia.com/icons/tools/worksheet-protection-summary-8bc5ebdd-16.png"/>
-        <bt:Image id="Tool.68.32" DefaultValue="https://addin.datacellia.com/icons/tools/worksheet-protection-summary-8bc5ebdd-32.png"/>
-        <bt:Image id="Tool.68.80" DefaultValue="https://addin.datacellia.com/icons/tools/worksheet-protection-summary-8bc5ebdd-80.png"/>
+        <bt:Image id="Tool.48.16" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-inconsistent-e7ea3c00-16.png"/>
+        <bt:Image id="Tool.48.32" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-inconsistent-e7ea3c00-32.png"/>
+        <bt:Image id="Tool.48.80" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-inconsistent-e7ea3c00-80.png"/>
+        <bt:Image id="Tool.49.16" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-error-rows-71d062a3-16.png"/>
+        <bt:Image id="Tool.49.32" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-error-rows-71d062a3-32.png"/>
+        <bt:Image id="Tool.49.80" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-error-rows-71d062a3-80.png"/>
+        <bt:Image id="Tool.50.16" DefaultValue="https://addin.datacellia.com/icons/tools/formula-map-summary-16efa45e-16.png"/>
+        <bt:Image id="Tool.50.32" DefaultValue="https://addin.datacellia.com/icons/tools/formula-map-summary-16efa45e-32.png"/>
+        <bt:Image id="Tool.50.80" DefaultValue="https://addin.datacellia.com/icons/tools/formula-map-summary-16efa45e-80.png"/>
+        <bt:Image id="Tool.51.16" DefaultValue="https://addin.datacellia.com/icons/tools/extract-formulas-as-text-4ce20532-16.png"/>
+        <bt:Image id="Tool.51.32" DefaultValue="https://addin.datacellia.com/icons/tools/extract-formulas-as-text-4ce20532-32.png"/>
+        <bt:Image id="Tool.51.80" DefaultValue="https://addin.datacellia.com/icons/tools/extract-formulas-as-text-4ce20532-80.png"/>
+        <bt:Image id="Tool.52.16" DefaultValue="https://addin.datacellia.com/icons/tools/list-external-formulas-37d39870-16.png"/>
+        <bt:Image id="Tool.52.32" DefaultValue="https://addin.datacellia.com/icons/tools/list-external-formulas-37d39870-32.png"/>
+        <bt:Image id="Tool.52.80" DefaultValue="https://addin.datacellia.com/icons/tools/list-external-formulas-37d39870-80.png"/>
+        <bt:Image id="Category.selection.16" DefaultValue="https://addin.datacellia.com/icons/tools/category-selection-73cb437b-16.png"/>
+        <bt:Image id="Category.selection.32" DefaultValue="https://addin.datacellia.com/icons/tools/category-selection-73cb437b-32.png"/>
+        <bt:Image id="Category.selection.80" DefaultValue="https://addin.datacellia.com/icons/tools/category-selection-73cb437b-80.png"/>
+        <bt:Image id="Tool.53.16" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-constants-18ee0e9b-16.png"/>
+        <bt:Image id="Tool.53.32" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-constants-18ee0e9b-32.png"/>
+        <bt:Image id="Tool.53.80" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-constants-18ee0e9b-80.png"/>
+        <bt:Image id="Tool.54.16" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-blanks-2d819974-16.png"/>
+        <bt:Image id="Tool.54.32" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-blanks-2d819974-32.png"/>
+        <bt:Image id="Tool.54.80" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-blanks-2d819974-80.png"/>
+        <bt:Image id="Tool.55.16" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-conditional-formats-214d1c43-16.png"/>
+        <bt:Image id="Tool.55.32" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-conditional-formats-214d1c43-32.png"/>
+        <bt:Image id="Tool.55.80" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-conditional-formats-214d1c43-80.png"/>
+        <bt:Image id="Tool.56.16" DefaultValue="https://addin.datacellia.com/icons/tools/select-formulas-0b97ae24-16.png"/>
+        <bt:Image id="Tool.56.32" DefaultValue="https://addin.datacellia.com/icons/tools/select-formulas-0b97ae24-32.png"/>
+        <bt:Image id="Tool.56.80" DefaultValue="https://addin.datacellia.com/icons/tools/select-formulas-0b97ae24-80.png"/>
+        <bt:Image id="Tool.57.16" DefaultValue="https://addin.datacellia.com/icons/tools/select-constants-4cfdf627-16.png"/>
+        <bt:Image id="Tool.57.32" DefaultValue="https://addin.datacellia.com/icons/tools/select-constants-4cfdf627-32.png"/>
+        <bt:Image id="Tool.57.80" DefaultValue="https://addin.datacellia.com/icons/tools/select-constants-4cfdf627-80.png"/>
+        <bt:Image id="Tool.58.16" DefaultValue="https://addin.datacellia.com/icons/tools/select-errors-b28e3796-16.png"/>
+        <bt:Image id="Tool.58.32" DefaultValue="https://addin.datacellia.com/icons/tools/select-errors-b28e3796-32.png"/>
+        <bt:Image id="Tool.58.80" DefaultValue="https://addin.datacellia.com/icons/tools/select-errors-b28e3796-80.png"/>
+        <bt:Image id="Tool.59.16" DefaultValue="https://addin.datacellia.com/icons/tools/select-blanks-e6cc6582-16.png"/>
+        <bt:Image id="Tool.59.32" DefaultValue="https://addin.datacellia.com/icons/tools/select-blanks-e6cc6582-32.png"/>
+        <bt:Image id="Tool.59.80" DefaultValue="https://addin.datacellia.com/icons/tools/select-blanks-e6cc6582-80.png"/>
+        <bt:Image id="Tool.60.16" DefaultValue="https://addin.datacellia.com/icons/tools/select-visible-cells-b4d38610-16.png"/>
+        <bt:Image id="Tool.60.32" DefaultValue="https://addin.datacellia.com/icons/tools/select-visible-cells-b4d38610-32.png"/>
+        <bt:Image id="Tool.60.80" DefaultValue="https://addin.datacellia.com/icons/tools/select-visible-cells-b4d38610-80.png"/>
+        <bt:Image id="Category.workbook.16" DefaultValue="https://addin.datacellia.com/icons/tools/category-workbook-b6c20195-16.png"/>
+        <bt:Image id="Category.workbook.32" DefaultValue="https://addin.datacellia.com/icons/tools/category-workbook-b6c20195-32.png"/>
+        <bt:Image id="Category.workbook.80" DefaultValue="https://addin.datacellia.com/icons/tools/category-workbook-b6c20195-80.png"/>
+        <bt:Image id="Tool.61.16" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-locked-cells-1030f8fb-16.png"/>
+        <bt:Image id="Tool.61.32" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-locked-cells-1030f8fb-32.png"/>
+        <bt:Image id="Tool.61.80" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-locked-cells-1030f8fb-80.png"/>
+        <bt:Image id="Tool.62.16" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-unlocked-cells-a4ae034d-16.png"/>
+        <bt:Image id="Tool.62.32" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-unlocked-cells-a4ae034d-32.png"/>
+        <bt:Image id="Tool.62.80" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-unlocked-cells-a4ae034d-80.png"/>
+        <bt:Image id="Tool.63.16" DefaultValue="https://addin.datacellia.com/icons/tools/list-named-ranges-cda73f9f-16.png"/>
+        <bt:Image id="Tool.63.32" DefaultValue="https://addin.datacellia.com/icons/tools/list-named-ranges-cda73f9f-32.png"/>
+        <bt:Image id="Tool.63.80" DefaultValue="https://addin.datacellia.com/icons/tools/list-named-ranges-cda73f9f-80.png"/>
+        <bt:Image id="Tool.64.16" DefaultValue="https://addin.datacellia.com/icons/tools/list-hyperlinks-e9436a29-16.png"/>
+        <bt:Image id="Tool.64.32" DefaultValue="https://addin.datacellia.com/icons/tools/list-hyperlinks-e9436a29-32.png"/>
+        <bt:Image id="Tool.64.80" DefaultValue="https://addin.datacellia.com/icons/tools/list-hyperlinks-e9436a29-80.png"/>
+        <bt:Image id="Tool.65.16" DefaultValue="https://addin.datacellia.com/icons/tools/list-comments-and-notes-0785fbd1-16.png"/>
+        <bt:Image id="Tool.65.32" DefaultValue="https://addin.datacellia.com/icons/tools/list-comments-and-notes-0785fbd1-32.png"/>
+        <bt:Image id="Tool.65.80" DefaultValue="https://addin.datacellia.com/icons/tools/list-comments-and-notes-0785fbd1-80.png"/>
+        <bt:Image id="Tool.66.16" DefaultValue="https://addin.datacellia.com/icons/tools/list-worksheets-29424d7e-16.png"/>
+        <bt:Image id="Tool.66.32" DefaultValue="https://addin.datacellia.com/icons/tools/list-worksheets-29424d7e-32.png"/>
+        <bt:Image id="Tool.66.80" DefaultValue="https://addin.datacellia.com/icons/tools/list-worksheets-29424d7e-80.png"/>
+        <bt:Image id="Tool.67.16" DefaultValue="https://addin.datacellia.com/icons/tools/worksheet-protection-summary-b42bae92-16.png"/>
+        <bt:Image id="Tool.67.32" DefaultValue="https://addin.datacellia.com/icons/tools/worksheet-protection-summary-b42bae92-32.png"/>
+        <bt:Image id="Tool.67.80" DefaultValue="https://addin.datacellia.com/icons/tools/worksheet-protection-summary-b42bae92-80.png"/>
         <bt:Image id="Category.reporting.16" DefaultValue="https://addin.datacellia.com/icons/tools/category-reporting-8533e621-16.png"/>
         <bt:Image id="Category.reporting.32" DefaultValue="https://addin.datacellia.com/icons/tools/category-reporting-8533e621-32.png"/>
         <bt:Image id="Category.reporting.80" DefaultValue="https://addin.datacellia.com/icons/tools/category-reporting-8533e621-80.png"/>
-        <bt:Image id="Tool.69.16" DefaultValue="https://addin.datacellia.com/icons/tools/create-dashboard-abced842-16.png"/>
-        <bt:Image id="Tool.69.32" DefaultValue="https://addin.datacellia.com/icons/tools/create-dashboard-abced842-32.png"/>
-        <bt:Image id="Tool.69.80" DefaultValue="https://addin.datacellia.com/icons/tools/create-dashboard-abced842-80.png"/>
-        <bt:Image id="Tool.70.16" DefaultValue="https://addin.datacellia.com/icons/tools/create-report-4deaa170-16.png"/>
-        <bt:Image id="Tool.70.32" DefaultValue="https://addin.datacellia.com/icons/tools/create-report-4deaa170-32.png"/>
-        <bt:Image id="Tool.70.80" DefaultValue="https://addin.datacellia.com/icons/tools/create-report-4deaa170-80.png"/>
-        <bt:Image id="Tool.71.16" DefaultValue="https://addin.datacellia.com/icons/tools/executive-dashboard-27c16c6c-16.png"/>
-        <bt:Image id="Tool.71.32" DefaultValue="https://addin.datacellia.com/icons/tools/executive-dashboard-27c16c6c-32.png"/>
-        <bt:Image id="Tool.71.80" DefaultValue="https://addin.datacellia.com/icons/tools/executive-dashboard-27c16c6c-80.png"/>
-        <bt:Image id="Tool.72.16" DefaultValue="https://addin.datacellia.com/icons/tools/sales-dashboard-bb733517-16.png"/>
-        <bt:Image id="Tool.72.32" DefaultValue="https://addin.datacellia.com/icons/tools/sales-dashboard-bb733517-32.png"/>
-        <bt:Image id="Tool.72.80" DefaultValue="https://addin.datacellia.com/icons/tools/sales-dashboard-bb733517-80.png"/>
-        <bt:Image id="Tool.73.16" DefaultValue="https://addin.datacellia.com/icons/tools/hr-dashboard-99f85785-16.png"/>
-        <bt:Image id="Tool.73.32" DefaultValue="https://addin.datacellia.com/icons/tools/hr-dashboard-99f85785-32.png"/>
-        <bt:Image id="Tool.73.80" DefaultValue="https://addin.datacellia.com/icons/tools/hr-dashboard-99f85785-80.png"/>
-        <bt:Image id="Tool.74.16" DefaultValue="https://addin.datacellia.com/icons/tools/finance-dashboard-9c5bd1ed-16.png"/>
-        <bt:Image id="Tool.74.32" DefaultValue="https://addin.datacellia.com/icons/tools/finance-dashboard-9c5bd1ed-32.png"/>
-        <bt:Image id="Tool.74.80" DefaultValue="https://addin.datacellia.com/icons/tools/finance-dashboard-9c5bd1ed-80.png"/>
-        <bt:Image id="Tool.75.16" DefaultValue="https://addin.datacellia.com/icons/tools/executive-report-87c93268-16.png"/>
-        <bt:Image id="Tool.75.32" DefaultValue="https://addin.datacellia.com/icons/tools/executive-report-87c93268-32.png"/>
-        <bt:Image id="Tool.75.80" DefaultValue="https://addin.datacellia.com/icons/tools/executive-report-87c93268-80.png"/>
-        <bt:Image id="Tool.76.16" DefaultValue="https://addin.datacellia.com/icons/tools/sales-report-de3c0c38-16.png"/>
-        <bt:Image id="Tool.76.32" DefaultValue="https://addin.datacellia.com/icons/tools/sales-report-de3c0c38-32.png"/>
-        <bt:Image id="Tool.76.80" DefaultValue="https://addin.datacellia.com/icons/tools/sales-report-de3c0c38-80.png"/>
-        <bt:Image id="Tool.77.16" DefaultValue="https://addin.datacellia.com/icons/tools/hr-report-999ee76d-16.png"/>
-        <bt:Image id="Tool.77.32" DefaultValue="https://addin.datacellia.com/icons/tools/hr-report-999ee76d-32.png"/>
-        <bt:Image id="Tool.77.80" DefaultValue="https://addin.datacellia.com/icons/tools/hr-report-999ee76d-80.png"/>
-        <bt:Image id="Tool.78.16" DefaultValue="https://addin.datacellia.com/icons/tools/finance-report-280136c4-16.png"/>
-        <bt:Image id="Tool.78.32" DefaultValue="https://addin.datacellia.com/icons/tools/finance-report-280136c4-32.png"/>
-        <bt:Image id="Tool.78.80" DefaultValue="https://addin.datacellia.com/icons/tools/finance-report-280136c4-80.png"/>
-        <bt:Image id="Tool.79.16" DefaultValue="https://addin.datacellia.com/icons/tools/stock-report-71e9018f-16.png"/>
-        <bt:Image id="Tool.79.32" DefaultValue="https://addin.datacellia.com/icons/tools/stock-report-71e9018f-32.png"/>
-        <bt:Image id="Tool.79.80" DefaultValue="https://addin.datacellia.com/icons/tools/stock-report-71e9018f-80.png"/>
-        <bt:Image id="Tool.80.16" DefaultValue="https://addin.datacellia.com/icons/tools/project-report-4b33ef26-16.png"/>
-        <bt:Image id="Tool.80.32" DefaultValue="https://addin.datacellia.com/icons/tools/project-report-4b33ef26-32.png"/>
-        <bt:Image id="Tool.80.80" DefaultValue="https://addin.datacellia.com/icons/tools/project-report-4b33ef26-80.png"/>
-        <bt:Image id="Tool.81.16" DefaultValue="https://addin.datacellia.com/icons/tools/data-quality-report-01c85541-16.png"/>
-        <bt:Image id="Tool.81.32" DefaultValue="https://addin.datacellia.com/icons/tools/data-quality-report-01c85541-32.png"/>
-        <bt:Image id="Tool.81.80" DefaultValue="https://addin.datacellia.com/icons/tools/data-quality-report-01c85541-80.png"/>
-        <bt:Image id="Tool.82.16" DefaultValue="https://addin.datacellia.com/icons/tools/general-report-93bc7fbf-16.png"/>
-        <bt:Image id="Tool.82.32" DefaultValue="https://addin.datacellia.com/icons/tools/general-report-93bc7fbf-32.png"/>
-        <bt:Image id="Tool.82.80" DefaultValue="https://addin.datacellia.com/icons/tools/general-report-93bc7fbf-80.png"/>
+        <bt:Image id="Tool.68.16" DefaultValue="https://addin.datacellia.com/icons/tools/create-dashboard-abced842-16.png"/>
+        <bt:Image id="Tool.68.32" DefaultValue="https://addin.datacellia.com/icons/tools/create-dashboard-abced842-32.png"/>
+        <bt:Image id="Tool.68.80" DefaultValue="https://addin.datacellia.com/icons/tools/create-dashboard-abced842-80.png"/>
+        <bt:Image id="Tool.69.16" DefaultValue="https://addin.datacellia.com/icons/tools/create-report-4deaa170-16.png"/>
+        <bt:Image id="Tool.69.32" DefaultValue="https://addin.datacellia.com/icons/tools/create-report-4deaa170-32.png"/>
+        <bt:Image id="Tool.69.80" DefaultValue="https://addin.datacellia.com/icons/tools/create-report-4deaa170-80.png"/>
+        <bt:Image id="Tool.70.16" DefaultValue="https://addin.datacellia.com/icons/tools/executive-dashboard-27c16c6c-16.png"/>
+        <bt:Image id="Tool.70.32" DefaultValue="https://addin.datacellia.com/icons/tools/executive-dashboard-27c16c6c-32.png"/>
+        <bt:Image id="Tool.70.80" DefaultValue="https://addin.datacellia.com/icons/tools/executive-dashboard-27c16c6c-80.png"/>
+        <bt:Image id="Tool.71.16" DefaultValue="https://addin.datacellia.com/icons/tools/sales-dashboard-bb733517-16.png"/>
+        <bt:Image id="Tool.71.32" DefaultValue="https://addin.datacellia.com/icons/tools/sales-dashboard-bb733517-32.png"/>
+        <bt:Image id="Tool.71.80" DefaultValue="https://addin.datacellia.com/icons/tools/sales-dashboard-bb733517-80.png"/>
+        <bt:Image id="Tool.72.16" DefaultValue="https://addin.datacellia.com/icons/tools/hr-dashboard-99f85785-16.png"/>
+        <bt:Image id="Tool.72.32" DefaultValue="https://addin.datacellia.com/icons/tools/hr-dashboard-99f85785-32.png"/>
+        <bt:Image id="Tool.72.80" DefaultValue="https://addin.datacellia.com/icons/tools/hr-dashboard-99f85785-80.png"/>
+        <bt:Image id="Tool.73.16" DefaultValue="https://addin.datacellia.com/icons/tools/finance-dashboard-9c5bd1ed-16.png"/>
+        <bt:Image id="Tool.73.32" DefaultValue="https://addin.datacellia.com/icons/tools/finance-dashboard-9c5bd1ed-32.png"/>
+        <bt:Image id="Tool.73.80" DefaultValue="https://addin.datacellia.com/icons/tools/finance-dashboard-9c5bd1ed-80.png"/>
+        <bt:Image id="Tool.74.16" DefaultValue="https://addin.datacellia.com/icons/tools/executive-report-87c93268-16.png"/>
+        <bt:Image id="Tool.74.32" DefaultValue="https://addin.datacellia.com/icons/tools/executive-report-87c93268-32.png"/>
+        <bt:Image id="Tool.74.80" DefaultValue="https://addin.datacellia.com/icons/tools/executive-report-87c93268-80.png"/>
+        <bt:Image id="Tool.75.16" DefaultValue="https://addin.datacellia.com/icons/tools/sales-report-de3c0c38-16.png"/>
+        <bt:Image id="Tool.75.32" DefaultValue="https://addin.datacellia.com/icons/tools/sales-report-de3c0c38-32.png"/>
+        <bt:Image id="Tool.75.80" DefaultValue="https://addin.datacellia.com/icons/tools/sales-report-de3c0c38-80.png"/>
+        <bt:Image id="Tool.76.16" DefaultValue="https://addin.datacellia.com/icons/tools/hr-report-999ee76d-16.png"/>
+        <bt:Image id="Tool.76.32" DefaultValue="https://addin.datacellia.com/icons/tools/hr-report-999ee76d-32.png"/>
+        <bt:Image id="Tool.76.80" DefaultValue="https://addin.datacellia.com/icons/tools/hr-report-999ee76d-80.png"/>
+        <bt:Image id="Tool.77.16" DefaultValue="https://addin.datacellia.com/icons/tools/finance-report-280136c4-16.png"/>
+        <bt:Image id="Tool.77.32" DefaultValue="https://addin.datacellia.com/icons/tools/finance-report-280136c4-32.png"/>
+        <bt:Image id="Tool.77.80" DefaultValue="https://addin.datacellia.com/icons/tools/finance-report-280136c4-80.png"/>
+        <bt:Image id="Tool.78.16" DefaultValue="https://addin.datacellia.com/icons/tools/stock-report-71e9018f-16.png"/>
+        <bt:Image id="Tool.78.32" DefaultValue="https://addin.datacellia.com/icons/tools/stock-report-71e9018f-32.png"/>
+        <bt:Image id="Tool.78.80" DefaultValue="https://addin.datacellia.com/icons/tools/stock-report-71e9018f-80.png"/>
+        <bt:Image id="Tool.79.16" DefaultValue="https://addin.datacellia.com/icons/tools/project-report-4b33ef26-16.png"/>
+        <bt:Image id="Tool.79.32" DefaultValue="https://addin.datacellia.com/icons/tools/project-report-4b33ef26-32.png"/>
+        <bt:Image id="Tool.79.80" DefaultValue="https://addin.datacellia.com/icons/tools/project-report-4b33ef26-80.png"/>
+        <bt:Image id="Tool.80.16" DefaultValue="https://addin.datacellia.com/icons/tools/data-quality-report-01c85541-16.png"/>
+        <bt:Image id="Tool.80.32" DefaultValue="https://addin.datacellia.com/icons/tools/data-quality-report-01c85541-32.png"/>
+        <bt:Image id="Tool.80.80" DefaultValue="https://addin.datacellia.com/icons/tools/data-quality-report-01c85541-80.png"/>
+        <bt:Image id="Tool.81.16" DefaultValue="https://addin.datacellia.com/icons/tools/general-report-93bc7fbf-16.png"/>
+        <bt:Image id="Tool.81.32" DefaultValue="https://addin.datacellia.com/icons/tools/general-report-93bc7fbf-32.png"/>
+        <bt:Image id="Tool.81.80" DefaultValue="https://addin.datacellia.com/icons/tools/general-report-93bc7fbf-80.png"/>
         <bt:Image id="Category.charts.16" DefaultValue="https://addin.datacellia.com/icons/tools/category-charts-60efe1ae-16.png"/>
         <bt:Image id="Category.charts.32" DefaultValue="https://addin.datacellia.com/icons/tools/category-charts-60efe1ae-32.png"/>
         <bt:Image id="Category.charts.80" DefaultValue="https://addin.datacellia.com/icons/tools/category-charts-60efe1ae-80.png"/>
-        <bt:Image id="Tool.83.16" DefaultValue="https://addin.datacellia.com/icons/tools/create-chart-ac3ed028-16.png"/>
-        <bt:Image id="Tool.83.32" DefaultValue="https://addin.datacellia.com/icons/tools/create-chart-ac3ed028-32.png"/>
-        <bt:Image id="Tool.83.80" DefaultValue="https://addin.datacellia.com/icons/tools/create-chart-ac3ed028-80.png"/>
-        <bt:Image id="Tool.84.16" DefaultValue="https://addin.datacellia.com/icons/tools/category-chart-ea9c5fa2-16.png"/>
-        <bt:Image id="Tool.84.32" DefaultValue="https://addin.datacellia.com/icons/tools/category-chart-ea9c5fa2-32.png"/>
-        <bt:Image id="Tool.84.80" DefaultValue="https://addin.datacellia.com/icons/tools/category-chart-ea9c5fa2-80.png"/>
-        <bt:Image id="Tool.85.16" DefaultValue="https://addin.datacellia.com/icons/tools/trend-chart-4dea53c2-16.png"/>
-        <bt:Image id="Tool.85.32" DefaultValue="https://addin.datacellia.com/icons/tools/trend-chart-4dea53c2-32.png"/>
-        <bt:Image id="Tool.85.80" DefaultValue="https://addin.datacellia.com/icons/tools/trend-chart-4dea53c2-80.png"/>
-        <bt:Image id="Tool.86.16" DefaultValue="https://addin.datacellia.com/icons/tools/share-chart-bc81df88-16.png"/>
-        <bt:Image id="Tool.86.32" DefaultValue="https://addin.datacellia.com/icons/tools/share-chart-bc81df88-32.png"/>
-        <bt:Image id="Tool.86.80" DefaultValue="https://addin.datacellia.com/icons/tools/share-chart-bc81df88-80.png"/>
-        <bt:Image id="Tool.87.16" DefaultValue="https://addin.datacellia.com/icons/tools/target-chart-e55beab8-16.png"/>
-        <bt:Image id="Tool.87.32" DefaultValue="https://addin.datacellia.com/icons/tools/target-chart-e55beab8-32.png"/>
-        <bt:Image id="Tool.87.80" DefaultValue="https://addin.datacellia.com/icons/tools/target-chart-e55beab8-80.png"/>
-        <bt:Image id="Tool.88.16" DefaultValue="https://addin.datacellia.com/icons/tools/pareto-chart-ab2ac275-16.png"/>
-        <bt:Image id="Tool.88.32" DefaultValue="https://addin.datacellia.com/icons/tools/pareto-chart-ab2ac275-32.png"/>
-        <bt:Image id="Tool.88.80" DefaultValue="https://addin.datacellia.com/icons/tools/pareto-chart-ab2ac275-80.png"/>
+        <bt:Image id="Tool.82.16" DefaultValue="https://addin.datacellia.com/icons/tools/create-chart-ac3ed028-16.png"/>
+        <bt:Image id="Tool.82.32" DefaultValue="https://addin.datacellia.com/icons/tools/create-chart-ac3ed028-32.png"/>
+        <bt:Image id="Tool.82.80" DefaultValue="https://addin.datacellia.com/icons/tools/create-chart-ac3ed028-80.png"/>
+        <bt:Image id="Tool.83.16" DefaultValue="https://addin.datacellia.com/icons/tools/category-chart-ea9c5fa2-16.png"/>
+        <bt:Image id="Tool.83.32" DefaultValue="https://addin.datacellia.com/icons/tools/category-chart-ea9c5fa2-32.png"/>
+        <bt:Image id="Tool.83.80" DefaultValue="https://addin.datacellia.com/icons/tools/category-chart-ea9c5fa2-80.png"/>
+        <bt:Image id="Tool.84.16" DefaultValue="https://addin.datacellia.com/icons/tools/trend-chart-4dea53c2-16.png"/>
+        <bt:Image id="Tool.84.32" DefaultValue="https://addin.datacellia.com/icons/tools/trend-chart-4dea53c2-32.png"/>
+        <bt:Image id="Tool.84.80" DefaultValue="https://addin.datacellia.com/icons/tools/trend-chart-4dea53c2-80.png"/>
+        <bt:Image id="Tool.85.16" DefaultValue="https://addin.datacellia.com/icons/tools/share-chart-bc81df88-16.png"/>
+        <bt:Image id="Tool.85.32" DefaultValue="https://addin.datacellia.com/icons/tools/share-chart-bc81df88-32.png"/>
+        <bt:Image id="Tool.85.80" DefaultValue="https://addin.datacellia.com/icons/tools/share-chart-bc81df88-80.png"/>
+        <bt:Image id="Tool.86.16" DefaultValue="https://addin.datacellia.com/icons/tools/target-chart-e55beab8-16.png"/>
+        <bt:Image id="Tool.86.32" DefaultValue="https://addin.datacellia.com/icons/tools/target-chart-e55beab8-32.png"/>
+        <bt:Image id="Tool.86.80" DefaultValue="https://addin.datacellia.com/icons/tools/target-chart-e55beab8-80.png"/>
+        <bt:Image id="Tool.87.16" DefaultValue="https://addin.datacellia.com/icons/tools/pareto-chart-ab2ac275-16.png"/>
+        <bt:Image id="Tool.87.32" DefaultValue="https://addin.datacellia.com/icons/tools/pareto-chart-ab2ac275-32.png"/>
+        <bt:Image id="Tool.87.80" DefaultValue="https://addin.datacellia.com/icons/tools/pareto-chart-ab2ac275-80.png"/>
         <bt:Image id="Category.validation.16" DefaultValue="https://addin.datacellia.com/icons/tools/category-validation-4f66a864-16.png"/>
         <bt:Image id="Category.validation.32" DefaultValue="https://addin.datacellia.com/icons/tools/category-validation-4f66a864-32.png"/>
         <bt:Image id="Category.validation.80" DefaultValue="https://addin.datacellia.com/icons/tools/category-validation-4f66a864-80.png"/>
-        <bt:Image id="Tool.89.16" DefaultValue="https://addin.datacellia.com/icons/tools/create-dropdown-list-d8e64b9b-16.png"/>
-        <bt:Image id="Tool.89.32" DefaultValue="https://addin.datacellia.com/icons/tools/create-dropdown-list-d8e64b9b-32.png"/>
-        <bt:Image id="Tool.89.80" DefaultValue="https://addin.datacellia.com/icons/tools/create-dropdown-list-d8e64b9b-80.png"/>
-        <bt:Image id="Tool.90.16" DefaultValue="https://addin.datacellia.com/icons/tools/set-number-validation-0b47b707-16.png"/>
-        <bt:Image id="Tool.90.32" DefaultValue="https://addin.datacellia.com/icons/tools/set-number-validation-0b47b707-32.png"/>
-        <bt:Image id="Tool.90.80" DefaultValue="https://addin.datacellia.com/icons/tools/set-number-validation-0b47b707-80.png"/>
-        <bt:Image id="Tool.91.16" DefaultValue="https://addin.datacellia.com/icons/tools/set-date-validation-164423d2-16.png"/>
-        <bt:Image id="Tool.91.32" DefaultValue="https://addin.datacellia.com/icons/tools/set-date-validation-164423d2-32.png"/>
-        <bt:Image id="Tool.91.80" DefaultValue="https://addin.datacellia.com/icons/tools/set-date-validation-164423d2-80.png"/>
-        <bt:Image id="Tool.92.16" DefaultValue="https://addin.datacellia.com/icons/tools/set-text-length-validation-9903c6e4-16.png"/>
-        <bt:Image id="Tool.92.32" DefaultValue="https://addin.datacellia.com/icons/tools/set-text-length-validation-9903c6e4-32.png"/>
-        <bt:Image id="Tool.92.80" DefaultValue="https://addin.datacellia.com/icons/tools/set-text-length-validation-9903c6e4-80.png"/>
-        <bt:Image id="Tool.93.16" DefaultValue="https://addin.datacellia.com/icons/tools/prevent-duplicate-entry-d457f47a-16.png"/>
-        <bt:Image id="Tool.93.32" DefaultValue="https://addin.datacellia.com/icons/tools/prevent-duplicate-entry-d457f47a-32.png"/>
-        <bt:Image id="Tool.93.80" DefaultValue="https://addin.datacellia.com/icons/tools/prevent-duplicate-entry-d457f47a-80.png"/>
-        <bt:Image id="Tool.94.16" DefaultValue="https://addin.datacellia.com/icons/tools/report-invalid-data-c073eb13-16.png"/>
-        <bt:Image id="Tool.94.32" DefaultValue="https://addin.datacellia.com/icons/tools/report-invalid-data-c073eb13-32.png"/>
-        <bt:Image id="Tool.94.80" DefaultValue="https://addin.datacellia.com/icons/tools/report-invalid-data-c073eb13-80.png"/>
+        <bt:Image id="Tool.88.16" DefaultValue="https://addin.datacellia.com/icons/tools/create-dropdown-list-d8e64b9b-16.png"/>
+        <bt:Image id="Tool.88.32" DefaultValue="https://addin.datacellia.com/icons/tools/create-dropdown-list-d8e64b9b-32.png"/>
+        <bt:Image id="Tool.88.80" DefaultValue="https://addin.datacellia.com/icons/tools/create-dropdown-list-d8e64b9b-80.png"/>
+        <bt:Image id="Tool.89.16" DefaultValue="https://addin.datacellia.com/icons/tools/set-number-validation-0b47b707-16.png"/>
+        <bt:Image id="Tool.89.32" DefaultValue="https://addin.datacellia.com/icons/tools/set-number-validation-0b47b707-32.png"/>
+        <bt:Image id="Tool.89.80" DefaultValue="https://addin.datacellia.com/icons/tools/set-number-validation-0b47b707-80.png"/>
+        <bt:Image id="Tool.90.16" DefaultValue="https://addin.datacellia.com/icons/tools/set-date-validation-164423d2-16.png"/>
+        <bt:Image id="Tool.90.32" DefaultValue="https://addin.datacellia.com/icons/tools/set-date-validation-164423d2-32.png"/>
+        <bt:Image id="Tool.90.80" DefaultValue="https://addin.datacellia.com/icons/tools/set-date-validation-164423d2-80.png"/>
+        <bt:Image id="Tool.91.16" DefaultValue="https://addin.datacellia.com/icons/tools/set-text-length-validation-9903c6e4-16.png"/>
+        <bt:Image id="Tool.91.32" DefaultValue="https://addin.datacellia.com/icons/tools/set-text-length-validation-9903c6e4-32.png"/>
+        <bt:Image id="Tool.91.80" DefaultValue="https://addin.datacellia.com/icons/tools/set-text-length-validation-9903c6e4-80.png"/>
+        <bt:Image id="Tool.92.16" DefaultValue="https://addin.datacellia.com/icons/tools/prevent-duplicate-entry-d457f47a-16.png"/>
+        <bt:Image id="Tool.92.32" DefaultValue="https://addin.datacellia.com/icons/tools/prevent-duplicate-entry-d457f47a-32.png"/>
+        <bt:Image id="Tool.92.80" DefaultValue="https://addin.datacellia.com/icons/tools/prevent-duplicate-entry-d457f47a-80.png"/>
+        <bt:Image id="Tool.93.16" DefaultValue="https://addin.datacellia.com/icons/tools/report-invalid-data-c073eb13-16.png"/>
+        <bt:Image id="Tool.93.32" DefaultValue="https://addin.datacellia.com/icons/tools/report-invalid-data-c073eb13-32.png"/>
+        <bt:Image id="Tool.93.80" DefaultValue="https://addin.datacellia.com/icons/tools/report-invalid-data-c073eb13-80.png"/>
+        <bt:Image id="Tool.94.16" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-data-validation-72c7fe68-16.png"/>
+        <bt:Image id="Tool.94.32" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-data-validation-72c7fe68-32.png"/>
+        <bt:Image id="Tool.94.80" DefaultValue="https://addin.datacellia.com/icons/tools/highlight-data-validation-72c7fe68-80.png"/>
 <!-- END GENERATED IMAGES -->
       </bt:Images>
       <bt:Urls>
         <bt:Url id="Commands.Url" DefaultValue="https://addin.datacellia.com/commands.html"/>
-        <bt:Url id="Taskpane.Url" DefaultValue="https://addin.datacellia.com/index.html?v=3.36.0.0"/>
-        <bt:Url id="AllTools.Url" DefaultValue="https://addin.datacellia.com/index.html?view=tools&amp;v=3.36.0.0"/>
-        <bt:Url id="Context.PickDate.Url" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date&amp;source=context-menu&amp;v=3.36.0.0"/>
+        <bt:Url id="Taskpane.Url" DefaultValue="https://addin.datacellia.com/index.html?v=3.37.0.0"/>
+        <bt:Url id="AllTools.Url" DefaultValue="https://addin.datacellia.com/index.html?view=tools&amp;v=3.37.0.0"/>
+        <bt:Url id="Context.PickDate.Url" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date&amp;source=context-menu&amp;v=3.37.0.0"/>
         <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://addin.datacellia.com/"/>
         <!-- BEGIN GENERATED URLS -->
-        <bt:Url id="TP.1" DefaultValue="https://addin.datacellia.com/index.html?tool=trim-whitespace&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.2" DefaultValue="https://addin.datacellia.com/index.html?tool=clean-invisible-characters&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.3" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-empty-rows&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.4" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-empty-columns&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.5" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-duplicates&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.6" DefaultValue="https://addin.datacellia.com/index.html?tool=to-upper-case&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.7" DefaultValue="https://addin.datacellia.com/index.html?tool=to-lower-case&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.8" DefaultValue="https://addin.datacellia.com/index.html?tool=capitalize-words&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.9" DefaultValue="https://addin.datacellia.com/index.html?tool=split-by-delimiter&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.10" DefaultValue="https://addin.datacellia.com/index.html?tool=extract-email&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.11" DefaultValue="https://addin.datacellia.com/index.html?tool=extract-first-number&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.12" DefaultValue="https://addin.datacellia.com/index.html?tool=data-profile&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.13" DefaultValue="https://addin.datacellia.com/index.html?tool=formulas-to-values&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.14" DefaultValue="https://addin.datacellia.com/index.html?tool=fill-down&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.15" DefaultValue="https://addin.datacellia.com/index.html?tool=fill-blanks&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.16" DefaultValue="https://addin.datacellia.com/index.html?tool=text-to-number&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.17" DefaultValue="https://addin.datacellia.com/index.html?tool=unique-values&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.18" DefaultValue="https://addin.datacellia.com/index.html?tool=date-parts&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.19" DefaultValue="https://addin.datacellia.com/index.html?tool=round-number&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.20" DefaultValue="https://addin.datacellia.com/index.html?tool=change-decimal-display&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.21" DefaultValue="https://addin.datacellia.com/index.html?tool=absolute-numbers&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.22" DefaultValue="https://addin.datacellia.com/index.html?tool=flip-number-signs&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.23" DefaultValue="https://addin.datacellia.com/index.html?tool=convert-to-percent&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.24" DefaultValue="https://addin.datacellia.com/index.html?tool=convert-percent-to-number&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.25" DefaultValue="https://addin.datacellia.com/index.html?tool=fix-number-separators&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.26" DefaultValue="https://addin.datacellia.com/index.html?tool=scale-numbers&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.27" DefaultValue="https://addin.datacellia.com/index.html?tool=clear-zero-values&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.28" DefaultValue="https://addin.datacellia.com/index.html?tool=number-health-check&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.29" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.30" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-time&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.31" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date-time&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.32" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-today&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.33" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-current-time&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.34" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-date-time&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.35" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-lists&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.36" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-tables-by-key&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.37" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-rows&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.38" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-health-check&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.39" DefaultValue="https://addin.datacellia.com/index.html?tool=append-worksheets&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.40" DefaultValue="https://addin.datacellia.com/index.html?tool=append-tables&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.41" DefaultValue="https://addin.datacellia.com/index.html?tool=lookup-from-table&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.42" DefaultValue="https://addin.datacellia.com/index.html?tool=multi-lookup&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.43" DefaultValue="https://addin.datacellia.com/index.html?tool=group-summarize&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.44" DefaultValue="https://addin.datacellia.com/index.html?tool=unpivot-columns&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.45" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-formulas&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.46" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-errors&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.47" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-external-formulas&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.48" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-constants&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.49" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-blanks&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.50" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-inconsistent&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.51" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-data-validation&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.52" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-conditional-formats&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.53" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-locked-cells&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.54" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-unlocked-cells&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.55" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-error-rows&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.56" DefaultValue="https://addin.datacellia.com/index.html?tool=select-formulas&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.57" DefaultValue="https://addin.datacellia.com/index.html?tool=select-constants&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.58" DefaultValue="https://addin.datacellia.com/index.html?tool=select-errors&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.59" DefaultValue="https://addin.datacellia.com/index.html?tool=select-blanks&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.60" DefaultValue="https://addin.datacellia.com/index.html?tool=select-visible-cells&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.61" DefaultValue="https://addin.datacellia.com/index.html?tool=formula-map-summary&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.62" DefaultValue="https://addin.datacellia.com/index.html?tool=extract-formulas-as-text&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.63" DefaultValue="https://addin.datacellia.com/index.html?tool=list-external-formulas&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.64" DefaultValue="https://addin.datacellia.com/index.html?tool=list-named-ranges&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.65" DefaultValue="https://addin.datacellia.com/index.html?tool=list-hyperlinks&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.66" DefaultValue="https://addin.datacellia.com/index.html?tool=list-comments-and-notes&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.67" DefaultValue="https://addin.datacellia.com/index.html?tool=list-worksheets&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.68" DefaultValue="https://addin.datacellia.com/index.html?tool=worksheet-protection-summary&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.69" DefaultValue="https://addin.datacellia.com/index.html?tool=create-dashboard&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.70" DefaultValue="https://addin.datacellia.com/index.html?tool=create-report&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.71" DefaultValue="https://addin.datacellia.com/index.html?tool=executive-dashboard&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.72" DefaultValue="https://addin.datacellia.com/index.html?tool=sales-dashboard&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.73" DefaultValue="https://addin.datacellia.com/index.html?tool=hr-dashboard&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.74" DefaultValue="https://addin.datacellia.com/index.html?tool=finance-dashboard&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.75" DefaultValue="https://addin.datacellia.com/index.html?tool=executive-report&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.76" DefaultValue="https://addin.datacellia.com/index.html?tool=sales-report&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.77" DefaultValue="https://addin.datacellia.com/index.html?tool=hr-report&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.78" DefaultValue="https://addin.datacellia.com/index.html?tool=finance-report&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.79" DefaultValue="https://addin.datacellia.com/index.html?tool=stock-report&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.80" DefaultValue="https://addin.datacellia.com/index.html?tool=project-report&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.81" DefaultValue="https://addin.datacellia.com/index.html?tool=data-quality-report&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.82" DefaultValue="https://addin.datacellia.com/index.html?tool=general-report&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.83" DefaultValue="https://addin.datacellia.com/index.html?tool=create-chart&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.84" DefaultValue="https://addin.datacellia.com/index.html?tool=category-chart&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.85" DefaultValue="https://addin.datacellia.com/index.html?tool=trend-chart&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.86" DefaultValue="https://addin.datacellia.com/index.html?tool=share-chart&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.87" DefaultValue="https://addin.datacellia.com/index.html?tool=target-chart&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.88" DefaultValue="https://addin.datacellia.com/index.html?tool=pareto-chart&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.89" DefaultValue="https://addin.datacellia.com/index.html?tool=create-dropdown-list&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.90" DefaultValue="https://addin.datacellia.com/index.html?tool=set-number-validation&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.91" DefaultValue="https://addin.datacellia.com/index.html?tool=set-date-validation&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.92" DefaultValue="https://addin.datacellia.com/index.html?tool=set-text-length-validation&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.93" DefaultValue="https://addin.datacellia.com/index.html?tool=prevent-duplicate-entry&amp;v=3.36.0.0"/>
-        <bt:Url id="TP.94" DefaultValue="https://addin.datacellia.com/index.html?tool=report-invalid-data&amp;v=3.36.0.0"/>
+        <bt:Url id="TP.1" DefaultValue="https://addin.datacellia.com/index.html?tool=trim-whitespace&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.2" DefaultValue="https://addin.datacellia.com/index.html?tool=clean-invisible-characters&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.3" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-empty-rows&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.4" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-empty-columns&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.5" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-duplicates&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.6" DefaultValue="https://addin.datacellia.com/index.html?tool=to-upper-case&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.7" DefaultValue="https://addin.datacellia.com/index.html?tool=to-lower-case&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.8" DefaultValue="https://addin.datacellia.com/index.html?tool=capitalize-words&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.9" DefaultValue="https://addin.datacellia.com/index.html?tool=split-by-delimiter&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.10" DefaultValue="https://addin.datacellia.com/index.html?tool=extract-email&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.11" DefaultValue="https://addin.datacellia.com/index.html?tool=extract-first-number&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.12" DefaultValue="https://addin.datacellia.com/index.html?tool=data-profile&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.13" DefaultValue="https://addin.datacellia.com/index.html?tool=formulas-to-values&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.14" DefaultValue="https://addin.datacellia.com/index.html?tool=fill-down&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.15" DefaultValue="https://addin.datacellia.com/index.html?tool=fill-blanks&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.16" DefaultValue="https://addin.datacellia.com/index.html?tool=text-to-number&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.17" DefaultValue="https://addin.datacellia.com/index.html?tool=unique-values&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.18" DefaultValue="https://addin.datacellia.com/index.html?tool=date-parts&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.19" DefaultValue="https://addin.datacellia.com/index.html?tool=round-number&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.20" DefaultValue="https://addin.datacellia.com/index.html?tool=change-decimal-display&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.21" DefaultValue="https://addin.datacellia.com/index.html?tool=absolute-numbers&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.22" DefaultValue="https://addin.datacellia.com/index.html?tool=flip-number-signs&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.23" DefaultValue="https://addin.datacellia.com/index.html?tool=convert-to-percent&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.24" DefaultValue="https://addin.datacellia.com/index.html?tool=convert-percent-to-number&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.25" DefaultValue="https://addin.datacellia.com/index.html?tool=fix-number-separators&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.26" DefaultValue="https://addin.datacellia.com/index.html?tool=scale-numbers&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.27" DefaultValue="https://addin.datacellia.com/index.html?tool=clear-zero-values&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.28" DefaultValue="https://addin.datacellia.com/index.html?tool=number-health-check&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.29" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.30" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-time&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.31" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date-time&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.32" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-today&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.33" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-current-time&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.34" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-date-time&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.35" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-lists&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.36" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-tables-by-key&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.37" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-rows&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.38" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-health-check&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.39" DefaultValue="https://addin.datacellia.com/index.html?tool=append-worksheets&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.40" DefaultValue="https://addin.datacellia.com/index.html?tool=append-tables&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.41" DefaultValue="https://addin.datacellia.com/index.html?tool=lookup-from-table&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.42" DefaultValue="https://addin.datacellia.com/index.html?tool=multi-lookup&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.43" DefaultValue="https://addin.datacellia.com/index.html?tool=group-summarize&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.44" DefaultValue="https://addin.datacellia.com/index.html?tool=unpivot-columns&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.45" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-formulas&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.46" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-errors&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.47" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-external-formulas&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.48" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-inconsistent&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.49" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-error-rows&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.50" DefaultValue="https://addin.datacellia.com/index.html?tool=formula-map-summary&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.51" DefaultValue="https://addin.datacellia.com/index.html?tool=extract-formulas-as-text&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.52" DefaultValue="https://addin.datacellia.com/index.html?tool=list-external-formulas&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.53" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-constants&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.54" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-blanks&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.55" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-conditional-formats&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.56" DefaultValue="https://addin.datacellia.com/index.html?tool=select-formulas&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.57" DefaultValue="https://addin.datacellia.com/index.html?tool=select-constants&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.58" DefaultValue="https://addin.datacellia.com/index.html?tool=select-errors&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.59" DefaultValue="https://addin.datacellia.com/index.html?tool=select-blanks&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.60" DefaultValue="https://addin.datacellia.com/index.html?tool=select-visible-cells&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.61" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-locked-cells&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.62" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-unlocked-cells&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.63" DefaultValue="https://addin.datacellia.com/index.html?tool=list-named-ranges&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.64" DefaultValue="https://addin.datacellia.com/index.html?tool=list-hyperlinks&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.65" DefaultValue="https://addin.datacellia.com/index.html?tool=list-comments-and-notes&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.66" DefaultValue="https://addin.datacellia.com/index.html?tool=list-worksheets&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.67" DefaultValue="https://addin.datacellia.com/index.html?tool=worksheet-protection-summary&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.68" DefaultValue="https://addin.datacellia.com/index.html?tool=create-dashboard&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.69" DefaultValue="https://addin.datacellia.com/index.html?tool=create-report&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.70" DefaultValue="https://addin.datacellia.com/index.html?tool=executive-dashboard&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.71" DefaultValue="https://addin.datacellia.com/index.html?tool=sales-dashboard&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.72" DefaultValue="https://addin.datacellia.com/index.html?tool=hr-dashboard&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.73" DefaultValue="https://addin.datacellia.com/index.html?tool=finance-dashboard&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.74" DefaultValue="https://addin.datacellia.com/index.html?tool=executive-report&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.75" DefaultValue="https://addin.datacellia.com/index.html?tool=sales-report&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.76" DefaultValue="https://addin.datacellia.com/index.html?tool=hr-report&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.77" DefaultValue="https://addin.datacellia.com/index.html?tool=finance-report&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.78" DefaultValue="https://addin.datacellia.com/index.html?tool=stock-report&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.79" DefaultValue="https://addin.datacellia.com/index.html?tool=project-report&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.80" DefaultValue="https://addin.datacellia.com/index.html?tool=data-quality-report&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.81" DefaultValue="https://addin.datacellia.com/index.html?tool=general-report&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.82" DefaultValue="https://addin.datacellia.com/index.html?tool=create-chart&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.83" DefaultValue="https://addin.datacellia.com/index.html?tool=category-chart&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.84" DefaultValue="https://addin.datacellia.com/index.html?tool=trend-chart&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.85" DefaultValue="https://addin.datacellia.com/index.html?tool=share-chart&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.86" DefaultValue="https://addin.datacellia.com/index.html?tool=target-chart&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.87" DefaultValue="https://addin.datacellia.com/index.html?tool=pareto-chart&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.88" DefaultValue="https://addin.datacellia.com/index.html?tool=create-dropdown-list&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.89" DefaultValue="https://addin.datacellia.com/index.html?tool=set-number-validation&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.90" DefaultValue="https://addin.datacellia.com/index.html?tool=set-date-validation&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.91" DefaultValue="https://addin.datacellia.com/index.html?tool=set-text-length-validation&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.92" DefaultValue="https://addin.datacellia.com/index.html?tool=prevent-duplicate-entry&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.93" DefaultValue="https://addin.datacellia.com/index.html?tool=report-invalid-data&amp;v=3.37.0.0"/>
+        <bt:Url id="TP.94" DefaultValue="https://addin.datacellia.com/index.html?tool=highlight-data-validation&amp;v=3.37.0.0"/>
 <!-- END GENERATED URLS -->
       </bt:Urls>
       <bt:ShortStrings>
@@ -2623,6 +2657,36 @@
           <bt:Override Locale="az-Latn-AZ" Value="Xarici düsturları vurğula"/>
           <bt:Override Locale="es-ES" Value="Resaltar fórmulas externas"/>
         </bt:String>
+        <bt:String id="L.highlight-inconsistent" DefaultValue="Tutarsız Formülleri Vurgula">
+          <bt:Override Locale="en-US" Value="Highlight Inconsistent Formulas"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Uyğunsuz düsturları vurğula"/>
+          <bt:Override Locale="es-ES" Value="Resaltar fórmulas inconsistentes"/>
+        </bt:String>
+        <bt:String id="L.highlight-error-rows" DefaultValue="Hatalı Satırları Vurgula">
+          <bt:Override Locale="en-US" Value="Highlight Error Rows"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Səhv sətirləri vurğula"/>
+          <bt:Override Locale="es-ES" Value="Resaltar filas con errores"/>
+        </bt:String>
+        <bt:String id="L.formula-map-summary" DefaultValue="Formül Haritası ve Özeti">
+          <bt:Override Locale="en-US" Value="Formula Map and Summary"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Düstur xəritəsi və xülasəsi"/>
+          <bt:Override Locale="es-ES" Value="Mapa y resumen de fórmulas"/>
+        </bt:String>
+        <bt:String id="L.extract-formulas-as-text" DefaultValue="Formülleri Metin Olarak Çıkar">
+          <bt:Override Locale="en-US" Value="Extract Formulas as Text"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Düsturları mətn kimi çıxar"/>
+          <bt:Override Locale="es-ES" Value="Extraer fórmulas como texto"/>
+        </bt:String>
+        <bt:String id="L.list-external-formulas" DefaultValue="Dış Bağlantılı Formülleri Listele">
+          <bt:Override Locale="en-US" Value="List External Formulas"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Xarici düsturları siyahıla"/>
+          <bt:Override Locale="es-ES" Value="Listar fórmulas externas"/>
+        </bt:String>
+        <bt:String id="Cat.selection" DefaultValue="Seçim ve Vurgulama">
+          <bt:Override Locale="en-US" Value="Select and Highlight"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Seçim və vurğulama"/>
+          <bt:Override Locale="es-ES" Value="Selección y resaltado"/>
+        </bt:String>
         <bt:String id="L.highlight-constants" DefaultValue="Sabit Değerleri Vurgula">
           <bt:Override Locale="en-US" Value="Highlight Constants"/>
           <bt:Override Locale="az-Latn-AZ" Value="Sabit dəyərləri vurğula"/>
@@ -2633,35 +2697,10 @@
           <bt:Override Locale="az-Latn-AZ" Value="Boş xanaları vurğula"/>
           <bt:Override Locale="es-ES" Value="Resaltar celdas vacías"/>
         </bt:String>
-        <bt:String id="L.highlight-inconsistent" DefaultValue="Tutarsız Formülleri Vurgula">
-          <bt:Override Locale="en-US" Value="Highlight Inconsistent Formulas"/>
-          <bt:Override Locale="az-Latn-AZ" Value="Uyğunsuz düsturları vurğula"/>
-          <bt:Override Locale="es-ES" Value="Resaltar fórmulas inconsistentes"/>
-        </bt:String>
-        <bt:String id="L.highlight-data-validation" DefaultValue="Veri Doğrulamalı Hücreleri Vurgula">
-          <bt:Override Locale="en-US" Value="Highlight Data Validation"/>
-          <bt:Override Locale="az-Latn-AZ" Value="Məlumat yoxlamalı xanaları vurğula"/>
-          <bt:Override Locale="es-ES" Value="Resaltar validación de datos"/>
-        </bt:String>
         <bt:String id="L.highlight-conditional-formats" DefaultValue="Koşullu Biçimleri Vurgula">
           <bt:Override Locale="en-US" Value="Highlight Conditional Formats"/>
           <bt:Override Locale="az-Latn-AZ" Value="Şərti formatları vurğula"/>
           <bt:Override Locale="es-ES" Value="Resaltar formatos condicionales"/>
-        </bt:String>
-        <bt:String id="L.highlight-locked-cells" DefaultValue="Kilitli Hücreleri Vurgula">
-          <bt:Override Locale="en-US" Value="Highlight Locked Cells"/>
-          <bt:Override Locale="az-Latn-AZ" Value="Kilidli xanaları vurğula"/>
-          <bt:Override Locale="es-ES" Value="Resaltar celdas bloqueadas"/>
-        </bt:String>
-        <bt:String id="L.highlight-unlocked-cells" DefaultValue="Kilitsiz Hücreleri Vurgula">
-          <bt:Override Locale="en-US" Value="Highlight Unlocked Cells"/>
-          <bt:Override Locale="az-Latn-AZ" Value="Kilidsiz xanaları vurğula"/>
-          <bt:Override Locale="es-ES" Value="Resaltar celdas desbloqueadas"/>
-        </bt:String>
-        <bt:String id="L.highlight-error-rows" DefaultValue="Hatalı Satırları Vurgula">
-          <bt:Override Locale="en-US" Value="Highlight Error Rows"/>
-          <bt:Override Locale="az-Latn-AZ" Value="Səhv sətirləri vurğula"/>
-          <bt:Override Locale="es-ES" Value="Resaltar filas con errores"/>
         </bt:String>
         <bt:String id="L.select-formulas" DefaultValue="Formül Hücrelerini Seç">
           <bt:Override Locale="en-US" Value="Select Formulas"/>
@@ -2688,20 +2727,20 @@
           <bt:Override Locale="az-Latn-AZ" Value="Görünən xanaları seç"/>
           <bt:Override Locale="es-ES" Value="Seleccionar celdas visibles"/>
         </bt:String>
-        <bt:String id="L.formula-map-summary" DefaultValue="Formül Haritası ve Özeti">
-          <bt:Override Locale="en-US" Value="Formula Map and Summary"/>
-          <bt:Override Locale="az-Latn-AZ" Value="Düstur xəritəsi və xülasəsi"/>
-          <bt:Override Locale="es-ES" Value="Mapa y resumen de fórmulas"/>
+        <bt:String id="Cat.workbook" DefaultValue="Çalışma Kitabı">
+          <bt:Override Locale="en-US" Value="Workbook"/>
+          <bt:Override Locale="az-Latn-AZ" Value="İş kitabı"/>
+          <bt:Override Locale="es-ES" Value="Libro de trabajo"/>
         </bt:String>
-        <bt:String id="L.extract-formulas-as-text" DefaultValue="Formülleri Metin Olarak Çıkar">
-          <bt:Override Locale="en-US" Value="Extract Formulas as Text"/>
-          <bt:Override Locale="az-Latn-AZ" Value="Düsturları mətn kimi çıxar"/>
-          <bt:Override Locale="es-ES" Value="Extraer fórmulas como texto"/>
+        <bt:String id="L.highlight-locked-cells" DefaultValue="Kilitli Hücreleri Vurgula">
+          <bt:Override Locale="en-US" Value="Highlight Locked Cells"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Kilidli xanaları vurğula"/>
+          <bt:Override Locale="es-ES" Value="Resaltar celdas bloqueadas"/>
         </bt:String>
-        <bt:String id="L.list-external-formulas" DefaultValue="Dış Bağlantılı Formülleri Listele">
-          <bt:Override Locale="en-US" Value="List External Formulas"/>
-          <bt:Override Locale="az-Latn-AZ" Value="Xarici düsturları siyahıla"/>
-          <bt:Override Locale="es-ES" Value="Listar fórmulas externas"/>
+        <bt:String id="L.highlight-unlocked-cells" DefaultValue="Kilitsiz Hücreleri Vurgula">
+          <bt:Override Locale="en-US" Value="Highlight Unlocked Cells"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Kilidsiz xanaları vurğula"/>
+          <bt:Override Locale="es-ES" Value="Resaltar celdas desbloqueadas"/>
         </bt:String>
         <bt:String id="L.list-named-ranges" DefaultValue="Adlandırılmış Aralıkları Listele">
           <bt:Override Locale="en-US" Value="List Named Ranges"/>
@@ -2872,6 +2911,11 @@
           <bt:Override Locale="en-US" Value="Report Invalid Data"/>
           <bt:Override Locale="az-Latn-AZ" Value="Yanlış Məlumatları Hesabatla"/>
           <bt:Override Locale="es-ES" Value="Informar Datos No Válidos"/>
+        </bt:String>
+        <bt:String id="L.highlight-data-validation" DefaultValue="Veri Doğrulamalı Hücreleri Vurgula">
+          <bt:Override Locale="en-US" Value="Highlight Data Validation"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Məlumat yoxlamalı xanaları vurğula"/>
+          <bt:Override Locale="es-ES" Value="Resaltar validación de datos"/>
         </bt:String>
         <bt:String id="Datacellia.ButtonLabel" DefaultValue="Tüm araçlar">
           <bt:Override Locale="en-US" Value="All tools"/>
@@ -3188,6 +3232,36 @@
           <bt:Override Locale="az-Latn-AZ" Value="Uyğun xanaları önizləyir və dolğu tətbiq edir. Datacellia Geri al əvvəlki dolğuları bərpa edir."/>
           <bt:Override Locale="es-ES" Value="Previsualiza coincidencias y aplica relleno. Deshacer de Datacellia restaura los rellenos anteriores."/>
         </bt:String>
+        <bt:String id="D.highlight-inconsistent" DefaultValue="En az üç formül bulunan sütunlarda göreli formül çoğunluğundan ayrılan inceleme adaylarını vurgular.">
+          <bt:Override Locale="en-US" Value="Highlight review candidates differing from the relative formula majority in columns containing at least three formulas."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Ən azı üç düsturlu sütunda nisbi düstur çoxluğundan fərqlənən namizədləri vurğulayır."/>
+          <bt:Override Locale="es-ES" Value="Resalta candidatos distintos de la mayoría relativa en columnas con al menos tres fórmulas."/>
+        </bt:String>
+        <bt:String id="D.highlight-error-rows" DefaultValue="Seçilen aralıkta eşleşen hücreleri önizler ve dolgu rengi uygular. Datacellia Geri Al ile önceki dolgulara dönün.">
+          <bt:Override Locale="en-US" Value="Preview matching cells in the captured range and apply fill formatting. Datacellia Undo restores previous fills."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Uyğun xanaları önizləyir və dolğu tətbiq edir. Datacellia Geri al əvvəlki dolğuları bərpa edir."/>
+          <bt:Override Locale="es-ES" Value="Previsualiza coincidencias y aplica relleno. Deshacer de Datacellia restaura los rellenos anteriores."/>
+        </bt:String>
+        <bt:String id="D.formula-map-summary" DefaultValue="Kitaptaki formülleri, açık sayfa ve dış dosya başvurularını yeni sayfada listeler. Dinamik başvurular ayrıca incelenmelidir.">
+          <bt:Override Locale="en-US" Value="List workbook formulas and explicit worksheet and external references in a new sheet. Review dynamic references separately."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Kitabdakı düsturları və açıq vərəq və xarici istinadları siyahılayır. Dinamik istinadları ayrıca yoxlayın."/>
+          <bt:Override Locale="es-ES" Value="Lista las fórmulas del libro y sus referencias explícitas. Revisa las referencias dinámicas por separado."/>
+        </bt:String>
+        <bt:String id="D.extract-formulas-as-text" DefaultValue="Denetim sonucunu önizler ve yeni bir sayfaya yazar. Rapor denetim anındaki durumu gösterir.">
+          <bt:Override Locale="en-US" Value="Preview the audit result and write it to a new worksheet. The report captures the current workbook state."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Yoxlama nəticəsini önizləyir və yeni vərəqə yazır. Hesabat cari vəziyyəti göstərir."/>
+          <bt:Override Locale="es-ES" Value="Previsualiza el resultado y lo escribe en una hoja nueva. El informe refleja el estado actual."/>
+        </bt:String>
+        <bt:String id="D.list-external-formulas" DefaultValue="Denetim sonucunu önizler ve yeni bir sayfaya yazar. Rapor denetim anındaki durumu gösterir.">
+          <bt:Override Locale="en-US" Value="Preview the audit result and write it to a new worksheet. The report captures the current workbook state."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Yoxlama nəticəsini önizləyir və yeni vərəqə yazır. Hesabat cari vəziyyəti göstərir."/>
+          <bt:Override Locale="es-ES" Value="Previsualiza el resultado y lo escribe en una hoja nueva. El informe refleja el estado actual."/>
+        </bt:String>
+        <bt:String id="MenuDesc.selection" DefaultValue="Sabit Değerleri Vurgula · Boş Hücreleri Vurgula · Koşullu Biçimleri Vurgula">
+          <bt:Override Locale="en-US" Value="Highlight Constants · Highlight Blanks · Highlight Conditional Formats"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Sabit dəyərləri vurğula · Boş xanaları vurğula · Şərti formatları vurğula"/>
+          <bt:Override Locale="es-ES" Value="Resaltar constantes · Resaltar celdas vacías · Resaltar formatos condicionales"/>
+        </bt:String>
         <bt:String id="D.highlight-constants" DefaultValue="Seçilen aralıkta eşleşen hücreleri önizler ve dolgu rengi uygular. Datacellia Geri Al ile önceki dolgulara dönün.">
           <bt:Override Locale="en-US" Value="Preview matching cells in the captured range and apply fill formatting. Datacellia Undo restores previous fills."/>
           <bt:Override Locale="az-Latn-AZ" Value="Uyğun xanaları önizləyir və dolğu tətbiq edir. Datacellia Geri al əvvəlki dolğuları bərpa edir."/>
@@ -3198,32 +3272,7 @@
           <bt:Override Locale="az-Latn-AZ" Value="Uyğun xanaları önizləyir və dolğu tətbiq edir. Datacellia Geri al əvvəlki dolğuları bərpa edir."/>
           <bt:Override Locale="es-ES" Value="Previsualiza coincidencias y aplica relleno. Deshacer de Datacellia restaura los rellenos anteriores."/>
         </bt:String>
-        <bt:String id="D.highlight-inconsistent" DefaultValue="En az üç formül bulunan sütunlarda göreli formül çoğunluğundan ayrılan inceleme adaylarını vurgular.">
-          <bt:Override Locale="en-US" Value="Highlight review candidates differing from the relative formula majority in columns containing at least three formulas."/>
-          <bt:Override Locale="az-Latn-AZ" Value="Ən azı üç düsturlu sütunda nisbi düstur çoxluğundan fərqlənən namizədləri vurğulayır."/>
-          <bt:Override Locale="es-ES" Value="Resalta candidatos distintos de la mayoría relativa en columnas con al menos tres fórmulas."/>
-        </bt:String>
-        <bt:String id="D.highlight-data-validation" DefaultValue="Seçilen aralıkta eşleşen hücreleri önizler ve dolgu rengi uygular. Datacellia Geri Al ile önceki dolgulara dönün.">
-          <bt:Override Locale="en-US" Value="Preview matching cells in the captured range and apply fill formatting. Datacellia Undo restores previous fills."/>
-          <bt:Override Locale="az-Latn-AZ" Value="Uyğun xanaları önizləyir və dolğu tətbiq edir. Datacellia Geri al əvvəlki dolğuları bərpa edir."/>
-          <bt:Override Locale="es-ES" Value="Previsualiza coincidencias y aplica relleno. Deshacer de Datacellia restaura los rellenos anteriores."/>
-        </bt:String>
         <bt:String id="D.highlight-conditional-formats" DefaultValue="Seçilen aralıkta eşleşen hücreleri önizler ve dolgu rengi uygular. Datacellia Geri Al ile önceki dolgulara dönün.">
-          <bt:Override Locale="en-US" Value="Preview matching cells in the captured range and apply fill formatting. Datacellia Undo restores previous fills."/>
-          <bt:Override Locale="az-Latn-AZ" Value="Uyğun xanaları önizləyir və dolğu tətbiq edir. Datacellia Geri al əvvəlki dolğuları bərpa edir."/>
-          <bt:Override Locale="es-ES" Value="Previsualiza coincidencias y aplica relleno. Deshacer de Datacellia restaura los rellenos anteriores."/>
-        </bt:String>
-        <bt:String id="D.highlight-locked-cells" DefaultValue="Seçilen aralıkta eşleşen hücreleri önizler ve dolgu rengi uygular. Datacellia Geri Al ile önceki dolgulara dönün.">
-          <bt:Override Locale="en-US" Value="Preview matching cells in the captured range and apply fill formatting. Datacellia Undo restores previous fills."/>
-          <bt:Override Locale="az-Latn-AZ" Value="Uyğun xanaları önizləyir və dolğu tətbiq edir. Datacellia Geri al əvvəlki dolğuları bərpa edir."/>
-          <bt:Override Locale="es-ES" Value="Previsualiza coincidencias y aplica relleno. Deshacer de Datacellia restaura los rellenos anteriores."/>
-        </bt:String>
-        <bt:String id="D.highlight-unlocked-cells" DefaultValue="Seçilen aralıkta eşleşen hücreleri önizler ve dolgu rengi uygular. Datacellia Geri Al ile önceki dolgulara dönün.">
-          <bt:Override Locale="en-US" Value="Preview matching cells in the captured range and apply fill formatting. Datacellia Undo restores previous fills."/>
-          <bt:Override Locale="az-Latn-AZ" Value="Uyğun xanaları önizləyir və dolğu tətbiq edir. Datacellia Geri al əvvəlki dolğuları bərpa edir."/>
-          <bt:Override Locale="es-ES" Value="Previsualiza coincidencias y aplica relleno. Deshacer de Datacellia restaura los rellenos anteriores."/>
-        </bt:String>
-        <bt:String id="D.highlight-error-rows" DefaultValue="Seçilen aralıkta eşleşen hücreleri önizler ve dolgu rengi uygular. Datacellia Geri Al ile önceki dolgulara dönün.">
           <bt:Override Locale="en-US" Value="Preview matching cells in the captured range and apply fill formatting. Datacellia Undo restores previous fills."/>
           <bt:Override Locale="az-Latn-AZ" Value="Uyğun xanaları önizləyir və dolğu tətbiq edir. Datacellia Geri al əvvəlki dolğuları bərpa edir."/>
           <bt:Override Locale="es-ES" Value="Previsualiza coincidencias y aplica relleno. Deshacer de Datacellia restaura los rellenos anteriores."/>
@@ -3253,20 +3302,20 @@
           <bt:Override Locale="az-Latn-AZ" Value="Alınmış aralıqdakı uyğun xanaları Excel-də seçir. Dəyərləri və formatları qoruyur."/>
           <bt:Override Locale="es-ES" Value="Selecciona las celdas coincidentes del rango capturado y conserva los valores y el formato."/>
         </bt:String>
-        <bt:String id="D.formula-map-summary" DefaultValue="Kitaptaki formülleri, açık sayfa ve dış dosya başvurularını yeni sayfada listeler. Dinamik başvurular ayrıca incelenmelidir.">
-          <bt:Override Locale="en-US" Value="List workbook formulas and explicit worksheet and external references in a new sheet. Review dynamic references separately."/>
-          <bt:Override Locale="az-Latn-AZ" Value="Kitabdakı düsturları və açıq vərəq və xarici istinadları siyahılayır. Dinamik istinadları ayrıca yoxlayın."/>
-          <bt:Override Locale="es-ES" Value="Lista las fórmulas del libro y sus referencias explícitas. Revisa las referencias dinámicas por separado."/>
+        <bt:String id="MenuDesc.workbook" DefaultValue="Kilitli Hücreleri Vurgula · Kilitsiz Hücreleri Vurgula · Adlandırılmış Aralıkları Listele">
+          <bt:Override Locale="en-US" Value="Highlight Locked Cells · Highlight Unlocked Cells · List Named Ranges"/>
+          <bt:Override Locale="az-Latn-AZ" Value="Kilidli xanaları vurğula · Kilidsiz xanaları vurğula · Adlandırılmış aralıqları siyahıla"/>
+          <bt:Override Locale="es-ES" Value="Resaltar celdas bloqueadas · Resaltar celdas desbloqueadas · Listar rangos con nombre"/>
         </bt:String>
-        <bt:String id="D.extract-formulas-as-text" DefaultValue="Denetim sonucunu önizler ve yeni bir sayfaya yazar. Rapor denetim anındaki durumu gösterir.">
-          <bt:Override Locale="en-US" Value="Preview the audit result and write it to a new worksheet. The report captures the current workbook state."/>
-          <bt:Override Locale="az-Latn-AZ" Value="Yoxlama nəticəsini önizləyir və yeni vərəqə yazır. Hesabat cari vəziyyəti göstərir."/>
-          <bt:Override Locale="es-ES" Value="Previsualiza el resultado y lo escribe en una hoja nueva. El informe refleja el estado actual."/>
+        <bt:String id="D.highlight-locked-cells" DefaultValue="Seçilen aralıkta eşleşen hücreleri önizler ve dolgu rengi uygular. Datacellia Geri Al ile önceki dolgulara dönün.">
+          <bt:Override Locale="en-US" Value="Preview matching cells in the captured range and apply fill formatting. Datacellia Undo restores previous fills."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Uyğun xanaları önizləyir və dolğu tətbiq edir. Datacellia Geri al əvvəlki dolğuları bərpa edir."/>
+          <bt:Override Locale="es-ES" Value="Previsualiza coincidencias y aplica relleno. Deshacer de Datacellia restaura los rellenos anteriores."/>
         </bt:String>
-        <bt:String id="D.list-external-formulas" DefaultValue="Denetim sonucunu önizler ve yeni bir sayfaya yazar. Rapor denetim anındaki durumu gösterir.">
-          <bt:Override Locale="en-US" Value="Preview the audit result and write it to a new worksheet. The report captures the current workbook state."/>
-          <bt:Override Locale="az-Latn-AZ" Value="Yoxlama nəticəsini önizləyir və yeni vərəqə yazır. Hesabat cari vəziyyəti göstərir."/>
-          <bt:Override Locale="es-ES" Value="Previsualiza el resultado y lo escribe en una hoja nueva. El informe refleja el estado actual."/>
+        <bt:String id="D.highlight-unlocked-cells" DefaultValue="Seçilen aralıkta eşleşen hücreleri önizler ve dolgu rengi uygular. Datacellia Geri Al ile önceki dolgulara dönün.">
+          <bt:Override Locale="en-US" Value="Preview matching cells in the captured range and apply fill formatting. Datacellia Undo restores previous fills."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Uyğun xanaları önizləyir və dolğu tətbiq edir. Datacellia Geri al əvvəlki dolğuları bərpa edir."/>
+          <bt:Override Locale="es-ES" Value="Previsualiza coincidencias y aplica relleno. Deshacer de Datacellia restaura los rellenos anteriores."/>
         </bt:String>
         <bt:String id="D.list-named-ranges" DefaultValue="Denetim sonucunu önizler ve yeni bir sayfaya yazar. Rapor denetim anındaki durumu gösterir.">
           <bt:Override Locale="en-US" Value="Preview the audit result and write it to a new worksheet. The report captures the current workbook state."/>
@@ -3437,6 +3486,11 @@
           <bt:Override Locale="en-US" Value="Uses Excel to check existing validation and reports invalid records and the number of cells without rules on a new sheet."/>
           <bt:Override Locale="az-Latn-AZ" Value="Mövcud qaydaları Excel ilə yoxlayır, yanlış qeydləri və qaydasız xanaların sayını yeni vərəqdə göstərir."/>
           <bt:Override Locale="es-ES" Value="Usa Excel para comprobar las reglas existentes e informa los registros no válidos y las celdas sin reglas en una hoja nueva."/>
+        </bt:String>
+        <bt:String id="D.highlight-data-validation" DefaultValue="Seçilen aralıkta eşleşen hücreleri önizler ve dolgu rengi uygular. Datacellia Geri Al ile önceki dolgulara dönün.">
+          <bt:Override Locale="en-US" Value="Preview matching cells in the captured range and apply fill formatting. Datacellia Undo restores previous fills."/>
+          <bt:Override Locale="az-Latn-AZ" Value="Uyğun xanaları önizləyir və dolğu tətbiq edir. Datacellia Geri al əvvəlki dolğuları bərpa edir."/>
+          <bt:Override Locale="es-ES" Value="Previsualiza coincidencias y aplica relleno. Deshacer de Datacellia restaura los rellenos anteriores."/>
         </bt:String>
         <bt:String id="Datacellia.ButtonDescription" DefaultValue="Araç adını arayın veya kategorilerden seçin.">
           <bt:Override Locale="en-US" Value="Search for a tool by name or browse categories."/>
