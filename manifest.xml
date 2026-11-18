@@ -5,7 +5,7 @@
            xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
            xsi:type="TaskPaneApp">
   <Id>f69a7bc2-42e8-4e6a-9db8-55c71a75db34</Id>
-  <Version>3.38.0.0</Version>
+  <Version>3.38.1.0</Version>
   <ProviderName>Datacellia</ProviderName>
   <DefaultLocale>tr-TR</DefaultLocale>
   <DisplayName DefaultValue="Datacellia"/>
@@ -26,7 +26,7 @@
     </Sets>
   </Requirements>
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://addin.datacellia.com/index.html?v=3.38.0.0"/>
+    <SourceLocation DefaultValue="https://addin.datacellia.com/index.html?v=3.38.1.0"/>
   </DefaultSettings>
   <Permissions>ReadWriteDocument</Permissions>
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
@@ -70,8 +70,7 @@
                     <bt:Image size="80" resid="Icon.80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="AllTools.Url"/>
+                    <SourceLocation resid="Taskpane.Url"/>
                   </Action>
                 </Control>
               </Group>
@@ -107,9 +106,8 @@
                     <bt:Image size="80" resid="Tool.1.80"/>
                     <bt:Image size="64" resid="Tool.1.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.1"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.trim-whitespace</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.clean-invisible-characters">
@@ -124,9 +122,8 @@
                     <bt:Image size="80" resid="Tool.2.80"/>
                     <bt:Image size="64" resid="Tool.2.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.2"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.clean-invisible-characters</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.remove-empty-rows">
@@ -141,9 +138,8 @@
                     <bt:Image size="80" resid="Tool.3.80"/>
                     <bt:Image size="64" resid="Tool.3.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.3"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.remove-empty-rows</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.remove-empty-columns">
@@ -158,9 +154,8 @@
                     <bt:Image size="80" resid="Tool.4.80"/>
                     <bt:Image size="64" resid="Tool.4.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.4"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.remove-empty-columns</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.remove-duplicates">
@@ -175,9 +170,8 @@
                     <bt:Image size="80" resid="Tool.5.80"/>
                     <bt:Image size="64" resid="Tool.5.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.5"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.remove-duplicates</FunctionName>
                   </Action>
                 </Item>
                   </Items>
@@ -206,9 +200,8 @@
                     <bt:Image size="80" resid="Tool.6.80"/>
                     <bt:Image size="64" resid="Tool.6.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.6"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.to-upper-case</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.to-lower-case">
@@ -223,9 +216,8 @@
                     <bt:Image size="80" resid="Tool.7.80"/>
                     <bt:Image size="64" resid="Tool.7.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.7"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.to-lower-case</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.capitalize-words">
@@ -240,9 +232,8 @@
                     <bt:Image size="80" resid="Tool.8.80"/>
                     <bt:Image size="64" resid="Tool.8.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.8"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.capitalize-words</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.split-by-delimiter">
@@ -257,9 +248,8 @@
                     <bt:Image size="80" resid="Tool.9.80"/>
                     <bt:Image size="64" resid="Tool.9.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.9"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.split-by-delimiter</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.extract-email">
@@ -274,9 +264,8 @@
                     <bt:Image size="80" resid="Tool.10.80"/>
                     <bt:Image size="64" resid="Tool.10.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.10"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.extract-email</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.extract-first-number">
@@ -291,9 +280,8 @@
                     <bt:Image size="80" resid="Tool.11.80"/>
                     <bt:Image size="64" resid="Tool.11.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.11"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.extract-first-number</FunctionName>
                   </Action>
                 </Item>
                   </Items>
@@ -322,9 +310,8 @@
                     <bt:Image size="80" resid="Tool.12.80"/>
                     <bt:Image size="64" resid="Tool.12.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.12"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.data-profile</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.formulas-to-values">
@@ -339,9 +326,8 @@
                     <bt:Image size="80" resid="Tool.13.80"/>
                     <bt:Image size="64" resid="Tool.13.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.13"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.formulas-to-values</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.fill-down">
@@ -356,9 +342,8 @@
                     <bt:Image size="80" resid="Tool.14.80"/>
                     <bt:Image size="64" resid="Tool.14.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.14"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.fill-down</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.fill-blanks">
@@ -373,9 +358,8 @@
                     <bt:Image size="80" resid="Tool.15.80"/>
                     <bt:Image size="64" resid="Tool.15.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.15"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.fill-blanks</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.text-to-number">
@@ -390,9 +374,8 @@
                     <bt:Image size="80" resid="Tool.16.80"/>
                     <bt:Image size="64" resid="Tool.16.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.16"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.text-to-number</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.unique-values">
@@ -407,9 +390,8 @@
                     <bt:Image size="80" resid="Tool.17.80"/>
                     <bt:Image size="64" resid="Tool.17.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.17"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.unique-values</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.date-parts">
@@ -424,9 +406,8 @@
                     <bt:Image size="80" resid="Tool.18.80"/>
                     <bt:Image size="64" resid="Tool.18.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.18"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.date-parts</FunctionName>
                   </Action>
                 </Item>
                   </Items>
@@ -463,9 +444,8 @@
                     <bt:Image size="80" resid="Tool.19.80"/>
                     <bt:Image size="64" resid="Tool.19.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.19"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.round-number</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.change-decimal-display">
@@ -480,9 +460,8 @@
                     <bt:Image size="80" resid="Tool.20.80"/>
                     <bt:Image size="64" resid="Tool.20.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.20"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.change-decimal-display</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.absolute-numbers">
@@ -497,9 +476,8 @@
                     <bt:Image size="80" resid="Tool.21.80"/>
                     <bt:Image size="64" resid="Tool.21.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.21"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.absolute-numbers</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.flip-number-signs">
@@ -514,9 +492,8 @@
                     <bt:Image size="80" resid="Tool.22.80"/>
                     <bt:Image size="64" resid="Tool.22.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.22"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.flip-number-signs</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.convert-to-percent">
@@ -531,9 +508,8 @@
                     <bt:Image size="80" resid="Tool.23.80"/>
                     <bt:Image size="64" resid="Tool.23.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.23"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.convert-to-percent</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.convert-percent-to-number">
@@ -548,9 +524,8 @@
                     <bt:Image size="80" resid="Tool.24.80"/>
                     <bt:Image size="64" resid="Tool.24.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.24"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.convert-percent-to-number</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.fix-number-separators">
@@ -565,9 +540,8 @@
                     <bt:Image size="80" resid="Tool.25.80"/>
                     <bt:Image size="64" resid="Tool.25.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.25"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.fix-number-separators</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.scale-numbers">
@@ -582,9 +556,8 @@
                     <bt:Image size="80" resid="Tool.26.80"/>
                     <bt:Image size="64" resid="Tool.26.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.26"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.scale-numbers</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.clear-zero-values">
@@ -599,9 +572,8 @@
                     <bt:Image size="80" resid="Tool.27.80"/>
                     <bt:Image size="64" resid="Tool.27.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.27"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.clear-zero-values</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.number-health-check">
@@ -616,9 +588,8 @@
                     <bt:Image size="80" resid="Tool.28.80"/>
                     <bt:Image size="64" resid="Tool.28.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.28"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.number-health-check</FunctionName>
                   </Action>
                 </Item>
                   </Items>
@@ -647,9 +618,8 @@
                     <bt:Image size="80" resid="Tool.29.80"/>
                     <bt:Image size="64" resid="Tool.29.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.29"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.pick-date</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.pick-time">
@@ -664,9 +634,8 @@
                     <bt:Image size="80" resid="Tool.30.80"/>
                     <bt:Image size="64" resid="Tool.30.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.30"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.pick-time</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.pick-date-time">
@@ -681,9 +650,8 @@
                     <bt:Image size="80" resid="Tool.31.80"/>
                     <bt:Image size="64" resid="Tool.31.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.31"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.pick-date-time</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.insert-today">
@@ -698,9 +666,8 @@
                     <bt:Image size="80" resid="Tool.32.80"/>
                     <bt:Image size="64" resid="Tool.32.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.32"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.insert-today</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.insert-current-time">
@@ -715,9 +682,8 @@
                     <bt:Image size="80" resid="Tool.33.80"/>
                     <bt:Image size="64" resid="Tool.33.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.33"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.insert-current-time</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.insert-date-time">
@@ -732,9 +698,8 @@
                     <bt:Image size="80" resid="Tool.34.80"/>
                     <bt:Image size="64" resid="Tool.34.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.34"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.insert-date-time</FunctionName>
                   </Action>
                 </Item>
                   </Items>
@@ -771,9 +736,8 @@
                     <bt:Image size="80" resid="Tool.35.80"/>
                     <bt:Image size="64" resid="Tool.35.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.35"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.compare-lists</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.compare-tables-by-key">
@@ -788,9 +752,8 @@
                     <bt:Image size="80" resid="Tool.36.80"/>
                     <bt:Image size="64" resid="Tool.36.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.36"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.compare-tables-by-key</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.compare-rows">
@@ -805,9 +768,8 @@
                     <bt:Image size="80" resid="Tool.37.80"/>
                     <bt:Image size="64" resid="Tool.37.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.37"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.compare-rows</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.compare-health-check">
@@ -822,9 +784,8 @@
                     <bt:Image size="80" resid="Tool.38.80"/>
                     <bt:Image size="64" resid="Tool.38.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.38"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.compare-health-check</FunctionName>
                   </Action>
                 </Item>
                   </Items>
@@ -853,9 +814,8 @@
                     <bt:Image size="80" resid="Tool.39.80"/>
                     <bt:Image size="64" resid="Tool.39.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.39"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.append-worksheets</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.append-tables">
@@ -870,9 +830,8 @@
                     <bt:Image size="80" resid="Tool.40.80"/>
                     <bt:Image size="64" resid="Tool.40.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.40"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.append-tables</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.lookup-from-table">
@@ -887,9 +846,8 @@
                     <bt:Image size="80" resid="Tool.41.80"/>
                     <bt:Image size="64" resid="Tool.41.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.41"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.lookup-from-table</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.multi-lookup">
@@ -904,9 +862,8 @@
                     <bt:Image size="80" resid="Tool.42.80"/>
                     <bt:Image size="64" resid="Tool.42.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.42"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.multi-lookup</FunctionName>
                   </Action>
                 </Item>
                   </Items>
@@ -935,9 +892,8 @@
                     <bt:Image size="80" resid="Tool.43.80"/>
                     <bt:Image size="64" resid="Tool.43.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.43"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.group-summarize</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.unpivot-columns">
@@ -952,9 +908,8 @@
                     <bt:Image size="80" resid="Tool.44.80"/>
                     <bt:Image size="64" resid="Tool.44.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.44"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.unpivot-columns</FunctionName>
                   </Action>
                 </Item>
                   </Items>
@@ -1401,9 +1356,8 @@
                     <bt:Image size="80" resid="Tool.88.80"/>
                     <bt:Image size="64" resid="Tool.88.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.88"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.create-dropdown-list</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.set-number-validation">
@@ -1418,9 +1372,8 @@
                     <bt:Image size="80" resid="Tool.89.80"/>
                     <bt:Image size="64" resid="Tool.89.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.89"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.set-number-validation</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.set-date-validation">
@@ -1435,9 +1388,8 @@
                     <bt:Image size="80" resid="Tool.90.80"/>
                     <bt:Image size="64" resid="Tool.90.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.90"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.set-date-validation</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.set-text-length-validation">
@@ -1452,9 +1404,8 @@
                     <bt:Image size="80" resid="Tool.91.80"/>
                     <bt:Image size="64" resid="Tool.91.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.91"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.set-text-length-validation</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.prevent-duplicate-entry">
@@ -1469,9 +1420,8 @@
                     <bt:Image size="80" resid="Tool.92.80"/>
                     <bt:Image size="64" resid="Tool.92.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.92"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.prevent-duplicate-entry</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.report-invalid-data">
@@ -1486,9 +1436,8 @@
                     <bt:Image size="80" resid="Tool.93.80"/>
                     <bt:Image size="64" resid="Tool.93.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.93"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.report-invalid-data</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.highlight-data-validation">
@@ -1541,9 +1490,8 @@
                     <bt:Image size="80" resid="Tool.82.80"/>
                     <bt:Image size="64" resid="Tool.82.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.82"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.create-chart</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.category-chart">
@@ -1558,9 +1506,8 @@
                     <bt:Image size="80" resid="Tool.83.80"/>
                     <bt:Image size="64" resid="Tool.83.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.83"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.category-chart</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.trend-chart">
@@ -1575,9 +1522,8 @@
                     <bt:Image size="80" resid="Tool.84.80"/>
                     <bt:Image size="64" resid="Tool.84.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.84"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.trend-chart</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.share-chart">
@@ -1592,9 +1538,8 @@
                     <bt:Image size="80" resid="Tool.85.80"/>
                     <bt:Image size="64" resid="Tool.85.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.85"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.share-chart</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.target-chart">
@@ -1609,9 +1554,8 @@
                     <bt:Image size="80" resid="Tool.86.80"/>
                     <bt:Image size="64" resid="Tool.86.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.86"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.target-chart</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.pareto-chart">
@@ -1626,9 +1570,8 @@
                     <bt:Image size="80" resid="Tool.87.80"/>
                     <bt:Image size="64" resid="Tool.87.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.87"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.pareto-chart</FunctionName>
                   </Action>
                 </Item>
                   </Items>
@@ -1657,9 +1600,8 @@
                     <bt:Image size="80" resid="Tool.68.80"/>
                     <bt:Image size="64" resid="Tool.68.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.68"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.create-dashboard</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.create-report">
@@ -1674,9 +1616,8 @@
                     <bt:Image size="80" resid="Tool.69.80"/>
                     <bt:Image size="64" resid="Tool.69.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.69"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.create-report</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.executive-dashboard">
@@ -1691,9 +1632,8 @@
                     <bt:Image size="80" resid="Tool.70.80"/>
                     <bt:Image size="64" resid="Tool.70.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.70"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.executive-dashboard</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.sales-dashboard">
@@ -1708,9 +1648,8 @@
                     <bt:Image size="80" resid="Tool.71.80"/>
                     <bt:Image size="64" resid="Tool.71.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.71"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.sales-dashboard</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.hr-dashboard">
@@ -1725,9 +1664,8 @@
                     <bt:Image size="80" resid="Tool.72.80"/>
                     <bt:Image size="64" resid="Tool.72.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.72"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.hr-dashboard</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.finance-dashboard">
@@ -1742,9 +1680,8 @@
                     <bt:Image size="80" resid="Tool.73.80"/>
                     <bt:Image size="64" resid="Tool.73.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.73"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.finance-dashboard</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.executive-report">
@@ -1759,9 +1696,8 @@
                     <bt:Image size="80" resid="Tool.74.80"/>
                     <bt:Image size="64" resid="Tool.74.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.74"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.executive-report</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.sales-report">
@@ -1776,9 +1712,8 @@
                     <bt:Image size="80" resid="Tool.75.80"/>
                     <bt:Image size="64" resid="Tool.75.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.75"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.sales-report</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.hr-report">
@@ -1793,9 +1728,8 @@
                     <bt:Image size="80" resid="Tool.76.80"/>
                     <bt:Image size="64" resid="Tool.76.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.76"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.hr-report</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.finance-report">
@@ -1810,9 +1744,8 @@
                     <bt:Image size="80" resid="Tool.77.80"/>
                     <bt:Image size="64" resid="Tool.77.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.77"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.finance-report</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.stock-report">
@@ -1827,9 +1760,8 @@
                     <bt:Image size="80" resid="Tool.78.80"/>
                     <bt:Image size="64" resid="Tool.78.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.78"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.stock-report</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.project-report">
@@ -1844,9 +1776,8 @@
                     <bt:Image size="80" resid="Tool.79.80"/>
                     <bt:Image size="64" resid="Tool.79.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.79"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.project-report</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.data-quality-report">
@@ -1861,9 +1792,8 @@
                     <bt:Image size="80" resid="Tool.80.80"/>
                     <bt:Image size="64" resid="Tool.80.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.80"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.data-quality-report</FunctionName>
                   </Action>
                 </Item>
                 <Item id="Cmd.general-report">
@@ -1878,9 +1808,8 @@
                     <bt:Image size="80" resid="Tool.81.80"/>
                     <bt:Image size="64" resid="Tool.81.16"/>
                   </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                    <SourceLocation resid="TP.81"/>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>run.general-report</FunctionName>
                   </Action>
                 </Item>
                   </Items>
@@ -1903,9 +1832,8 @@
                   <bt:Image size="32" resid="Tool.29.32"/>
                   <bt:Image size="80" resid="Tool.29.80"/>
                 </Icon>
-                <Action xsi:type="ShowTaskpane">
-                  <TaskpaneId>Datacellia.Taskpane</TaskpaneId>
-                  <SourceLocation resid="Context.PickDate.Url"/>
+                <Action xsi:type="ExecuteFunction">
+                  <FunctionName>run.pick-date</FunctionName>
                 </Action>
               </Control>
             </OfficeMenu>
@@ -2247,81 +2175,10 @@
       </bt:Images>
       <bt:Urls>
         <bt:Url id="Commands.Url" DefaultValue="https://addin.datacellia.com/commands.html"/>
-        <bt:Url id="Taskpane.Url" DefaultValue="https://addin.datacellia.com/index.html?v=3.38.0.0"/>
-        <bt:Url id="AllTools.Url" DefaultValue="https://addin.datacellia.com/index.html?view=tools&amp;v=3.38.0.0"/>
-        <bt:Url id="Context.PickDate.Url" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date&amp;source=context-menu&amp;v=3.38.0.0"/>
+        <bt:Url id="Taskpane.Url" DefaultValue="https://addin.datacellia.com/index.html?v=3.38.1.0"/>
         <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://addin.datacellia.com/"/>
         <!-- BEGIN GENERATED URLS -->
-        <bt:Url id="TP.1" DefaultValue="https://addin.datacellia.com/index.html?tool=trim-whitespace&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.2" DefaultValue="https://addin.datacellia.com/index.html?tool=clean-invisible-characters&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.3" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-empty-rows&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.4" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-empty-columns&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.5" DefaultValue="https://addin.datacellia.com/index.html?tool=remove-duplicates&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.6" DefaultValue="https://addin.datacellia.com/index.html?tool=to-upper-case&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.7" DefaultValue="https://addin.datacellia.com/index.html?tool=to-lower-case&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.8" DefaultValue="https://addin.datacellia.com/index.html?tool=capitalize-words&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.9" DefaultValue="https://addin.datacellia.com/index.html?tool=split-by-delimiter&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.10" DefaultValue="https://addin.datacellia.com/index.html?tool=extract-email&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.11" DefaultValue="https://addin.datacellia.com/index.html?tool=extract-first-number&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.12" DefaultValue="https://addin.datacellia.com/index.html?tool=data-profile&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.13" DefaultValue="https://addin.datacellia.com/index.html?tool=formulas-to-values&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.14" DefaultValue="https://addin.datacellia.com/index.html?tool=fill-down&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.15" DefaultValue="https://addin.datacellia.com/index.html?tool=fill-blanks&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.16" DefaultValue="https://addin.datacellia.com/index.html?tool=text-to-number&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.17" DefaultValue="https://addin.datacellia.com/index.html?tool=unique-values&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.18" DefaultValue="https://addin.datacellia.com/index.html?tool=date-parts&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.19" DefaultValue="https://addin.datacellia.com/index.html?tool=round-number&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.20" DefaultValue="https://addin.datacellia.com/index.html?tool=change-decimal-display&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.21" DefaultValue="https://addin.datacellia.com/index.html?tool=absolute-numbers&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.22" DefaultValue="https://addin.datacellia.com/index.html?tool=flip-number-signs&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.23" DefaultValue="https://addin.datacellia.com/index.html?tool=convert-to-percent&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.24" DefaultValue="https://addin.datacellia.com/index.html?tool=convert-percent-to-number&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.25" DefaultValue="https://addin.datacellia.com/index.html?tool=fix-number-separators&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.26" DefaultValue="https://addin.datacellia.com/index.html?tool=scale-numbers&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.27" DefaultValue="https://addin.datacellia.com/index.html?tool=clear-zero-values&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.28" DefaultValue="https://addin.datacellia.com/index.html?tool=number-health-check&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.29" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.30" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-time&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.31" DefaultValue="https://addin.datacellia.com/index.html?tool=pick-date-time&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.32" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-today&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.33" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-current-time&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.34" DefaultValue="https://addin.datacellia.com/index.html?tool=insert-date-time&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.35" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-lists&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.36" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-tables-by-key&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.37" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-rows&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.38" DefaultValue="https://addin.datacellia.com/index.html?tool=compare-health-check&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.39" DefaultValue="https://addin.datacellia.com/index.html?tool=append-worksheets&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.40" DefaultValue="https://addin.datacellia.com/index.html?tool=append-tables&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.41" DefaultValue="https://addin.datacellia.com/index.html?tool=lookup-from-table&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.42" DefaultValue="https://addin.datacellia.com/index.html?tool=multi-lookup&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.43" DefaultValue="https://addin.datacellia.com/index.html?tool=group-summarize&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.44" DefaultValue="https://addin.datacellia.com/index.html?tool=unpivot-columns&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.68" DefaultValue="https://addin.datacellia.com/index.html?tool=create-dashboard&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.69" DefaultValue="https://addin.datacellia.com/index.html?tool=create-report&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.70" DefaultValue="https://addin.datacellia.com/index.html?tool=executive-dashboard&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.71" DefaultValue="https://addin.datacellia.com/index.html?tool=sales-dashboard&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.72" DefaultValue="https://addin.datacellia.com/index.html?tool=hr-dashboard&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.73" DefaultValue="https://addin.datacellia.com/index.html?tool=finance-dashboard&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.74" DefaultValue="https://addin.datacellia.com/index.html?tool=executive-report&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.75" DefaultValue="https://addin.datacellia.com/index.html?tool=sales-report&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.76" DefaultValue="https://addin.datacellia.com/index.html?tool=hr-report&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.77" DefaultValue="https://addin.datacellia.com/index.html?tool=finance-report&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.78" DefaultValue="https://addin.datacellia.com/index.html?tool=stock-report&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.79" DefaultValue="https://addin.datacellia.com/index.html?tool=project-report&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.80" DefaultValue="https://addin.datacellia.com/index.html?tool=data-quality-report&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.81" DefaultValue="https://addin.datacellia.com/index.html?tool=general-report&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.82" DefaultValue="https://addin.datacellia.com/index.html?tool=create-chart&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.83" DefaultValue="https://addin.datacellia.com/index.html?tool=category-chart&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.84" DefaultValue="https://addin.datacellia.com/index.html?tool=trend-chart&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.85" DefaultValue="https://addin.datacellia.com/index.html?tool=share-chart&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.86" DefaultValue="https://addin.datacellia.com/index.html?tool=target-chart&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.87" DefaultValue="https://addin.datacellia.com/index.html?tool=pareto-chart&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.88" DefaultValue="https://addin.datacellia.com/index.html?tool=create-dropdown-list&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.89" DefaultValue="https://addin.datacellia.com/index.html?tool=set-number-validation&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.90" DefaultValue="https://addin.datacellia.com/index.html?tool=set-date-validation&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.91" DefaultValue="https://addin.datacellia.com/index.html?tool=set-text-length-validation&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.92" DefaultValue="https://addin.datacellia.com/index.html?tool=prevent-duplicate-entry&amp;v=3.38.0.0"/>
-        <bt:Url id="TP.93" DefaultValue="https://addin.datacellia.com/index.html?tool=report-invalid-data&amp;v=3.38.0.0"/>
+
 <!-- END GENERATED URLS -->
       </bt:Urls>
       <bt:ShortStrings>
